@@ -17,3 +17,26 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Shared entrance motion - used across the landing page, survey and results so the whole
+   product moves the same way. Kept to opacity + a small rise, never anything bouncy. */
+@keyframes rs-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rs-animate-in {
+  animation: rs-rise-in 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rs-animate-in {
+    animation: none;
+  }
+}
