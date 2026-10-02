@@ -66,17 +66,19 @@ export default async function ResultsPage({
       </div>
 
       {/* ---------------------------------------------------------------- */}
-      {/* 1. Do now - no permission needed (placeholder)                   */}
+      {/* 1. Do now - no permission needed                                 */}
       {/* ---------------------------------------------------------------- */}
       <Section title="Do now, no permission needed">
-        <div className="rounded-lg border border-dashed border-stone-300 bg-stone-50 p-5 text-sm text-stone-500">
-          <p className="font-medium text-stone-600">Coming soon.</p>
-          <p className="mt-1 max-w-prose">
-            No-permission moves like switching electricity retailer or plan type belong here.
-            This build prices the hot water upgrade that needs your landlord&apos;s sign-off.
-            Your cooktop and space-heating answers are asked but not priced. Space heating
-            depends on the building&apos;s fabric, which five questions can&apos;t tell us, and a
-            number we couldn&apos;t defend would undermine the ones we can.
+        <div className="rounded-lg border border-stone-200 bg-stone-50 p-5 text-sm text-stone-600">
+          <p className="max-w-prose">
+            Switching electricity retailer or plan type takes no landlord sign-off. This
+            build&apos;s number is the upgrade that does need permission: the hot water system,
+            priced in full below.
+          </p>
+          <p className="mt-3 max-w-prose">
+            Your cooktop and space heating are asked about but deliberately not priced. Space
+            heating depends on insulation and glazing, which five questions cannot establish,
+            and a number we could not defend would undermine the two we can.
           </p>
         </div>
       </Section>
@@ -148,15 +150,15 @@ export default async function ResultsPage({
           )}
         </Section>
       ) : (
-        <Section title="Ask your landlord" highlight>
+        <Section title="Your hot water, already sorted" highlight>
           <div className="rounded-lg border border-emerald-200 bg-white p-6">
             <p className="text-lg font-semibold text-stone-900">
-              You&apos;re already on the most efficient option
+              You&apos;re already on the most efficient system
             </p>
             <p className="mt-3 max-w-prose text-stone-700">
-              Your hot water already runs on {currentLabel}, which is the best available option
-              on the NSW grid today. There is no upgrade for us to recommend, and no honest
-              saving to quote. We&apos;d rather tell you that plainly than invent a number.
+              {currentLabel} is the best available option on the NSW grid today, so there&apos;s
+              no upgrade to chase and nothing to ask your landlord for. The electricity plan
+              switch above is still worth doing, and it only needs your own permission.
             </p>
           </div>
           <Notes warnings={result.warnings} />
