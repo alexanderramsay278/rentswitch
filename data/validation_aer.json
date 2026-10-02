@@ -1,0 +1,41 @@
+{
+  "_source": {
+    "name": "AER, Residential energy consumption benchmarks, 9 December 2020 (Frontier Economics). Table 30: NSW gas consumption benchmarks (MJ).",
+    "url": "https://www.aer.gov.au/system/files/Residential%20energy%20consumption%20benchmarks%20-%209%20December%202020_0.pdf",
+    "sample": "1,062 NSW households",
+    "caveat": "AER figure is TOTAL household gas; our model is hot water only. This is a plausibility and scaling check, NOT a predicted-vs-actual accuracy test. 2020 data."
+  },
+  "results": [
+    {
+      "occupants": 1,
+      "aer_total_gas_mj": 9835,
+      "modelled_hot_water_mj": 5625.4,
+      "hot_water_share": 0.572
+    },
+    {
+      "occupants": 2,
+      "aer_total_gas_mj": 16945,
+      "modelled_hot_water_mj": 11250.8,
+      "hot_water_share": 0.664
+    },
+    {
+      "occupants": 3,
+      "aer_total_gas_mj": 19978,
+      "modelled_hot_water_mj": 16876.2,
+      "hot_water_share": 0.845
+    },
+    {
+      "occupants": 4,
+      "aer_total_gas_mj": 24160,
+      "modelled_hot_water_mj": 22501.7,
+      "hot_water_share": 0.931
+    },
+    {
+      "occupants": 5,
+      "aer_total_gas_mj": 28799,
+      "modelled_hot_water_mj": 28127.1,
+      "hot_water_share": 0.977
+    }
+  ],
+  "finding": "Model is plausible at 1-2 occupants and increasingly over-predicts above that. Linear-in-occupants assumption (inherited from the NSW ESS 45 L/person/day figure) diverges from sub-linear real consumption."
+}

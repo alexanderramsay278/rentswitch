@@ -160,26 +160,73 @@ would be a health risk. This was in an early draft of our spec and was removed.
 
 ## Validation
 
-> 🎯 This section is the point. A small model shown working against real data beats a large one
-> asserted.
+> This section is the point. A model shown working against real data beats a larger one
+> asserted. We ran the external check we could run, and it did not pass cleanly — so that is
+> what is reported here.
 
-**Method.** For each participating household we take the actual quarterly energy bill and the
-appliance types, run them through the engine, and compare predicted annual cost against what
-the household actually paid. We report **every** result, including the ones that miss.
+### External check — AER metered benchmarks
 
-`[PENDING — Sunday 09:00–11:00]`
+**Source.** AER, *Residential energy consumption benchmarks*, 9 December 2020 (Frontier
+Economics), **Table 30: New South Wales gas consumption benchmarks (MJ)**. NSW gas sample:
+**1,062 real metered households.** This is the dataset behind the "households like yours" box
+on every Australian energy bill. Reproduce it with `python tools/validate_aer.py`.
+
+**What this is, and what it is not.** The AER figure is *total* household gas — hot water plus
+cooking plus space heating. Our model covers hot water only. So this is **not** a
+predicted-versus-actual accuracy test and we do not claim an error percentage from it. It
+answers two falsifiable questions instead.
+
+**Test 1 — plausibility.** Is our modelled hot water a believable share of the gas a real
+household of that size actually uses?
+
+| Occupants | AER total gas (MJ/yr) | Our modelled hot water (MJ/yr) | Share | Verdict |
+|---|---|---|---|---|
+| 1 | 9,835 | 5,625 | 57% | plausible |
+| 2 | 16,945 | 11,251 | 66% | plausible |
+| 3 | 19,978 | 16,876 | 84% | high |
+| 4 | 24,160 | 22,502 | 93% | **implausible** |
+| 5+ | 28,799 | 28,127 | 98% | **implausible** |
+
+**Test 2 — scaling.** Our model assumes demand is linear in occupants. Real households are not.
+
+| Occupants | AER actual | Our model | We over-predict by |
+|---|---|---|---|
+| 1 | 1.00x | 1.00x | — |
+| 2 | 1.72x | 2.00x | 16% |
+| 3 | 2.03x | 3.00x | 48% |
+| 4 | 2.46x | 4.00x | 63% |
+| 5+ | 2.93x | 5.00x | **71%** |
+
+### The finding, stated plainly
+
+**The model is reliable for 1–2 person households and increasingly overstates the saving above
+that.** At five occupants it implies 98% of all household gas goes to hot water, which cannot
+be true.
+
+**Cause.** We assume hot water scales linearly with occupants, because the NSW Energy Savings
+Scheme's own modelling uses a flat 45 L/person/day. Real metered households are strongly
+sub-linear: five people use 2.93x a one-person household, not 5.00x. Households share
+dishwashing, laundry and space heating even though they do not share showers.
+
+**Consequence.** Our worked example is a two-person household, which sits inside the defensible
+range. Beyond two occupants the quoted figure should be read as an upper bound. Calibrating the
+per-person curve against metered data is the first item in [Future work](#future-work).
+
+> We would rather publish the limit we found than an accuracy figure we did not measure.
+
+### Per-household check — not completed
 
 | Household | Occupants | Hot water | Predicted | Actual | Error |
 |---|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
+| — | — | — | — | — | — |
 
-**Mean absolute percentage error: `[DERIVE-B]`**
+Comparing predicted annual cost against individual households' actual bills was planned and
+**was not completed** — we could not collect a usable sample inside the event. The one bill
+offered was a final bill for a vacant property (2.41 kWh/day against 21.62 the previous year),
+which would have produced a meaningless error figure, so it was excluded rather than used.
 
-⚠️ **This is a convenience sample** — households known to the team, not a random one. It tells
-you the model is approximately right for real NSW homes; it does not tell you it generalises.
+**No accuracy percentage is claimed anywhere in this project.** The external check above is a
+plausibility and scaling test against regulator data, and it is described as exactly that.
 
 ### Internal checks
 
