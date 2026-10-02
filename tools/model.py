@@ -78,7 +78,8 @@ def deal(I, S, W, v, f, t_max):
 
 
 def run(k, tariffs, occupants, last_gas_appliance=True, rate="offPeak",
-        weekly_rent=None, L=None, cop=None, rebate=None):
+        weekly_rent=None, L=None, cop=None, rebate=None, fuel="gas"):
+    """fuel: 'gas' (ESS D19) or 'electric_tank' (ESS D17). Mirrors src/engine.ts."""
     e_plan = pick_plan(tariffs, k["tariffs_reference"]["electricity_plan"].split(" - ")[0])
     g_plan = pick_plan(tariffs, k["tariffs_reference"]["gas_plan"].split(" - ")[0])
 
@@ -101,20 +102,27 @@ def run(k, tariffs, occupants, last_gas_appliance=True, rate="offPeak",
     D_res = E / k["efficiency"]["eta_electric_resistive"]["value"] / 3.6
     D_hp = E / cop / 3.6
 
-    cost_gas_usage = gas_cost_yr(g_plan["blocks"], D_gas)
-    cost_gas_supply = 365 * g_plan["dailySupplyCharge"] if last_gas_appliance else 0.0
+    is_gas = fuel == "gas"
+    C_elec = k["costs"]["C_electric_storage_medium_installed"]["value"]
+
     cost_hp = D_hp * p_e
     if rate == "controlledLoad":
         cost_hp += 365 * (e_plan.get("controlledLoadSupplyCharge") or 0.0)
 
+    # What they pay today, by current system.
+    cost_gas_usage = gas_cost_yr(g_plan["blocks"], D_gas) if is_gas else D_res * p_e
+    # Supply charge is per CONNECTION - never applies to an all-electric household.
+    cost_gas_supply = (365 * g_plan["dailySupplyCharge"]
+                       if (is_gas and last_gas_appliance) else 0.0)
+
     S_usage = cost_gas_usage - cost_hp
     S = S_usage + cost_gas_supply
 
-    em_gas = D_gas * ef_g
+    em_gas = D_gas * ef_g if is_gas else D_res * ef_e
     em_hp = D_hp * ef_e
     d_em = em_gas - em_hp
 
-    I = (C - R) - C_gas
+    I = (C - R) - (C_gas if is_gas else C_elec)
     years = I / S if S > 0 else float("inf")
     dl = deal(I, S, weekly_rent, k["deal"]["v_vacancy_weeks"]["value"],
               k["deal"]["f_letting_fee_weeks"]["value"],

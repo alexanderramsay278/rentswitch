@@ -49,9 +49,10 @@ export interface Constants {
   cop: number;
   efElectricity: number; // kg CO2-e/kWh
   efGas: number;         // kg CO2-e/MJ
-  cHeatPump: number;     // $
-  cGasReplace: number;   // $
-  rebate: number;        // $
+  cHeatPump: number;        // $
+  cGasReplace: number;      // $  like-for-like gas storage replacement
+  cElectricReplace: number; // $  like-for-like electric storage replacement
+  rebate: number;           // $
   vacancyWeeks: number;
   lettingFeeWeeks: number;
   maxPaybackYears: number;
@@ -68,7 +69,20 @@ export interface Inputs {
   weeklyRent?: number;
 }
 
+/** What the household runs today, after resolving "unsure". */
+export type CurrentSystem = "gas" | "electric_tank" | "heat_pump" | "solar";
+
 export interface Result {
+  /** The system we modelled replacing, after resolving "unsure" to gas. */
+  currentSystem: CurrentSystem;
+  /**
+   * False when there is no hot water upgrade to recommend — the household is
+   * already on a heat pump or solar. Every money/emissions figure is then zero
+   * and the UI must say so rather than render an empty result as a saving.
+   */
+  upgradeModelled: boolean;
+  /** NSW ESS activity code, for the letter and the README. */
+  essActivity: "D19" | "D17" | null;
   energy: {
     usefulMJPerYear: number;
     usefulMJPerDay: number;
@@ -259,48 +273,102 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
   const warnings: string[] = [];
   const rate: ElectricityRate = input.heatPumpRate ?? "offPeak";
 
+  // --- Resolve which system we are actually replacing -----------------------
+  // "unsure" falls back to gas storage, the most common case, and says so.
+  const currentSystem: CurrentSystem =
+    input.hotWaterFuel === "unsure" ? "gas" : input.hotWaterFuel;
+
   if (input.hotWaterFuel === "unsure") {
     warnings.push(
       "You weren't sure what heats your water, so we assumed gas storage - the most common case. Change it above."
     );
   }
 
-  // Section 2-3: energy
+  // Section 2-3: energy. Useful energy is independent of the appliance.
   const E = usefulEnergyMJPerYear(c, input.occupants);
-  const D_gas = E / c.etaGas;                 // MJ/yr
-  const D_hp = E / c.cop / 3.6;               // kWh/yr
+  const D_gas = E / c.etaGas;                      // MJ/yr
+  const D_res = E / c.etaResistive / 3.6;          // kWh/yr
+  const D_hp = E / c.cop / 3.6;                    // kWh/yr
 
-  // Section 4-5: cost
-  const gasUsage = gasUsageCostPerYear(t.gasBlocks, D_gas);
-  const gasSupply = input.isLastGasAppliance ? 365 * t.gasSupply : 0;
   const hpRate = electricityRate(t, rate);
   let hpUsage = D_hp * hpRate;
-
   // Controlled load needs its own metered circuit, which carries its own daily charge.
   if (rate === "controlledLoad") {
     hpUsage += 365 * t.controlledLoadSupply;
   }
 
-  // Section 6: tenant saving
-  const S_usage = gasUsage - hpUsage;
+  // --- Already efficient: nothing to upgrade --------------------------------
+  // A heat pump or solar system is already the best available option. Returning
+  // zeros here is deliberate: the alternative is presenting a fabricated saving.
+  if (currentSystem === "heat_pump" || currentSystem === "solar") {
+    const label = currentSystem === "heat_pump" ? "a heat pump" : "solar hot water";
+    warnings.push(
+      `You already have ${label}, which is the most efficient option available - there is no hot water upgrade for us to recommend. The permission-free actions below still apply.`
+    );
+    const nil = computeDeal(c, 0, 0, input.weeklyRent);
+    return {
+      currentSystem,
+      upgradeModelled: false,
+      essActivity: null,
+      energy: {
+        usefulMJPerYear: E,
+        usefulMJPerDay: E / 365,
+        gasDeliveredMJPerYear: 0,
+        heatPumpKWhPerYear: D_hp,
+      },
+      cost: {
+        gasUsagePerYear: 0, gasSupplyPerYear: 0, gasTotalPerYear: 0,
+        heatPumpUsagePerYear: hpUsage, heatPumpRateUsed: rate, heatPumpRateDollars: hpRate,
+      },
+      saving: { usage: 0, supply: 0, total: 0 },
+      emissions: {
+        gasKgPerYear: 0,
+        heatPumpKgPerYear: D_hp * c.efElectricity,
+        savedKgPerYear: 0,
+        percentCut: 0,
+      },
+      landlord: { headlineNetCost: 0, incremental: 0, yearsOfTenantSaving: 0 },
+      deal: nil,
+      warnings,
+    };
+  }
+
+  // --- Section 4-6: cost and tenant saving, by current system ---------------
+  const isGas = currentSystem === "gas";
+
+  // What they pay today.
+  const gasUsage = isGas ? gasUsageCostPerYear(t.gasBlocks, D_gas) : 0;
+  // UNIT TRAP: the gas supply charge is per CONNECTION, and is only saved when
+  // the connection is dropped. It never applies to an all-electric household.
+  const gasSupply = isGas && input.isLastGasAppliance ? 365 * t.gasSupply : 0;
+  const resUsage = isGas ? 0 : D_res * electricityRate(t, rate);
+
+  const S_usage = (isGas ? gasUsage : resUsage) - hpUsage;
   const S_supply = gasSupply;
   const S = S_usage + S_supply;
 
-  if (!input.isLastGasAppliance) {
+  if (isGas && !input.isLastGasAppliance) {
     warnings.push(
       "You have other gas appliances, so the gas daily supply charge stays. Electrify the rest and that's another $" +
         (365 * t.gasSupply).toFixed(0) + " a year."
     );
   }
+  if (!isGas) {
+    warnings.push(
+      "An electric storage tank is the most carbon-intensive way to heat water on the NSW grid, so the emissions saving here is large - but the bill saving is smaller than a gas switch, because there is no gas supply charge to shed."
+    );
+  }
 
-  // Section 7: emissions
-  const emGas = D_gas * c.efGas;
+  // Section 7: emissions. Gas uses EF per MJ; electricity uses EF per kWh.
+  const emCurrent = isGas ? D_gas * c.efGas : D_res * c.efElectricity;
   const emHp = D_hp * c.efElectricity;
-  const emSaved = emGas - emHp;
+  const emSaved = emCurrent - emHp;
 
-  // Section 8-9: landlord
+  // Section 8-9: landlord. The counterfactual is a like-for-like replacement
+  // of whatever they have now - NOT the sticker price of the heat pump.
   const headlineNetCost = c.cHeatPump - c.rebate;
-  const I = headlineNetCost - c.cGasReplace;
+  const counterfactual = isGas ? c.cGasReplace : c.cElectricReplace;
+  const I = headlineNetCost - counterfactual;
   const years = S > 0 ? I / S : Infinity;
 
   if (S <= 0) {
@@ -312,26 +380,30 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
   const deal = computeDeal(c, I, S, input.weeklyRent);
 
   return {
+    currentSystem,
+    upgradeModelled: true,
+    essActivity: isGas ? "D19" : "D17",
     energy: {
       usefulMJPerYear: E,
       usefulMJPerDay: E / 365,
-      gasDeliveredMJPerYear: D_gas,
+      gasDeliveredMJPerYear: isGas ? D_gas : 0,
       heatPumpKWhPerYear: D_hp,
     },
     cost: {
-      gasUsagePerYear: gasUsage,
+      // For an electric household these carry the CURRENT electric cost, not gas.
+      gasUsagePerYear: isGas ? gasUsage : resUsage,
       gasSupplyPerYear: gasSupply,
-      gasTotalPerYear: gasUsage + gasSupply,
+      gasTotalPerYear: (isGas ? gasUsage : resUsage) + gasSupply,
       heatPumpUsagePerYear: hpUsage,
       heatPumpRateUsed: rate,
       heatPumpRateDollars: hpRate,
     },
     saving: { usage: S_usage, supply: S_supply, total: S },
     emissions: {
-      gasKgPerYear: emGas,
+      gasKgPerYear: emCurrent,
       heatPumpKgPerYear: emHp,
       savedKgPerYear: emSaved,
-      percentCut: emGas > 0 ? (emSaved / emGas) * 100 : 0,
+      percentCut: emCurrent > 0 ? (emSaved / emCurrent) * 100 : 0,
     },
     landlord: {
       headlineNetCost,
