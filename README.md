@@ -4,7 +4,7 @@
 > building — and writes the landlord business case for the ones they can't.
 
 **Climate Hack-tion 2026** · Challenge: **Electrification** (35% by 2035) · Team **PPC Fans**
-Live: `[URL — Track A, once deployed]` · Demo video: `[link — Sunday]`
+**Live: https://rentswitchaus.vercel.app** · Demo video: `[link — added Sunday]`
 
 ---
 
