@@ -45,7 +45,7 @@ export default function LetterBlock({ letter }: { letter: string }) {
           Download .txt
         </button>
       </div>
-      <pre className="max-h-[32rem] overflow-y-auto whitespace-pre-wrap rounded-lg border border-stone-200 bg-stone-50 p-5 font-mono text-sm leading-relaxed text-stone-800">
+      <pre className="mx-auto max-h-[32rem] max-w-prose overflow-y-auto whitespace-pre-wrap rounded-lg border border-stone-200 bg-stone-50 p-5 font-mono text-sm leading-relaxed text-stone-800">
         {letter}
       </pre>
     </div>

@@ -1,28 +1,22 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { calculate } from "@/lib/engine";
+import { calculate, type CurrentSystem } from "@/lib/engine";
 import { generateLetter } from "@/lib/letter";
 import { constants, tariffs } from "@/lib/adapter";
-import { queryToAnswers, hotWaterIsModelled } from "@/lib/questions";
+import { queryToAnswers } from "@/lib/questions";
 import { formatMoney, formatKg, formatYears, formatNumber } from "@/lib/format";
 import LetterBlock from "@/components/LetterBlock";
 
-const NOT_MODELLED_COPY: Record<string, { heading: string; body: string }> = {
-  heat_pump: {
-    heading: "You've already made this switch",
-    body:
-      "You told us your hot water already runs on an electric heat pump - that's the end state this whole tool is trying to get renters to. There's no upgrade left to model here.",
-  },
-  electric_tank: {
-    heading: "Not modelled in this version",
-    body:
-      "Rentswitch's first build models one switch only: gas storage hot water to an electric heat pump. An electric resistive tank to heat pump switch is a real saving too, but it runs on a different formula that isn't built yet - it's in the project's future work, not invented on the spot.",
-  },
-  solar: {
-    heading: "Not modelled in this version",
-    body:
-      "Solar hot water is already a low-emissions setup, and the gas-to-heat-pump switch this tool models doesn't apply to your case. We'd rather say that plainly than force a number that doesn't mean anything.",
-  },
+const CURRENT_SYSTEM_LABEL: Record<CurrentSystem, string> = {
+  gas: "gas storage",
+  electric_tank: "electric storage tank",
+  heat_pump: "electric heat pump",
+  solar: "solar hot water",
+};
+
+const ESS_ACTIVITY_COPY: Record<"D19" | "D17", string> = {
+  D19: "Replacing gas storage with a heat pump — NSW ESS activity D19",
+  D17: "Replacing an electric storage tank with a heat pump — NSW ESS activity D17",
 };
 
 export default async function ResultsPage({
@@ -39,34 +33,11 @@ export default async function ResultsPage({
         <h1 className="mb-4 text-xl font-semibold text-stone-900">
           We&apos;re missing an answer
         </h1>
-        <p className="mb-6 text-stone-600">
+        <p className="mb-6 max-w-prose text-stone-600">
           Something didn&apos;t come through from the questionnaire. No numbers are being
-          guessed here - please start again.
+          guessed here — please start again.
         </p>
-        <Link
-          href="/"
-          className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white hover:bg-emerald-700"
-        >
-          Start over
-        </Link>
-      </Shell>
-    );
-  }
-
-  if (!hotWaterIsModelled(answers.hotWater)) {
-    const copy = NOT_MODELLED_COPY[answers.hotWater];
-    return (
-      <Shell>
-        <h1 className="mb-4 text-xl font-semibold text-stone-900 sm:text-2xl">
-          {copy.heading}
-        </h1>
-        <p className="mb-6 text-stone-700">{copy.body}</p>
-        <Link
-          href="/"
-          className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white hover:bg-emerald-700"
-        >
-          Start over
-        </Link>
+        <StartOverButton />
       </Shell>
     );
   }
@@ -79,13 +50,16 @@ export default async function ResultsPage({
     weeklyRent: answers.weeklyRent,
   });
 
-  const letter = generateLetter(result, constants);
   const deal = result.deal;
+  const isGas = result.currentSystem === "gas";
+  const currentLabel = CURRENT_SYSTEM_LABEL[result.currentSystem];
 
   return (
     <Shell wide>
-      <div className="mb-8 flex items-baseline justify-between">
-        <h1 className="text-xl font-semibold text-stone-900 sm:text-2xl">Your results</h1>
+      <div className="mb-10 flex items-baseline justify-between">
+        <h1 className="text-xl font-semibold tracking-tight text-stone-900 sm:text-2xl">
+          Your results
+        </h1>
         <Link href="/" className="text-sm font-medium text-stone-500 hover:text-stone-700">
           Start over
         </Link>
@@ -97,96 +71,193 @@ export default async function ResultsPage({
       <Section title="Do now — no permission needed">
         <div className="rounded-lg border border-dashed border-stone-300 bg-stone-50 p-5 text-sm text-stone-500">
           <p className="font-medium text-stone-600">Coming soon.</p>
-          <p className="mt-1">
+          <p className="mt-1 max-w-prose">
             No-permission moves like switching electricity retailer or plan type belong here.
-            This build prices the one upgrade that needs your landlord&apos;s sign-off - P0 is
-            hot water, gas storage to heat pump. Cooktop and space heating (what you told us in
-            questions 4 and 5) aren&apos;t priced in this version; see the project&apos;s Future
-            work.
+            This build prices the hot water upgrade that needs your landlord&apos;s sign-off.
+            Your cooktop and space-heating answers are asked but not priced — space heating
+            depends on the building&apos;s fabric, which five questions can&apos;t tell us, and a
+            number we couldn&apos;t defend would undermine the ones we can.
           </p>
         </div>
       </Section>
 
       {/* ---------------------------------------------------------------- */}
-      {/* 2. Ask your landlord - the central claim                         */}
+      {/* 2. Ask your landlord, OR the "already efficient" honest state    */}
       {/* ---------------------------------------------------------------- */}
-      <Section title="Ask your landlord" highlight>
-        <p className="mb-6 text-stone-700">
-          You gain this every year. Your landlord pays this once. Neither of you is being
-          unreasonable - this is the split incentive, in one screen.
-        </p>
-
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <BigStat label="You save every year" value={formatMoney(result.saving.total)} accent />
-          <BigStat label="Landlord pays, once" value={formatMoney(result.landlord.incremental)} />
-          <BigStat
-            label="Years of your saving to cover it"
-            value={formatYears(result.landlord.yearsOfTenantSaving)}
-          />
-        </div>
-
-        {result.warnings.length > 0 && (
-          <div className="mt-6 space-y-2">
-            {result.warnings.map((w, i) => (
-              <p
-                key={i}
-                className="rounded-md border border-amber-200 bg-amber-50 px-4 py-2 text-sm text-amber-900"
-              >
-                ⚠️ {w}
-              </p>
-            ))}
-          </div>
-        )}
-
-        {deal && (
-          <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-5">
-            <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-stone-500">
-              Offer {deal.offer}
+      {result.upgradeModelled ? (
+        <Section title="Ask your landlord" highlight>
+          {result.essActivity && (
+            <p className="mb-5 inline-block rounded-full border border-stone-300 bg-white px-3 py-1 text-xs font-medium text-stone-600">
+              {ESS_ACTIVITY_COPY[result.essActivity]}
             </p>
-            <p className="text-stone-800">{deal.headline}</p>
-            <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-              {deal.vacancyValue > 0 && (
-                <StatRow label="Avoided vacancy value" value={formatMoney(deal.vacancyValue)} />
-              )}
-              {deal.weeklyRentAdjustment > 0 && (
-                <StatRow
-                  label="Weekly rent adjustment"
-                  value={`$${deal.weeklyRentAdjustment.toFixed(2)}`}
-                />
-              )}
-              {deal.paybackYears !== null && (
-                <StatRow label="Landlord payback" value={formatYears(deal.paybackYears)} />
-              )}
-              <StatRow label="Your net benefit, per year" value={formatMoney(deal.tenantNetBenefit)} />
-            </dl>
-            {answers.weeklyRent === undefined && (
-              <p className="mt-4 text-sm text-stone-500">
-                Add your weekly rent on the questionnaire to see what a longer lease is worth to
-                your landlord.
-              </p>
-            )}
+          )}
+          <p className="mb-6 max-w-prose text-stone-700">
+            You gain this every year. Your landlord pays this once. Neither of you is being
+            unreasonable — this is the split incentive, in one screen.
+          </p>
+
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <BigStat
+              eyebrow="Tenant saving, per year"
+              value={formatMoney(result.saving.total)}
+              caption="What you keep in your pocket every year if this switch happens."
+              accent
+            />
+            <BigStat
+              eyebrow="Landlord cost, once"
+              value={formatMoney(result.landlord.incremental)}
+              caption="The extra cost over replacing like-for-like, paid once at install."
+            />
+            <BigStat
+              eyebrow="Payback, in years"
+              value={formatYears(result.landlord.yearsOfTenantSaving)}
+              caption="Years of your saving it takes to cover the landlord's extra cost."
+            />
           </div>
-        )}
-      </Section>
+
+          <Notes warnings={result.warnings} />
+
+          {deal && (
+            <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-5">
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                Offer {deal.offer}
+              </p>
+              <p className="text-stone-800">{deal.headline}</p>
+              <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+                {deal.vacancyValue > 0 && (
+                  <StatRow label="Avoided vacancy value" value={formatMoney(deal.vacancyValue)} />
+                )}
+                {deal.weeklyRentAdjustment > 0 && (
+                  <StatRow
+                    label="Weekly rent adjustment"
+                    value={`$${deal.weeklyRentAdjustment.toFixed(2)}`}
+                  />
+                )}
+                {deal.paybackYears !== null && (
+                  <StatRow label="Landlord payback" value={formatYears(deal.paybackYears)} />
+                )}
+                <StatRow label="Your net benefit, per year" value={formatMoney(deal.tenantNetBenefit)} />
+              </dl>
+              {answers.weeklyRent === undefined && (
+                <p className="mt-4 max-w-prose text-sm text-stone-500">
+                  Add your weekly rent on the questionnaire to see what a longer lease is worth to
+                  your landlord.
+                </p>
+              )}
+            </div>
+          )}
+        </Section>
+      ) : (
+        <Section title="Ask your landlord" highlight>
+          <div className="rounded-lg border border-emerald-200 bg-white p-6">
+            <p className="text-lg font-semibold text-stone-900">
+              You&apos;re already on the most efficient option
+            </p>
+            <p className="mt-3 max-w-prose text-stone-700">
+              Your hot water already runs on {currentLabel}, which is the best available option
+              on the NSW grid today — there is no upgrade for us to recommend, and no honest
+              saving to quote. We&apos;d rather tell you that plainly than invent a number.
+            </p>
+          </div>
+          <Notes warnings={result.warnings} />
+        </Section>
+      )}
 
       {/* ---------------------------------------------------------------- */}
-      {/* 3. The letter                                                     */}
+      {/* 3. The letter — only when there's something to actually propose  */}
       {/* ---------------------------------------------------------------- */}
-      <Section title="The letter">
-        <p className="mb-4 text-stone-600">
-          A landlord business case, not a request - built from the numbers above.
-        </p>
-        <LetterBlock letter={letter} />
-      </Section>
+      {result.upgradeModelled && (
+        <Section title="The letter">
+          <p className="mb-4 max-w-prose text-stone-600">
+            A landlord business case, not a request — built from the numbers above.
+          </p>
+          <LetterBlock letter={generateLetter(result, constants)} />
+        </Section>
+      )}
 
       {/* ---------------------------------------------------------------- */}
       {/* 4. What it adds up to                                             */}
       {/* ---------------------------------------------------------------- */}
       <Section title="What it adds up to">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {result.upgradeModelled ? (
+          <>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+              <div>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                  Energy, per year
+                </h3>
+                <dl className="space-y-2 text-sm">
+                  <StatRow
+                    label="Hot water demand"
+                    value={`${formatNumber(result.energy.usefulMJPerYear)} MJ`}
+                  />
+                  {isGas && (
+                    <StatRow
+                      label="Gas delivered today"
+                      value={`${formatNumber(result.energy.gasDeliveredMJPerYear)} MJ`}
+                    />
+                  )}
+                  <StatRow
+                    label="Heat pump electricity, if switched"
+                    value={`${formatNumber(result.energy.heatPumpKWhPerYear)} kWh`}
+                  />
+                </dl>
+              </div>
+              <div>
+                <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                  Dollars, per year
+                </h3>
+                <dl className="space-y-2 text-sm">
+                  <StatRow
+                    label={isGas ? "Gas usage cost" : "Electric usage cost"}
+                    value={formatMoney(result.cost.gasUsagePerYear)}
+                  />
+                  {isGas && (
+                    <StatRow
+                      label="Gas daily supply charge"
+                      value={`${formatMoney(result.cost.gasSupplyPerYear)}${
+                        result.cost.gasSupplyPerYear === 0
+                          ? " (stays — other gas appliances)"
+                          : " — the single largest piece of the saving"
+                      }`}
+                    />
+                  )}
+                  <StatRow
+                    label="Heat pump running cost"
+                    value={formatMoney(result.cost.heatPumpUsagePerYear)}
+                  />
+                  <StatRow label="Total saving" value={formatMoney(result.saving.total)} strong />
+                </dl>
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-stone-500">
+                Emissions, per year
+              </h3>
+              <dl className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-3">
+                <StatRow
+                  label={`${isGas ? "Gas" : "Electric"} hot water today`}
+                  value={formatKg(result.emissions.gasKgPerYear)}
+                />
+                <StatRow
+                  label="Heat pump, if switched"
+                  value={formatKg(result.emissions.heatPumpKgPerYear)}
+                />
+                <StatRow
+                  label="Cut"
+                  value={`${formatKg(result.emissions.savedKgPerYear)} (${Math.round(
+                    result.emissions.percentCut
+                  )}%)`}
+                  strong
+                />
+              </dl>
+            </div>
+          </>
+        ) : (
           <div>
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-stone-500">
-              Energy, per year
+            <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-stone-500">
+              Your household, per year
             </h3>
             <dl className="space-y-2 text-sm">
               <StatRow
@@ -194,64 +265,52 @@ export default async function ResultsPage({
                 value={`${formatNumber(result.energy.usefulMJPerYear)} MJ`}
               />
               <StatRow
-                label="Gas delivered today"
-                value={`${formatNumber(result.energy.gasDeliveredMJPerYear)} MJ`}
-              />
-              <StatRow
-                label="Heat pump electricity, if switched"
-                value={`${formatNumber(result.energy.heatPumpKWhPerYear)} kWh`}
+                label={`Estimated ${currentLabel} emissions`}
+                value={formatKg(result.emissions.heatPumpKgPerYear)}
               />
             </dl>
+            <p className="mt-4 max-w-prose text-sm text-stone-500">
+              Because you&apos;re already on the option this tool would otherwise recommend,
+              there&apos;s no further $ or kg CO₂e saving modelled here.
+            </p>
           </div>
-          <div>
-            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-stone-500">
-              Dollars, per year
-            </h3>
-            <dl className="space-y-2 text-sm">
-              <StatRow label="Gas usage cost" value={formatMoney(result.cost.gasUsagePerYear)} />
-              <StatRow
-                label="Gas daily supply charge"
-                value={`${formatMoney(result.cost.gasSupplyPerYear)}${
-                  result.cost.gasSupplyPerYear === 0 ? " (stays - other gas appliances)" : " - the single largest piece of the saving"
-                }`}
-              />
-              <StatRow
-                label="Heat pump running cost"
-                value={formatMoney(result.cost.heatPumpUsagePerYear)}
-              />
-              <StatRow label="Total saving" value={formatMoney(result.saving.total)} strong />
-            </dl>
-          </div>
-        </div>
+        )}
 
-        <div className="mt-6">
-          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-stone-500">
-            Emissions, per year
-          </h3>
-          <dl className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-3">
-            <StatRow label="Gas hot water today" value={formatKg(result.emissions.gasKgPerYear)} />
-            <StatRow
-              label="Heat pump, if switched"
-              value={formatKg(result.emissions.heatPumpKgPerYear)}
-            />
-            <StatRow
-              label="Cut"
-              value={`${formatKg(result.emissions.savedKgPerYear)} (${Math.round(
-                result.emissions.percentCut
-              )}%)`}
-              strong
-            />
-          </dl>
-        </div>
-
-        <p className="mt-6 border-t border-stone-200 pt-4 text-sm text-stone-500">
+        <p className="mt-8 max-w-prose border-t border-stone-200 pt-4 text-sm text-stone-500">
           Australia needs 35% of households electrified by 2035. Almost a third of Australian
-          households rent and can&apos;t make this switch without their landlord&apos;s consent -
+          households rent and can&apos;t make this switch without their landlord&apos;s consent —
           this is what one of those households looks like once the split incentive is actually
           quantified.
         </p>
       </Section>
     </Shell>
+  );
+}
+
+function Notes({ warnings }: { warnings: string[] }) {
+  if (warnings.length === 0) return null;
+  return (
+    <div className="mt-6 space-y-2 border-t border-stone-200 pt-4">
+      <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
+        Notes on these figures
+      </p>
+      {warnings.map((w, i) => (
+        <p key={i} className="max-w-prose text-sm leading-relaxed text-stone-500">
+          {w}
+        </p>
+      ))}
+    </div>
+  );
+}
+
+function StartOverButton() {
+  return (
+    <Link
+      href="/"
+      className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
+    >
+      Start over
+    </Link>
   );
 }
 
@@ -294,24 +353,28 @@ function Section({
           : "border-stone-200 bg-white"
       }`}
     >
-      <h2 className="mb-5 text-lg font-semibold text-stone-900 sm:text-xl">{title}</h2>
+      <h2 className="mb-5 text-lg font-semibold tracking-tight text-stone-900 sm:text-xl">
+        {title}
+      </h2>
       {children}
     </section>
   );
 }
 
 function BigStat({
-  label,
+  eyebrow,
   value,
+  caption,
   accent = false,
 }: {
-  label: string;
+  eyebrow: string;
   value: string;
+  caption: string;
   accent?: boolean;
 }) {
   return (
     <div className="rounded-lg bg-white p-5 text-center shadow-sm ring-1 ring-stone-200">
-      <p className="text-xs font-medium uppercase tracking-wide text-stone-500">{label}</p>
+      <p className="text-xs font-medium uppercase tracking-wide text-stone-500">{eyebrow}</p>
       <p
         className={`mt-2 text-4xl font-bold tabular-nums ${
           accent ? "text-emerald-700" : "text-stone-900"
@@ -319,6 +382,7 @@ function BigStat({
       >
         {value}
       </p>
+      <p className="mt-2 text-xs leading-snug text-stone-500">{caption}</p>
     </div>
   );
 }
