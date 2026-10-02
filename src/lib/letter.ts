@@ -50,10 +50,21 @@ export function generateLetter(
 
   const lines: string[] = [];
 
+  // The letter must describe the system THIS household actually has.
+  // Writing "gas" to an all-electric household is both wrong and obviously wrong
+  // to the person receiving it, which destroys the credibility of every number
+  // that follows.
+  const isGas = r.currentSystem === "gas";
+  const systemName = isGas ? "gas hot water system" : "electric hot water tank";
+  const counterfactualCost = isGas ? c.cGasReplace : c.cElectricReplace;
+  const counterfactualName = isGas
+    ? "A like-for-like gas replacement"
+    : "A like-for-like electric tank";
+
   lines.push(`Dear ${landlord},`);
   lines.push("");
   lines.push(
-    `I'd like to propose replacing the gas hot water system at ${address} with an electric heat pump when it next needs replacing. I've done the numbers from both sides, and I think this is worth your time.`
+    `I'd like to propose replacing the ${systemName} at ${address} with an electric heat pump when it next needs replacing. I've done the numbers from both sides, and I think this is worth your time.`
   );
   lines.push("");
 
@@ -61,7 +72,7 @@ export function generateLetter(
   lines.push("WHAT IT ACTUALLY COSTS YOU");
   lines.push("");
   lines.push(
-    `This isn't a request to spend ${money(c.cHeatPump)} you weren't going to spend. Hot water systems fail, and when this one does you're replacing it either way. A like-for-like gas replacement costs about ${money(c.cGasReplace)} installed. A heat pump costs about ${money(c.cHeatPump)}.`
+    `This isn't a request to spend ${money(c.cHeatPump)} you weren't going to spend. Hot water systems fail, and when this one does you're replacing it either way. ${counterfactualName} costs about ${money(counterfactualCost)} installed. A heat pump costs about ${money(c.cHeatPump)}.`
   );
   if (c.rebate > 0) {
     lines.push(
@@ -101,7 +112,7 @@ export function generateLetter(
   switch (d?.offer) {
     case "A":
       lines.push(
-        `At replacement time this costs you nothing extra - the rebates cover the difference against a like-for-like gas replacement. I'm not asking for anything in return. I'd just like to agree now that when the system is replaced, it's replaced with a heat pump.`
+        `At replacement time this costs you nothing extra - the rebates cover the difference against ${counterfactualName.toLowerCase()}. I'm not asking for anything in return. I'd just like to agree now that when the system is replaced, it's replaced with a heat pump.`
       );
       break;
 
