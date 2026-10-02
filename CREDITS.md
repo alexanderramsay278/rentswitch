@@ -68,11 +68,17 @@ Hot water demand assumption.
 
 ## Frameworks, services and libraries
 - **Python 3.14** (standard library only — `json`, `urllib`, `os`, `sys`, `time`) — data fetching, model reference implementation, validation.
-- ⬜ Next.js — [licence, once scaffolded]
-- ⬜ Vercel — hosting
-- ⬜ [every library that ends up in `package.json`]
+- **Next.js 16** (App Router) — MIT licence. The frontend framework; `src/engine.ts` and `src/letter.ts` were dropped in unmodified.
+- **React 19** / **react-dom 19** — MIT licence. UI runtime Next.js is built on.
+- **TypeScript 5** — Apache 2.0 licence. Type-checks the whole frontend, including the adapter between `data/*.json` and `engine.ts`'s types.
+- **Tailwind CSS 4** (with `@tailwindcss/postcss`) — MIT licence. All styling; no component library used.
+- **ESLint 9** with `eslint-config-next` — MIT licence. Lint only, not shipped.
+- **@types/node, @types/react, @types/react-dom** — MIT licence. Type definitions only, not shipped.
+- **Vercel** — hosting, zero-config deploy from this repo.
 
-> No third-party Python packages were used. No PDF parsing library was used.
+> No third-party Python packages were used. No PDF parsing library was used. No database, auth
+> provider, state-management library or UI component library was added to the frontend — this
+> was a deliberate scope decision, not an oversight.
 
 ---
 
