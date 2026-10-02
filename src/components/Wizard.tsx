@@ -215,19 +215,34 @@ export default function Wizard() {
               goNext({ weeklyRent: val > 0 ? val : undefined });
             }}
           >
-            <input
-              type="number"
-              inputMode="decimal"
-              min={0}
-              step={1}
-              placeholder="e.g. 650"
-              value={rentInput}
-              onChange={(e) => setRentInput(e.target.value)}
-              className="w-full rounded-lg border border-stone-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            />
+            <label className="relative w-full">
+              <span className="sr-only">Weekly rent in dollars</span>
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-base text-stone-500"
+              >
+                $
+              </span>
+              <input
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
+                autoComplete="off"
+                placeholder="650"
+                value={rentInput}
+                onChange={(e) => setRentInput(e.target.value.replace(/\D/g, "").slice(0, 5))}
+                className="w-full rounded-lg border border-stone-300 py-3 pl-8 pr-16 text-base tabular-nums focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              />
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-sm text-stone-400"
+              >
+                /week
+              </span>
+            </label>
             <button
               type="submit"
-              className="rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
+              className="shrink-0 rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
             >
               Continue
             </button>
