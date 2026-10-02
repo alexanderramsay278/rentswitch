@@ -1,0 +1,904 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "endpoint": "https://cdr.energymadeeasy.gov.au/{brand}/cds-au/v1/energy/plans",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-02",
+    "filter": "customerType=RESIDENTIAL, postcode 2088 (Mosman NSW), effective=CURRENT",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day",
+    "licence": "See CREDITS.md - AER / data.gov.au terms"
+  },
+  "plans": [
+    {
+      "planId": "AGL1189640SRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.602365,
+      "flat": null,
+      "peak": 0.547241,
+      "offPeak": 0.218533,
+      "shoulder": null,
+      "controlledLoad": 0.175539,
+      "controlledLoadSupplyCharge": 0.041623
+    },
+    {
+      "planId": "AGL1189625MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Netflix Plan",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.48587,
+      "flat": null,
+      "peak": 0.49252,
+      "offPeak": 0.19668,
+      "shoulder": null,
+      "controlledLoad": 0.1579,
+      "controlledLoadSupplyCharge": 0.0385
+    },
+    {
+      "planId": "AGL1189622SRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.602365,
+      "flat": null,
+      "peak": 0.547241,
+      "offPeak": 0.218533,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1189628MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Seniors Saver",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.37803,
+      "flat": null,
+      "peak": 0.47063,
+      "offPeak": 0.18794,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1189572MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Smart Saver",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.44213,
+      "flat": null,
+      "peak": 0.49252,
+      "offPeak": 0.19668,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1189607MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Smart Saver - BP Fuel",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.44213,
+      "flat": null,
+      "peak": 0.49252,
+      "offPeak": 0.19668,
+      "shoulder": null,
+      "controlledLoad": 0.1579,
+      "controlledLoadSupplyCharge": 0.0374
+    },
+    {
+      "planId": "AGL1189590MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Smart Saver - Velocity New To AGL",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.44213,
+      "flat": null,
+      "peak": 0.49252,
+      "offPeak": 0.19668,
+      "shoulder": null,
+      "controlledLoad": 0.1579,
+      "controlledLoadSupplyCharge": 0.0374
+    },
+    {
+      "planId": "AGL1189597MRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Savers",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.60237,
+      "flat": null,
+      "peak": 0.54724,
+      "offPeak": 0.21853,
+      "shoulder": null,
+      "controlledLoad": 0.1755,
+      "controlledLoadSupplyCharge": 0.0416
+    },
+    {
+      "planId": "ENE932486MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.64561,
+      "flat": null,
+      "peak": 0.53729,
+      "offPeak": 0.22755,
+      "shoulder": 0.26637,
+      "controlledLoad": 0.175539,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE932474MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.60373,
+      "flat": null,
+      "peak": 0.53729,
+      "offPeak": 0.22755,
+      "shoulder": 0.26637,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE932495MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.63377,
+      "flat": 0.301227,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.175539,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE932485MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.55305,
+      "flat": 0.301227,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.175539,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE932468MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.68444,
+      "flat": null,
+      "peak": 0.53729,
+      "offPeak": 0.22755,
+      "shoulder": 0.26637,
+      "controlledLoad": 0.209136,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE932470MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.59188,
+      "flat": 0.301227,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.209136,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE932478MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.51117,
+      "flat": 0.301227,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE932479MRE11@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Ausgrid"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.72633,
+      "flat": null,
+      "peak": 0.53729,
+      "offPeak": 0.22755,
+      "shoulder": 0.26637,
+      "controlledLoad": 0.175539,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1055990SRG3@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Standing Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Country Network",
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.8382,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.053582
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03847
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.037315
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.034535
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.034535
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.034535
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.053582,
+      "lastBlockRate": 0.034535
+    },
+    {
+      "planId": "AGL1055999MRG4@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver - 3rd Party",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "AGL1055932MRG3@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Seniors Saver",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.611886,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.03911486
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.0280831
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.02723995
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02521055
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02521055
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02521055
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.03911486,
+      "lastBlockRate": 0.02521055
+    },
+    {
+      "planId": "AGL1055916MRG4@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver - BP Fuel",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "AGL1055880MRG4@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver - Westpac",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "AGL1055858MRG4@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "AGL1055879MRG4@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver - Velocity",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "AGL1055746MRG5@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Smart Saver - Velocity New To AGL",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network",
+        "Jemena Country Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.68732,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.04394
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.03155
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.0306
+        },
+        {
+          "volumeMJ": 2654.794,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": 10964.384,
+          "unitPrice": 0.02832
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.02832
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.04394,
+      "lastBlockRate": 0.02832
+    },
+    {
+      "planId": "ENE379614MRG28@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Flexi Plan",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE19241SRG37@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Standing Offer (Home)",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE1000069MRG4@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Balance Plan - My Connect",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE1000075MRG4@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Balance Plan - Residential Connections",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE831712MRG10@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "NSW Seniors Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE681366MRG13@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Rate Fix",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE477582MRG16@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Balance Plan - Connect Now",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    },
+    {
+      "planId": "ENE670158MRG14@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Balance Plan - Third Party Offer",
+      "customerType": "RESIDENTIAL",
+      "distributors": [
+        "Jemena Coastal Network"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.893,
+      "blocks": [
+        {
+          "volumeMJ": 20.712,
+          "unitPrice": 0.058
+        },
+        {
+          "volumeMJ": 20.384,
+          "unitPrice": 0.041
+        },
+        {
+          "volumeMJ": 49.315,
+          "unitPrice": 0.038
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.038
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.058,
+      "lastBlockRate": 0.038
+    }
+  ]
+}

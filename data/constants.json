@@ -1,0 +1,232 @@
+{
+  "_README": "Rentswitch model constants. EVERY value carries a source and a confidence tier. Anything tier 'assumption' MUST be printed on screen next to the number it produces (Video Script + Submission Pack both promise this). Retrieved 2026-10-02.",
+
+  "_tiers": {
+    "regulator": "Published by an Australian government department or regulator. Cite directly.",
+    "derived": "Computed by us from a regulator figure. Show the derivation on screen.",
+    "assumption": "No authoritative free AU source found. MUST be labelled on screen as an assumption."
+  },
+
+  "demand": {
+    "L_litres_per_person_per_day": {
+      "value": 45,
+      "unit": "L/person/day",
+      "tier": "regulator",
+      "source": "NSW DCCEEW / Office of Energy and Climate Change, 'Hot Water Systems and customer co-payments - Energy Savings Scheme Rule Change', Sept 2023, slide 11: 'used modelling based on average water consumption of 45 litres per person per day (L/day)'.",
+      "url": "https://www.energy.nsw.gov.au/sites/default/files/2023-09/NSW-ESS-Hot-Water-Consultation-September-2023.pdf",
+      "note": "The CURRENT ESS rule baseline uses 60 L/person/day from AS/NZS 4234:2008 (slide 10). NSW states on the same slide that the standard's reference consumption 'is not appropriate for continued use as the baselines'. 45 is the figure NSW itself modelled on. Run 60 as the sensitivity case.",
+      "sensitivity_high": 60
+    },
+    "deltaT_kelvin": {
+      "value": 45,
+      "unit": "K",
+      "tier": "assumption",
+      "source": "AS/NZS 4234 start-up thermal capacity basis (raise stored volume by 45 K). The standard itself is paywalled - not verified line-by-line.",
+      "note": "Consistent with ~15 C cold main to ~60 C stored (legionella control). LABEL THIS ON SCREEN."
+    },
+    "specific_heat_water_kJ_per_L_per_K": {
+      "value": 4.186,
+      "unit": "kJ/(L.K)",
+      "tier": "regulator",
+      "source": "Physical constant."
+    }
+  },
+
+  "efficiency": {
+    "eta_gas_storage": {
+      "value": 0.55,
+      "unit": "dimensionless",
+      "tier": "regulator",
+      "source": "energyrating.gov.au (Australian Government E3 Program), gas water heaters: gas storage water heaters have an efficiency rating of 55%, based on Zone 3 climate zone and AS/NZS 4234, medium load.",
+      "url": "https://www.energyrating.gov.au/industry-information/products/gas-water-heaters",
+      "note": "Includes standing losses. NSW ESS is moving its reference gas system to 4 stars, which would raise this - so 0.55 is the CONSERVATIVE choice (it understates the gas baseline cost and therefore understates our saving)."
+    },
+    "eta_electric_resistive": {
+      "value": 1.0,
+      "unit": "dimensionless",
+      "tier": "assumption",
+      "source": "Resistive element converts electricity to heat at ~100% at the element. Tank standing losses NOT deducted.",
+      "note": "Deliberately conservative: a higher eta_res lowers the modelled electric baseline, which SHRINKS the heat-pump saving. We would rather understate."
+    },
+    "COP_heat_pump": {
+      "value": 2.5,
+      "unit": "dimensionless",
+      "tier": "derived",
+      "source": "Derived from the regulatory minimum, not a vendor figure. DCCEEW, 'Decision Regulation Impact Statement: Heat Pump Water Heaters', April 2026, Table 19: MEPS 'set at equivalent of 60% savings in Zone 3 for HPWH in 2026'. NSW ESS Rule likewise requires a minimum 60% annual energy saving modelled under AS/NZS 4234.",
+      "url": "https://www.energyrating.gov.au/sites/default/files/2026-04/DRIS%20Energy%20efficiency%20policy%20options%20for%20heat%20pump%20water%20heaters.pdf",
+      "derivation": "saving = 1 - (eta_res / COP) = 0.60  =>  COP = eta_res / 0.40 = 1.0 / 0.40 = 2.5",
+      "note": "This is the REGULATORY FLOOR a compliant unit must meet, not a typical figure. Real units commonly reach 3-4. Using the floor means every saving we quote is a worst-case compliant unit. Say that on screen - it is a strength, not a hedge.",
+      "sensitivity_high": 3.5
+    }
+  },
+
+  "emissions": {
+    "EF_electricity_NSW_kgCO2e_per_kWh": {
+      "value": 0.67,
+      "scope2": 0.60,
+      "scope3": 0.07,
+      "unit": "kg CO2-e/kWh",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', August 2026, Table 1 (p.10), 'New South Wales and Australian Capital Territory': scope 2 = 0.60, scope 3 = 0.07.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf",
+      "licence": "CC BY 4.0"
+    },
+    "EF_gas_NSW_kgCO2e_per_MJ": {
+      "value": 0.06463,
+      "scope1_kgCO2e_per_GJ": 51.53,
+      "scope3_kgCO2e_per_GJ": 13.1,
+      "total_kgCO2e_per_GJ": 64.63,
+      "unit": "kg CO2-e/MJ",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026'. Table 5 (p.19), 'Natural gas distributed in a pipeline', scope 1 combined gases = 51.53 kg CO2-e/GJ. Table 6 (p.20), 'New South Wales and ACT', Metro, scope 3 = 13.1 kg CO2-e/GJ.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf",
+      "licence": "CC BY 4.0",
+      "note": "UNIT TRAP: this is per MJ. The electricity factor is per kWh. Never interchange (Model Maths section 11)."
+    }
+  },
+
+  "costs": {
+    "C_heat_pump_installed": {
+      "value": 4200,
+      "unit": "AUD",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Decision Regulation Impact Statement: Heat Pump Water Heaters', April 2026, Table 20 'Purchase and installation costs for the main categories of water heaters', Australia (AUD): HPWH = 4200.",
+      "url": "https://www.energyrating.gov.au/sites/default/files/2026-04/DRIS%20Energy%20efficiency%20policy%20options%20for%20heat%20pump%20water%20heaters.pdf",
+      "note": "Purchase AND installation. Same table, same methodology, same year as C_gas - so the incremental figure is an apples-to-apples subtraction. That internal consistency is the whole reason to use this source."
+    },
+    "C_gas_storage_installed": {
+      "value": 2200,
+      "unit": "AUD",
+      "tier": "regulator",
+      "source": "Same table: GSWH - NG and LPG = 2200.",
+      "note": "This is the like-for-like counterfactual: what the landlord spends anyway when the gas unit dies."
+    },
+    "C_gas_instantaneous_installed": {
+      "value": 1800,
+      "unit": "AUD",
+      "tier": "regulator",
+      "source": "Same table: GIWH - NG and LPG = 1800."
+    },
+    "C_electric_storage_medium_installed": {
+      "value": 1800,
+      "unit": "AUD",
+      "tier": "regulator",
+      "source": "Same table: ESWH Med = 1800."
+    }
+  },
+
+  "rebates": {
+    "_WARNING": "STILL THE LEAST VERIFIED INPUT. Rebate hunt run 2026-10-02: the STACKING question resolved, the DOLLAR AMOUNTS did not. Consumer-facing NSW incentive pages are JavaScript-rendered and returned no figures; every other result was an installer or comparison site, auto-disqualified because their exit is a checkout. R stays at $0 and the case still works. Do not fill this gap with a plausible number.",
+
+    "R_default": {
+      "value": 0,
+      "unit": "AUD",
+      "tier": "assumption",
+      "note": "DEFAULT ZERO ON PURPOSE. Same discipline as the asset-value slider in Product Spec 3.3: the headline number must be one we can fully source. With R = 0 the incremental cost is $2,000, payback is 2.8 years, and the case still stands up. Every dollar of rebate only improves it."
+    },
+
+    "stacking_ESS_and_STCs": {
+      "answer": "YES - almost certainly additive. Upgraded from 'do not assume' to 'strongly indicated' on 2026-10-02.",
+      "tier": "derived",
+      "direct_evidence": "NSW Government material states that after ESS stakeholder consultation, heat pump and solar water heaters were approved for the ESS, with certificates created under the ESS being ADDITIONAL to tradeable certificates created under the federal Small-scale Renewable Energy Scheme (SRES) for the same activity.",
+      "structural_corroboration": "Heat pump water heaters of 425 L or less are EXCLUDED from the NSW Peak Demand Reduction Scheme (PDRS) specifically to prevent incentive stacking across three schemes (ESS + PDRS + SRES). Excluding the third scheme only makes sense if the remaining two are permitted to stack. This is independent corroboration, not a restatement.",
+      "honest_limit": "Both points come from NSW Government documents surfaced in search, NOT from a primary sentence read directly in the ESS Rule. Treat as strongly indicated, one citation short of confirmed. If it goes in the letter or the video, say 'you may be able to claim both' - never 'you can claim both'.",
+      "practical_effect": "If additive, R is plausibly four figures and payback drops from 2.8 years to roughly 1.4. That is a material improvement we are deliberately NOT banking."
+    },
+
+    "ESS_verified_conditions": {
+      "tier": "regulator",
+      "activity_definitions": "D17 = replace an existing ELECTRIC water heater with an air source heat pump. D19 = replace an existing GAS water heater with an air source heat pump. D19 is the activity Rentswitch models.",
+      "minimum_performance": "Heat pump and solar water heaters must achieve a minimum 60% annual energy saving when modelled in the climate zone of installation under AS/NZS 4234. This is the figure our COP is derived from.",
+      "climate_zone": "NSW is HP3-AU, except alpine/cold areas which are HP5-AU. Sydney is HP3-AU.",
+      "asset_lifetime": "12 years for air source heat pump water heaters.",
+      "warranty": "From 1 December 2025, all heat pump water heaters with average insulated storage volume of 700 L or less require a minimum 5-year warranty against defects to be eligible for ESS incentives.",
+      "co_payment": {
+        "value": 200,
+        "unit": "AUD ex GST",
+        "status": "PROPOSED in the September 2023 consultation across all hot water activities, replacing the existing $30 ex GST co-payment under the HEER method. CURRENT STATUS NOT CONFIRMED.",
+        "why_it_matters": "A co-payment is an out-of-pocket cost that REDUCES the effective rebate. If the model ever moves R off zero, subtract this. Ignoring it would overstate the benefit."
+      }
+    },
+
+    "STC_verified_conditions": {
+      "tier": "regulator",
+      "source": "Clean Energy Regulator, Small-scale Renewable Energy Scheme.",
+      "eligibility": "Air source heat pumps must have capacity under 425 L, hold AS/NZS 2712:2007 certification, and appear on the CER Register of solar water heaters. Only listed models qualify.",
+      "timing": "STCs must be created within 12 months of installation.",
+      "deeming": "Certificate count is based on the electricity displaced over the system's lifetime, currently deemed at 10 years for an air source heat pump.",
+      "NOT_OBTAINED": "The STC count for a specific model in STC Zone 3 (Sydney), and the STC spot price as at October 2026. Both are needed to put a dollar figure on the federal half, and neither was retrieved from a primary source."
+    }
+  },
+
+  "legal": {
+    "_note": "The three claims flagged VERIFY in Gameplan (Sat 09:00) were pulled forward and checked on 2026-10-02. Two passed outright, one passed with a correction that matters.",
+
+    "urgent_repair": {
+      "status": "VERIFIED",
+      "finding": "A failure or breakdown of any essential service for HOT WATER, cooking, heating, cooling or laundering is expressly listed as an urgent repair.",
+      "source": "Residential Tenancies Act 2010 (NSW) - s62 (definitions) and s64 (urgent repairs). Restated in NSW Fair Trading guidance, 'Urgent repairs in residential rental properties'.",
+      "url": "https://www.nsw.gov.au/housing-and-construction/rules/urgent-repairs-residential-rental-properties",
+      "detail": "Tenant must notify the landlord or agent straight away. A tenant who arranges urgent repairs themselves may be reimbursed up to $1,000, payable by the landlord within 14 days of written notice with receipts.",
+      "WHAT_IS_NOT_LAW": "The downstream claim - 'emergency rates, no shopping around, no rebate' - is an INFERENCE, not a statutory consequence. It is well supported (ESS discounts require an accredited provider; STCs require a model on the CER register with certificates created within 12 months, neither of which survives a same-day emergency swap) but it must be worded as a practical consequence, never as something the Act says."
+    },
+
+    "rent_increase_rules": {
+      "status": "VERIFIED",
+      "finding": "Rent may be increased only ONCE in any 12-month period, for ALL lease types, with at least 60 days written notice. In force from 31 October 2024.",
+      "source": "NSW Fair Trading / nsw.gov.au, 'When and how rent can be increased'; NSW rental law reforms 2024.",
+      "detail": "Rent cannot be increased within the first 12 months of an agreement. Different rules apply to some agreements that started before 13 December 2024 for a fixed term under 2 years - those can have more than one increase in 12 months only if written into the agreement.",
+      "effect_on_model": "CONSTRAINS Offer C but does not break it: the rent adjustment is proposed at renewal, which is compliant. Offers A and B propose no rent change at all, so they are unaffected. Since Offer B is what actually fires at Sydney rents, this rule has no practical effect on the demo."
+    },
+
+    "depreciation": {
+      "status": "VERIFIED - with a correction that runs OPPOSITE to the common assumption",
+      "finding": "A landlord who buys and installs a BRAND NEW hot water system in a rental can claim decline in value. The well-known 2017 restriction applies to SECOND-HAND depreciating assets, not new ones.",
+      "quotes": [
+        "'In most cases you can't claim a deduction for second-hand depreciating assets after 1 July 2017.'",
+        "'New assets - You can claim the decline in value of new depreciating assets.'"
+      ],
+      "source": "ATO, 'Depreciating assets in rental properties' (QC 103906).",
+      "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/depreciating-assets-in-rental-properties",
+      "effective_life": "Hot water systems excluding piping: 12 years for gas and electric assets acquired from 1 July 2004 (Commissioner's determination). A taxpayer may instead use their own reasonable estimate.",
+      "NO_ECO_DEDUCTION": "CONFIRMED - no Australian eco-specific or electrification-specific deduction for residential landlords was found. This is ordinary Division 40 decline in value and nothing more. Product Spec 3.5's warning stands: do not imply one.",
+      "RULE": "Narrative pointer only. NEVER compute a figure - that needs their marginal rate, ownership structure and effective life, none of which we have, and a public repo handing out tax calculations is a liability."
+    }
+  },
+
+  "deal": {
+    "v_vacancy_weeks": {
+      "value": 3,
+      "unit": "weeks",
+      "tier": "assumption",
+      "note": "Vacancy duration between tenancies. User-adjustable. Label on screen."
+    },
+    "f_letting_fee_weeks": {
+      "value": 2,
+      "unit": "weeks of rent",
+      "tier": "assumption",
+      "note": "Letting fee + advertising, expressed in weeks of rent. User-adjustable. Label on screen."
+    },
+    "T_max_years": {
+      "value": 10,
+      "unit": "years",
+      "tier": "assumption",
+      "note": "Longest landlord payback period we will propose before declaring Offer D (no honest deal)."
+    }
+  },
+
+  "tariffs_reference": {
+    "_note": "Full set in data/tariffs.json (32 NSW residential plans). The model's default is the AGL Residential Standing Offer - the regulated reference offer, not a marketing plan.",
+    "electricity_plan": "AGL1189640SRE1@EME - AGL Residential Standing Offer, Ausgrid",
+    "gas_plan": "AGL1055990SRG3@EME - AGL Residential Standing Offer, Jemena",
+    "p_e_peak": 0.547241,
+    "p_e_offpeak": 0.218533,
+    "p_e_controlled_load": 0.175539,
+    "s_e_per_day": 1.602365,
+    "s_e_controlled_load_per_day": 0.041623,
+    "p_g_block1": 0.053582,
+    "s_g_per_day": 0.8382,
+    "units": "electricity $/kWh, gas $/MJ, supply charges $/day",
+    "source": "AER Consumer Data Right - Energy Product Reference Data API, retrieved 2026-10-02."
+  }
+}
