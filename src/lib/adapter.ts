@@ -30,6 +30,7 @@ export const constants: Constants = {
   efGas: rawConstants.emissions.EF_gas_NSW_kgCO2e_per_MJ.value,
   cHeatPump: rawConstants.costs.C_heat_pump_installed.value,
   cGasReplace: rawConstants.costs.C_gas_storage_installed.value,
+  cElectricReplace: rawConstants.costs.C_electric_storage_medium_installed.value,
   // Deliberately zero - see data/constants.json -> rebates._WARNING. Do not fill this in
   // with a plausible-looking number; every real rebate only improves the case.
   rebate: rawConstants.rebates.R_default.value,
