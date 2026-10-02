@@ -64,15 +64,15 @@ export function generateLetter(
   lines.push(`Dear ${landlord},`);
   lines.push("");
   lines.push(
-    `I'd like to propose replacing the ${systemName} at ${address} with an electric heat pump when it next needs replacing. I've done the numbers from both sides, and I think this is worth your time.`
+    `I want to raise something about the ${systemName} at ${address}. When it next needs replacing, I'd like you to consider a heat pump. I've worked through what that costs you, not just what it saves me.`
   );
   lines.push("");
 
   // --- The counterfactual. This is the whole argument. ---
-  lines.push("WHAT IT ACTUALLY COSTS YOU");
+  lines.push("What this actually costs you");
   lines.push("");
   lines.push(
-    `This isn't a request to spend ${money(c.cHeatPump)} you weren't going to spend. Hot water systems fail, and when this one does you're replacing it either way. ${counterfactualName} costs about ${money(counterfactualCost)} installed. A heat pump costs about ${money(c.cHeatPump)}.`
+    `Hot water systems fail. When this one does, you're buying a replacement either way. ${counterfactualName} runs about ${money(counterfactualCost)} installed. A heat pump is about ${money(c.cHeatPump)}.`
   );
   if (c.rebate > 0) {
     lines.push(
@@ -81,64 +81,64 @@ export function generateLetter(
   }
   lines.push("");
   lines.push(
-    `So the real decision isn't ${money(c.cHeatPump)} versus nothing. It's ${money(r.landlord.incremental)} extra, once, at a replacement you were already going to pay for.`
+    `So the question isn't whether to spend ${money(c.cHeatPump)}. It's whether to spend ${money(r.landlord.incremental)} more than you were already going to.`
   );
   lines.push("");
 
   // --- The split incentive, stated plainly. ---
-  lines.push("WHAT IT SAVES - AND WHO GETS THE SAVING");
+  lines.push("What it saves, and who gets the saving");
   lines.push("");
   lines.push(
-    `The change cuts the hot water bill by about ${money(r.saving.total)} a year.`
+    `The switch cuts the hot water bill by roughly ${money(r.saving.total)} a year.`
   );
   if (r.saving.supply > 0) {
     lines.push(
-      `About ${money(r.saving.supply)} of that is the daily gas supply charge, which disappears entirely once the last gas appliance is gone. That part is payable no matter how little gas is actually used.`
+      `Of that, ${money(r.saving.supply)} is the daily gas supply charge, which only goes away if the gas connection goes entirely. You pay it whether the household burns a lot of gas or almost none.`
     );
   }
   lines.push(
-    `It also cuts emissions by about ${Math.round(r.emissions.savedKgPerYear)} kg CO2-e a year, a reduction of ${Math.round(r.emissions.percentCut)}%.`
+    `It also cuts about ${Math.round(r.emissions.savedKgPerYear)} kg of CO2-e a year, down ${Math.round(r.emissions.percentCut)}%.`
   );
   lines.push("");
   lines.push(
-    `Here's the problem, stated honestly: I get that saving, and you pay for it. At ${money(r.saving.total)} a year against ${money(r.landlord.incremental)} extra, it takes ${r.landlord.yearsOfTenantSaving.toFixed(1)} years of my savings to cover your cost - and none of that money ever reaches you. That's why these upgrades don't happen in rentals, and it isn't anyone behaving badly. So here's what I can offer.`
+    `Now the awkward part. I get that saving. You pay for it. On those numbers it takes ${r.landlord.yearsOfTenantSaving.toFixed(1)} years of my savings to cover your cost, and not a cent of it reaches you. That's the reason this almost never happens in rentals, and it isn't anyone behaving badly. It's just how the split falls. So I'd rather bring you something than only ask.`
   );
   lines.push("");
 
   // --- The offer. Term sheet, not a plea. ---
-  lines.push("WHAT I'M OFFERING");
+  lines.push("What I'm offering");
   lines.push("");
 
   switch (d?.offer) {
     case "A":
       lines.push(
-        `At replacement time this costs you nothing extra - the rebates cover the difference against ${counterfactualName.toLowerCase()}. I'm not asking for anything in return. I'd just like to agree now that when the system is replaced, it's replaced with a heat pump.`
+        `At replacement time this costs you nothing extra, because the rebates cover the difference against ${counterfactualName.toLowerCase()}. I'm not asking for anything back. I'd just like us to agree now that when the system goes, it gets replaced with a heat pump.`
       );
       break;
 
     case "B":
       lines.push(
-        `I'll sign a longer fixed-term lease. A vacancy between tenancies costs you around ${money(d.vacancyValue)} once letting fees and advertising are counted - more than the ${money(r.landlord.incremental)} difference. One avoided turnover more than pays for this.`
+        `I'll sign a longer fixed term. A vacancy between tenancies costs you somewhere around ${money(d.vacancyValue)} once you add letting fees and advertising, which is more than the ${money(r.landlord.incremental)} difference. One turnover avoided covers it.`
       );
       lines.push("");
       lines.push(
-        `I'm not asking for a rent reduction and I'm not asking you to fund anything I'd take with me. I'm offering certainty, which is the thing that's actually worth money to you here.`
+        `I'm not asking for a rent reduction, and I'm not asking you to buy me anything I'd take when I go. What I'm offering is certainty about the lease, which is the part that's actually worth money to you.`
       );
       break;
 
     case "C":
       lines.push(
-        `I'll sign a longer fixed-term lease, which is worth about ${money(d.vacancyValue)} to you in avoided vacancy and letting costs. That leaves a gap of about ${money(d.gap)}.`
+        `I'll sign a longer fixed term, which is worth about ${money(d.vacancyValue)} to you in avoided vacancy and letting costs. That leaves a gap of roughly ${money(d.gap)}.`
       );
       lines.push("");
       lines.push(
-        `To close it, I'll accept a rent adjustment of $${d.weeklyRentAdjustment.toFixed(2)} a week at renewal. That pays your gap back in about ${d.paybackYears?.toFixed(1)} years, and it's deliberately set below what I save - I'd still be about ${money(d.tenantNetBenefit)} a year better off, and so would you. If it were set any higher this would just be a rent rise with a climate label on it, and I'm not going to propose that.`
+        `To close it, I'll take a rent adjustment of $${d.weeklyRentAdjustment.toFixed(2)} a week at renewal. That pays your gap back in about ${d.paybackYears?.toFixed(1)} years. I've set it below what I save on purpose, so I'd still be roughly ${money(d.tenantNetBenefit)} a year better off and so would you. Set it any higher and this is just a rent rise with a climate label on it, which I'm not going to propose.`
       );
       break;
 
     default:
       lines.push(
-        `On the numbers I have, I can't put together an offer that makes this work for you without costing me more than I'd save - the gap is about ${money(d?.gap ?? r.landlord.incremental)}. I'd rather tell you that than dress it up. If you're replacing the system anyway, or if a rebate applies that I haven't accounted for, the picture changes and I'd like to revisit it.`
+        `On the numbers I have, I can't put together an offer that works for you without costing me more than I'd save. The gap is about ${money(d?.gap ?? r.landlord.incremental)}. I'd rather say that than dress it up. If you're replacing the system anyway, or a rebate applies that I haven't counted, the picture changes and I'd like to come back to it.`
       );
       break;
   }
@@ -148,23 +148,23 @@ export function generateLetter(
   const legal: string[] = [];
   if (o.includeUrgentRepairClaim ?? true) {
     legal.push(
-      `Replacing it on your timetable is cheaper than replacing it on its own. Under the Residential Tenancies Act 2010 (NSW), a failure of the hot water service is an urgent repair — so when this one dies, you'll be arranging a replacement at short notice. In practice that means less room to compare quotes, and the rebate schemes get hard to use: they need an accredited installer and a model that's on the register, which is not what turns up on a Sunday. Deciding now keeps all of that on the table.`
+      `Replacing it while it still works is cheaper than replacing it after it dies. Under the Residential Tenancies Act 2010 (NSW), hot water failure counts as an urgent repair, so you'd be organising it at short notice. That usually means less room to compare quotes. The rebate schemes also need an accredited installer and a model that's on the register, and that isn't what turns up on a Sunday afternoon.`
     );
   }
   if (o.includeDepreciationPointer ?? true) {
     legal.push(
-      `It's also worth asking your accountant about depreciation. A brand-new hot water system in a rental is generally a depreciating asset — the 2017 change that removed deductions for second-hand assets doesn't apply to new ones. I haven't put a number on that, because it depends on your circumstances rather than mine.`
+      `Worth asking your accountant about depreciation too. A brand new hot water system in a rental is generally a depreciating asset. The 2017 change that stopped deductions for second-hand assets doesn't apply to new ones. I haven't tried to put a figure on it, since that depends on your situation and not mine.`
     );
   }
   if (legal.length) {
-    lines.push("A COUPLE OF OTHER THINGS");
+    lines.push("A couple of other things");
     lines.push("");
     lines.push(...legal);
     lines.push("");
   }
 
   lines.push(
-    `Happy to talk this through, and happy to be the one who gets the quotes.`
+    `Happy to talk it through. Happy to chase the quotes myself, too.`
   );
   lines.push("");
   lines.push("Kind regards,");
@@ -172,7 +172,7 @@ export function generateLetter(
   lines.push("");
   lines.push("---");
   lines.push("");
-  lines.push("HOW THESE NUMBERS WERE WORKED OUT");
+  lines.push("Where these numbers come from");
   lines.push(
     `Tariffs: AER Consumer Data Right, AGL Residential Standing Offer (the regulated reference offer), retrieved 2026-10-02. Emissions factors: DCCEEW National Greenhouse Accounts Factors 2026. Installed costs: DCCEEW Decision Regulation Impact Statement, Heat Pump Water Heaters, April 2026, Table 20. Hot water demand: ${c.L} L per person per day, the figure NSW used in its own Energy Savings Scheme modelling. Heat pump efficiency: COP ${c.cop}, derived from the minimum 60% saving a compliant unit must achieve - a worst-case compliant unit, not a best-case one.`
   );
