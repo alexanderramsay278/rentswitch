@@ -170,13 +170,13 @@ export default function Wizard() {
       {currentStep === "lastGas" && (
         <Step title="Is hot water your only gas appliance?" onBack={goBack}>
           <p className="mb-4 text-sm text-stone-500">
-            This decides whether the gas daily supply charge disappears if you switch - it&apos;s
+            This decides whether the gas daily supply charge disappears if you switch. It&apos;s
             worth 44% of the modelled saving.
           </p>
           <ChoiceGrid
             options={[
-              { value: "yes", label: "Yes - it's the only thing using gas" },
-              { value: "no", label: "No - I also have gas cooking or heating" },
+              { value: "yes", label: "Yes, it's the only thing using gas" },
+              { value: "no", label: "No, I also have gas cooking or heating" },
             ]}
             onPick={(v) => goNext({ isLastGasAppliance: v === "yes" })}
           />
@@ -204,7 +204,7 @@ export default function Wizard() {
       {currentStep === "rent" && (
         <Step title="What's your weekly rent?" onBack={goBack}>
           <p className="mb-4 text-sm text-stone-500">
-            Optional - this unlocks the landlord deal calculator (a longer lease can cover the
+            Optional. This unlocks the landlord deal calculator (a longer lease can cover the
             upgrade cost on its own). Skip if you&apos;d rather not say.
           </p>
           <form

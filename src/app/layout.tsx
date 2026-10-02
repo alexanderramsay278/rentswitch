@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Rentswitch",
   description:
-    "Shows renters the cheapest bill and emissions cuts they can make without touching the building - and writes the landlord business case for the ones they can't.",
+    "Shows renters the cheapest bill and emissions cuts they can make without touching the building. For the upgrades they can't make alone, it writes the landlord business case.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

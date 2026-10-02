@@ -15,8 +15,8 @@ const CURRENT_SYSTEM_LABEL: Record<CurrentSystem, string> = {
 };
 
 const ESS_ACTIVITY_COPY: Record<"D19" | "D17", string> = {
-  D19: "Replacing gas storage with a heat pump — NSW ESS activity D19",
-  D17: "Replacing an electric storage tank with a heat pump — NSW ESS activity D17",
+  D19: "Replacing gas storage with a heat pump (NSW ESS activity D19)",
+  D17: "Replacing an electric storage tank with a heat pump (NSW ESS activity D17)",
 };
 
 export default async function ResultsPage({
@@ -34,8 +34,8 @@ export default async function ResultsPage({
           We&apos;re missing an answer
         </h1>
         <p className="mb-6 max-w-prose text-stone-600">
-          Something didn&apos;t come through from the questionnaire. No numbers are being
-          guessed here — please start again.
+          Something didn&apos;t come through from the questionnaire. We never guess numbers,
+          so please start again.
         </p>
         <StartOverButton />
       </Shell>
@@ -68,13 +68,13 @@ export default async function ResultsPage({
       {/* ---------------------------------------------------------------- */}
       {/* 1. Do now - no permission needed (placeholder)                   */}
       {/* ---------------------------------------------------------------- */}
-      <Section title="Do now — no permission needed">
+      <Section title="Do now, no permission needed">
         <div className="rounded-lg border border-dashed border-stone-300 bg-stone-50 p-5 text-sm text-stone-500">
           <p className="font-medium text-stone-600">Coming soon.</p>
           <p className="mt-1 max-w-prose">
             No-permission moves like switching electricity retailer or plan type belong here.
             This build prices the hot water upgrade that needs your landlord&apos;s sign-off.
-            Your cooktop and space-heating answers are asked but not priced — space heating
+            Your cooktop and space-heating answers are asked but not priced. Space heating
             depends on the building&apos;s fabric, which five questions can&apos;t tell us, and a
             number we couldn&apos;t defend would undermine the ones we can.
           </p>
@@ -93,7 +93,7 @@ export default async function ResultsPage({
           )}
           <p className="mb-6 max-w-prose text-stone-700">
             You gain this every year. Your landlord pays this once. Neither of you is being
-            unreasonable — this is the split incentive, in one screen.
+            unreasonable. This is the split incentive, in one screen.
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -155,7 +155,7 @@ export default async function ResultsPage({
             </p>
             <p className="mt-3 max-w-prose text-stone-700">
               Your hot water already runs on {currentLabel}, which is the best available option
-              on the NSW grid today — there is no upgrade for us to recommend, and no honest
+              on the NSW grid today. There is no upgrade for us to recommend, and no honest
               saving to quote. We&apos;d rather tell you that plainly than invent a number.
             </p>
           </div>
@@ -169,7 +169,7 @@ export default async function ResultsPage({
       {result.upgradeModelled && (
         <Section title="The letter">
           <p className="mb-4 max-w-prose text-stone-600">
-            A landlord business case, not a request — built from the numbers above.
+            A landlord business case, not a request. Built from the numbers above.
           </p>
           <LetterBlock letter={generateLetter(result, constants)} />
         </Section>
@@ -217,8 +217,8 @@ export default async function ResultsPage({
                       label="Gas daily supply charge"
                       value={`${formatMoney(result.cost.gasSupplyPerYear)}${
                         result.cost.gasSupplyPerYear === 0
-                          ? " (stays — other gas appliances)"
-                          : " — the single largest piece of the saving"
+                          ? " (other gas appliances keep this charge)"
+                          : ", the single largest piece of the saving"
                       }`}
                     />
                   )}
@@ -278,8 +278,8 @@ export default async function ResultsPage({
 
         <p className="mt-8 max-w-prose border-t border-stone-200 pt-4 text-sm text-stone-500">
           Australia needs 35% of households electrified by 2035. Almost a third of Australian
-          households rent and can&apos;t make this switch without their landlord&apos;s consent —
-          this is what one of those households looks like once the split incentive is actually
+          households rent and can&apos;t make this switch without their landlord&apos;s consent.
+          This is what one of those households looks like once the split incentive is actually
           quantified.
         </p>
       </Section>

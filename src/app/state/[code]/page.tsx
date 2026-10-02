@@ -36,12 +36,12 @@ export default async function StatePage({
           Rentswitch currently models New South Wales
         </h1>
         <p className="mb-4 text-stone-700">
-          The engine takes any state&apos;s tariffs, rebates and emissions factor -{" "}
-          {name} is next, and here&apos;s why it matters there: Victoria&apos;s main hot water
-          rebate is available to owner-occupiers only.
+          The engine takes any state&apos;s tariffs, rebates and emissions factor. {name} is next,
+          and here&apos;s why it matters there: Victoria&apos;s main hot water rebate is available
+          to owner-occupiers only.
         </p>
         <p className="mb-6 text-sm text-stone-500">
-          That&apos;s the exact split incentive this project exists to fix - a renter in{" "}
+          That&apos;s the exact split incentive this project exists to fix. A renter in{" "}
           {name} can&apos;t claim the rebate meant to pay for the upgrade, even though they&apos;d
           be the one to benefit from it. We modelled NSW first to get one state&apos;s numbers
           right rather than every state&apos;s numbers approximately.
