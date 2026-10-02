@@ -65,8 +65,14 @@ export interface Answers {
   weeklyRent?: number;
 }
 
-/** True when the P0 engine has a model for this household's hot water situation at all. */
-export function hotWaterIsModelled(hotWater: HotWaterFuel): boolean {
+/**
+ * True when the "is this your only gas appliance" question is relevant - i.e. the hot
+ * water answer resolves to a gas system. (Every HotWaterFuel value is modelled by the
+ * engine now - gas and electric_tank price an upgrade, heat_pump and solar resolve to an
+ * honest "nothing to upgrade" result - so this is a question-routing check, not a gate on
+ * whether a result exists.)
+ */
+export function needsLastGasQuestion(hotWater: HotWaterFuel): boolean {
   return hotWater === "gas" || hotWater === "unsure";
 }
 

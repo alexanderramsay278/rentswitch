@@ -9,7 +9,7 @@ import {
   COOKTOP_OPTIONS,
   HEATING_OPTIONS,
   OCCUPANT_OPTIONS,
-  hotWaterIsModelled,
+  needsLastGasQuestion,
   answersToQuery,
   type Answers,
   type StateCode,
@@ -39,7 +39,7 @@ const BASE_ORDER: StepKey[] = [
 function visibleSteps(a: Partial<Answers>): StepKey[] {
   return BASE_ORDER.filter((step) => {
     if (step === "lastGas") {
-      return a.hotWater === undefined || hotWaterIsModelled(a.hotWater);
+      return a.hotWater === undefined || needsLastGasQuestion(a.hotWater);
     }
     return true;
   });
