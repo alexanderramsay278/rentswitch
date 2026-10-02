@@ -61,7 +61,7 @@ function ChoiceGrid<T extends string>({
           key={opt.value}
           type="button"
           onClick={() => onPick(opt.value)}
-          className="w-full rounded-lg border border-stone-300 bg-white px-5 py-4 text-left text-base font-medium text-stone-800 shadow-sm transition-colors hover:border-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          className="w-full min-h-[3.5rem] rounded-xl border border-stone-300 bg-white px-5 py-4 text-left text-base font-medium text-stone-800 shadow-sm transition-all hover:border-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 active:scale-[0.98]"
         >
           {opt.label}
         </button>
@@ -113,17 +113,20 @@ export default function Wizard() {
   const progressPct = totalSteps > 0 ? ((stepIndex + 1) / totalSteps) * 100 : 0;
 
   return (
-    <div className="rounded-xl border border-stone-200 bg-white p-6 shadow-sm sm:p-8">
-      <div className="mb-6">
-        <div className="h-1.5 w-full overflow-hidden rounded-full bg-stone-100">
+    <div className="rs-animate-in rounded-2xl border border-stone-200 bg-white p-7 shadow-md sm:p-10">
+      <div className="mb-8">
+        <div className="flex items-baseline justify-between">
+          <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">
+            Question <span className="text-emerald-700">{stepIndex + 1}</span> of {totalSteps}
+          </p>
+          <p className="text-xs tabular-nums text-stone-400">{Math.round(progressPct)}%</p>
+        </div>
+        <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-stone-100">
           <div
-            className="h-full bg-emerald-600 transition-all"
+            className="h-full rounded-full bg-emerald-600 transition-all duration-500 ease-out"
             style={{ width: `${progressPct}%` }}
           />
         </div>
-        <p className="mt-2 text-xs text-stone-500">
-          Question {stepIndex + 1} of {totalSteps}
-        </p>
       </div>
 
       {currentStep === "occupants" && (
@@ -231,7 +234,7 @@ export default function Wizard() {
                 placeholder="650"
                 value={rentInput}
                 onChange={(e) => setRentInput(e.target.value.replace(/\D/g, "").slice(0, 5))}
-                className="w-full rounded-lg border border-stone-300 py-3 pl-8 pr-16 text-base tabular-nums focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                className="min-h-[3.5rem] w-full rounded-xl border border-stone-300 py-3 pl-8 pr-16 text-base tabular-nums focus:outline-none focus:ring-2 focus:ring-emerald-500"
               />
               <span
                 aria-hidden="true"
@@ -242,7 +245,7 @@ export default function Wizard() {
             </label>
             <button
               type="submit"
-              className="shrink-0 rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
+              className="min-h-[3.5rem] shrink-0 rounded-xl bg-emerald-600 px-5 py-3 font-medium text-white transition-all hover:bg-emerald-700 active:scale-[0.98]"
             >
               Continue
             </button>
@@ -270,14 +273,14 @@ function Step({
   children: ReactNode;
 }) {
   return (
-    <div>
+    <div className="rs-animate-in">
       <h2 className="mb-5 text-xl font-semibold text-stone-900 sm:text-2xl">{title}</h2>
       {children}
       {onBack && (
         <button
           type="button"
           onClick={onBack}
-          className="mt-5 text-sm font-medium text-stone-500 hover:text-stone-700"
+          className="mt-6 text-sm font-medium text-stone-500 hover:text-stone-700"
         >
           ← Back
         </button>
