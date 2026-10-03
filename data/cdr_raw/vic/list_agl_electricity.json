@@ -1,0 +1,914 @@
+[
+  {
+    "planId": "AGD802776MR@VEC",
+    "displayName": "Residential Solar Savers - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:53Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802775MR@VEC",
+    "displayName": "Residential Solar Savers - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:53Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802765MR@VEC",
+    "displayName": "Residential Solar Savers",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:52Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802766MR@VEC",
+    "displayName": "Residential Solar Savers",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:52Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802735MR@VEC",
+    "displayName": "Residential Seniors Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:50Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802731MR@VEC",
+    "displayName": "Residential Seniors Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:50Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802714MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:49Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802722MR@VEC",
+    "displayName": "AGL Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:49Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802721MR@VEC",
+    "displayName": "AGL Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:49Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802711MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:49Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802702MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:48Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802701MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:48Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802692MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802691MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802681MR@VEC",
+    "displayName": "Residential Netflix Plan - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802686MR@VEC",
+    "displayName": "Residential Netflix Plan - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802670MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:46Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802669MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:46Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802662MR@VEC",
+    "displayName": "Residential Netflix Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:46Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802648MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:45Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802649MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:45Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802657MR@VEC",
+    "displayName": "Residential Netflix Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:45Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802639MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:44Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802630MR@VEC",
+    "displayName": "AGL Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:44Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802642MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:44Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802629MR@VEC",
+    "displayName": "AGL Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:44Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802619MR@VEC",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:43Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802623MR@VEC",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:43Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802611MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:42Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802610MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:42Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802601MR@VEC",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:42Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802600MR@VEC",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:42Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802590MR@VEC",
+    "displayName": "Residential Netflix Plan - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:41Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802595MR@VEC",
+    "displayName": "Residential Netflix Plan - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:41Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802522MR@VEC",
+    "displayName": "Residential Solar Savers",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:37Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802527MR@VEC",
+    "displayName": "Residential Solar Savers - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:37Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802532MR@VEC",
+    "displayName": "Residential Solar Savers - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:37Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802517MR@VEC",
+    "displayName": "Residential Solar Savers",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:36Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802487MR@VEC",
+    "displayName": "Residential Seniors Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:34Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802483MR@VEC",
+    "displayName": "AGL Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:34Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802493MR@VEC",
+    "displayName": "Residential Seniors Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:34Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802467MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:33Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802477MR@VEC",
+    "displayName": "AGL Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:33Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802473MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:33Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802457MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:32Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802453MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:32Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802463MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:32Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802442MR@VEC",
+    "displayName": "Residential Netflix Plan - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802447MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802437MR@VEC",
+    "displayName": "Residential Netflix Plan - New to AGL",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802433MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:30Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802422MR@VEC",
+    "displayName": "Residential Netflix Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:30Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802427MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:30Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802407MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:29Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802413MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:29Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802417MR@VEC",
+    "displayName": "Residential Netflix Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:29Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802397MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:28Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802403MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:28Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802393MR@VEC",
+    "displayName": "AGL Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:28Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802377MR@VEC",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:27Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802383MR@VEC",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:27Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802387MR@VEC",
+    "displayName": "AGL Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:27Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802367MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:26Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802363MR@VEC",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:26Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802373MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:26Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802347MR@VEC",
+    "displayName": "Residential Netflix Plan - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:25Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802352MR@VEC",
+    "displayName": "Residential Netflix Plan - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:25Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD802357MR@VEC",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:25Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD803531MR@VEC",
+    "displayName": "Residential Three for Free",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-24T03:04:57Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD799065SR@VEC",
+    "displayName": "Midday Power Saver",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-24T03:04:57Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD803530MR@VEC",
+    "displayName": "Residential Three for Free",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-24T03:04:57Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD799064SR@VEC",
+    "displayName": "Midday Power Saver",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-24T03:04:56Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD790777SR@VEC",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-14T14:00:00Z",
+    "lastUpdated": "2026-09-14T04:14:37Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD790776SR@VEC",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-14T14:00:00Z",
+    "lastUpdated": "2026-09-14T04:14:37Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD790710SR@VEC",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-14T14:00:00Z",
+    "lastUpdated": "2026-09-14T04:14:32Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "AGD790705SR@VEC",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-14T14:00:00Z",
+    "lastUpdated": "2026-09-14T04:14:32Z",
+    "distributors": [
+      "Citipower"
+    ]
+  }
+]

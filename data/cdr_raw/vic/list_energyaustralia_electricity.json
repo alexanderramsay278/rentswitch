@@ -1,0 +1,458 @@
+[
+  {
+    "planId": "TRU803136SR@VEC",
+    "displayName": "Standing Offer Midday Power Saver - Time of Use with Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-23T04:42:13Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU803135SR@VEC",
+    "displayName": "Standing Offer Midday Power Saver - Time of Use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-23T04:42:13Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796567MR@VEC",
+    "displayName": "Home 365 - Peak with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796569MR@VEC",
+    "displayName": "Rate Fix  - Peak Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796570MR@VEC",
+    "displayName": "Rate Fix  - Peak with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796571MR@VEC",
+    "displayName": "VIC Seniors Offer - Peak Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796572MR@VEC",
+    "displayName": "VIC Seniors Offer - Peak with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796575MR@VEC",
+    "displayName": "Power 365 - Peak Only - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796576MR@VEC",
+    "displayName": "Power 365 - Peak with Controlled Load - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:47Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796565MR@VEC",
+    "displayName": "Home 365 - Peak Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:46Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796336MR@VEC",
+    "displayName": "Power 365 - Peak Only - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796333MR@VEC",
+    "displayName": "Power 365 - Peak with Controlled Load - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796334MR@VEC",
+    "displayName": "Power 365 - Peak Only - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796335MR@VEC",
+    "displayName": "Power 365 - Peak with Controlled Load - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796337MR@VEC",
+    "displayName": "Power 365 - Peak with Controlled Load - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796338MR@VEC",
+    "displayName": "Power 365 - Peak Only - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796343SR@VEC",
+    "displayName": "Standing Offer (Home)  - Peak Only",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796344SR@VEC",
+    "displayName": "Standing Offer (Home)  - Peak with Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:31Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796305MR@VEC",
+    "displayName": "Solar Max - Peak with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:29Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796306MR@VEC",
+    "displayName": "Solar Max - Peak Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:29Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796217MR@VEC",
+    "displayName": "Power 365 - Time of Use -Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:22Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796223MR@VEC",
+    "displayName": "VIC Seniors Offer - Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:22Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796222MR@VEC",
+    "displayName": "VIC Seniors Offer - Time of Use with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:22Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796221MR@VEC",
+    "displayName": "Home 365 - Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:22Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796220MR@VEC",
+    "displayName": "Home 365 - Time of Use with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:22Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796216MR@VEC",
+    "displayName": "Power 365 - Time of Use with Controlled Load -Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:21Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796214MR@VEC",
+    "displayName": "Rate Fix - Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:21Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU796215MR@VEC",
+    "displayName": "Rate Fix - Time of Use with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:21Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795963SR@VEC",
+    "displayName": "Standing Offer (Home) - Time of Use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:01Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795964SR@VEC",
+    "displayName": "Standing Offer (Home) - Time of Use with Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:01Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795872MR@VEC",
+    "displayName": "Power 365 - Time of Use - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795861MR@VEC",
+    "displayName": "Power 365 - Time of Use - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795855MR@VEC",
+    "displayName": "Power 365 - Time of Use with Controlled Load - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795879MR@VEC",
+    "displayName": "Power 365 - Time of Use with Controlled Load - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795867MR@VEC",
+    "displayName": "Power 365 - Time of Use with Controlled Load - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795885MR@VEC",
+    "displayName": "Power 365 - Time of Use - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:59Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795700MR@VEC",
+    "displayName": "Solar Max - Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:57Z",
+    "distributors": [
+      "Citipower"
+    ]
+  },
+  {
+    "planId": "TRU795698MR@VEC",
+    "displayName": "Solar Max - Time of Use with Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:33:57Z",
+    "distributors": [
+      "Citipower"
+    ]
+  }
+]

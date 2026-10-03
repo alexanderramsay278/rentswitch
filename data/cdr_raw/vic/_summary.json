@@ -1,0 +1,241 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "endpoint": "https://cdr.energymadeeasy.gov.au/{brand}/cds-au/v1/energy/plans",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-03",
+    "filter": "customerType=RESIDENTIAL, postcode 3000 (Melbourne VIC), effective=CURRENT, standing or default offers only",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
+  },
+  "plans": [
+    {
+      "planId": "AGD790777SR@VEC",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.10127273,
+      "flat": 0.236,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.15081818,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGD790776SR@VEC",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.10127273,
+      "flat": 0.236,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGD790710SR@VEC",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.1013,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.1928,
+      "controlledLoad": 0.15081818,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGD790705SR@VEC",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.1013,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.1928,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU803136SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Midday Power Saver - Time of Use with Controlled Load",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.10127,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.0,
+      "controlledLoad": 0.150818,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU803135SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Midday Power Saver - Time of Use",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.10127,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.0,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU796343SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)  - Peak Only",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.10127,
+      "flat": 0.236,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU796344SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)  - Peak with Controlled Load",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.10127,
+      "flat": 0.236,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.150818,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU795963SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - Time of Use",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.10127,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.150818,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TRU795964SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - Time of Use with Controlled Load",
+      "distributors": [
+        "Citipower"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.10127,
+      "flat": null,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": 0.150818,
+      "controlledLoad": 0.150818,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGD790588SR@VEC",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Australian Gas Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.0098,
+      "blocks": [
+        {
+          "volumeMJ": 1644.0,
+          "unitPrice": 0.05036
+        },
+        {
+          "volumeMJ": 1314.0,
+          "unitPrice": 0.04732
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.03237
+        }
+      ],
+      "blockPeriod": "P2M",
+      "firstBlockRate": 0.05036,
+      "lastBlockRate": 0.03237
+    },
+    {
+      "planId": "TRU796856SR@VEC",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Standing Offer (Home) (T2)",
+      "distributors": [
+        "Australian Gas Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.16,
+      "blocks": [
+        {
+          "volumeMJ": 27.4,
+          "unitPrice": 0.05322
+        },
+        {
+          "volumeMJ": 21.9,
+          "unitPrice": 0.03914
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.0331
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.05322,
+      "lastBlockRate": 0.0331
+    }
+  ]
+}

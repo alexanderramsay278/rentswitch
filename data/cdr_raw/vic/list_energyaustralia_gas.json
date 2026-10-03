@@ -1,0 +1,98 @@
+[
+  {
+    "planId": "TRU797236MR@VEC",
+    "displayName": "Home 365 (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:35:53Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU797221MR@VEC",
+    "displayName": "Rate Fix (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:35:52Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU797231MR@VEC",
+    "displayName": "Power 365 - Third Party Offer (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:35:52Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU797218MR@VEC",
+    "displayName": "VIC Seniors Offer (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:35:51Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU796856SR@VEC",
+    "displayName": "Standing Offer (Home) (T2)",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:35:06Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU796723MR@VEC",
+    "displayName": "Power 365 - Residential Connections (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:57Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU796717MR@VEC",
+    "displayName": "Power 365 - My Connect (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:57Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "TRU796711MR@VEC",
+    "displayName": "Power 365 - Connect Now (T2)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-11T03:34:56Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "planId": "AGD802908MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel - New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:04Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802902MR@VEC",
+    "displayName": "Residential Seniors Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:03Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802896MR@VEC",
+    "displayName": "AGL Residential Smart Saver - New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:03Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802890MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:02Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802884MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity) - New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:01Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802872MR@VEC",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:00Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802866MR@VEC",
+    "displayName": "Residential Smart Saver (Velocity)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:04:00Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802854MR@VEC",
+    "displayName": "Residential Smart Saver (Westpac)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:59Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802860MR@VEC",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:59Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802848MR@VEC",
+    "displayName": "AGL Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:58Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD802836MR@VEC",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-30T14:00:00Z",
+    "lastUpdated": "2026-09-28T22:03:57Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  },
+  {
+    "planId": "AGD790588SR@VEC",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "customerType": "RESIDENTIAL",
+    "effectiveFrom": "2026-09-14T14:00:00Z",
+    "lastUpdated": "2026-09-14T04:14:24Z",
+    "distributors": [
+      "Australian Gas Networks"
+    ]
+  }
+]
