@@ -1,0 +1,641 @@
+=== SHEET Introduction
+Australian National Greenhouse Accounts Factors
+2026
+http://www.dcceew.gov.au/
+=== SHEET Table 1
+Table 1 Indirect (scope 2 and scope 3) location-based emission factors associated with the consumption and losses of purchased or acquired electricity		
+State, Territory or grid description	Scope 2 Emission Factors	Scope 3 Emission Factors
+	(kg CO2-e/kWh)	(kg CO2-e/kWh)
+New South Wales and Australian Capital Territory	0.6	0.07
+Victoria	0.74	0.11
+Queensland	0.65	0.11
+South Australia	0.21	0.03
+Western Australia - South West Interconnected System (SWIS)	0.45	0.1
+Western Australia - North Western Interconnected System (NWIS)	0.56	0.09
+Tasmania	0.23	0.03
+Northern territory - Darwin Katherine Interconnected System (DKIS) 	0.55	0.1
+National 	0.59	0.1
+=== SHEET Table 2
+Table 2 Indirect (scope 2 and scope 3) market-based emission factors associated with the consumption and losses of purchased or acquired electricity		
+Residual Mix Factor for the market-based method	Scope 2 Emission Factors	Scope 3 Emission Factors
+	(kg CO2-e/kWh)	(kg CO2-e/kWh)
+National	0.79	0.11
+=== SHEET Table 3
+Table 3: Indirect (scope 2) emission factors for electricity grids	
+Electricity grid	Emission factor
+	(kg CO2-e/kWh)
+National Electricity Market (NEM) 	0.6
+Western Australia - South West Interconnected System (SWIS)	0.45
+Northern territory - Darwin Katherine Interconnected System (DKIS)	0.55
+Western Australia - North Western Interconnected System (NWIS)	0.56
+Off-grid	0.67
+=== SHEET Table 4
+Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products						
+Fuel combusted	Energy Content factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 3 Emission Factor
+	(GJ/t)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e /GJ)
+		CO2	CH4	N2O	Combined gases	
+Bituminous coal 	27	90	0.04	0.2	90.24	3
+Sub-bituminous coal	21	90	0.04	0.2	90.24	2.5
+Anthracite	29	90	0.04	0.2	90.24	NE
+Brown coal (lignite)	10.2	93.5	0.02	0.3	93.82	0.4
+Coking coal	30	91.8	0.03	0.2	92.03	6.4
+Coal briquettes	22.1	95	0.08	0.3	95.38	NE
+Coal coke	27	107	0.03	0.2	107.23	NE
+Coal tar	37.5	81.8	0.03	0.2	82.03	NE
+Solid fossil fuels other than those mentioned in the items above	22.1	95	0.08	0.2	95.28	NE
+Industrial materials that are derived from fossil fuels, if recycled and combusted to produce heat or electricity	26.3	81.6	0.03	0.2	81.83	NE
+Passenger car tyres, if recycled and combusted to produce heat or electricity 	32	62.8	0.03	0.2	63.03	NE
+Truck and off-road tyres, if recycled and combusted to produce heat or electricity 	27.1	55.9	0.03	0.2	56.13	NE
+Non‑biomass municipal materials, if combusted to produce heat or electricity	10.5	87.1	0.8	1	88.9	NE
+Dry wood	16.2	0	0.1	1.1	1.2	NE
+Green and air dried wood	10.4	0	0.1	1.1	1.2	NE
+Sulphite lyes 	12.4	0	0.08	0.5	0.58	NE
+Bagasse	9.6	0	0.3	1.1	1.4	NE
+Biomass, municipal and industrial materials, if combusted to produce heat or electricity	12.2	0	0.8	1	1.8	NE
+Charcoal	31.1	0	5.3	1	6.3	NE
+Primary solid biomass fuels other than those mentioned in the items above	12.2	0	0.8	1	1.8	NE
+=== SHEET Table 5
+Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas					
+Fuel combusted	Energy Content factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor
+	(GJ/m3 unless otherwise indicated)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)
+		CO2	CH4	N2O	Combined gases
+Natural gas distributed in a pipeline	0.0393	51.4	0.1	0.03	51.53
+Coal seam methane that is captured for combustion	0.0377	51.4	0.2	0.03	51.63
+Coal mine waste gas that is captured for combustion	0.0377	51.9	4.6	0.3	56.8
+Compressed natural gas (reverting to standard conditions)	0.0393	51.4	0.1	0.03	51.53
+Unprocessed natural gas	0.0393	51.4	0.1	0.03	51.53
+Ethane	0.0629	56.5	0.03	0.03	56.56
+Coke oven gas	0.0181	37	0.03	0.05	37.08
+Blast furnace gas	0.004	234	0.03	0.02	234.05
+Town gas	0.039	60.2	0.04	0.03	60.27
+Liquefied natural gas	25.3 GJ/kL	51.4	0.1	0.03	51.53
+Gaseous fossil fuels other than those mentioned in the items above	0.039	51.4	0.1	0.03	51.53
+Landfill biogas that is captured for combustion (methane only)	0.0377	0	6.4	0.03	6.43
+Sludge biogas that is captured for combustion (methane only)	0.0377	0	6.4	0.03	6.43
+A biogas that is captured for combustion, other than those mentioned in the items above	0.037	0	6.4	0.03	6.43
+Biomethane	0.0393	0	0.1	0.03	0.13
+Hydrogen	0.0122	0	0	0.05	0.05
+=== SHEET Table 6
+Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas		
+State or territory	Scope 3 Emission Factors for Natural Gas (kg CO2-e/GJ)	Scope 3 Emission Factors for Natural Gas (kg CO2-e/GJ)
+	Metro	Non-Metro
+New South Wales and ACT	13.1	14
+Victoria	4	4
+Queensland	8.8	7.9
+South Australia	10.7	10.6
+Western Australia	4.1	4
+Tasmania	C	C
+Northern Territory	C	C
+=== SHEET Table 7
+Table 7 Indirect (Scope 3) emission factors for the consumption of ethane	
+Ethane produced in accordance with Division 23 of Part 3 of the Clean Energy Regulations 2011	Scope 3 Emission Factors for Ethane (kg CO2-e /GJ)
+New South Wales	23.7
+Victoria	5.7
+=== SHEET Table 8
+Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes						
+Fuel combusted	Energy Content factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 3 Emission Factor
+	(GJ per unit of fuel)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e /GJ)
+		CO2	CH4	N2O	Combined gases	
+Petroleum based oils (other than petroleum based oil used as fuel), e.g. lubricants	38.8 GJ/kL	13.9	0	0	13.9	18
+Petroleum based greases	38.8 GJ/kL	3.5	0	0	3.5	18
+Crude oil including crude oil condensates	45.3 GJ/t	69.6	0.08	0.2	69.88	NE
+Other natural gas liquids	46.5 GJ/t	61	0.08	0.2	61.28	NE
+Automotive gasoline/petrol (other than for use as fuel in an aircraft)	34.2 GJ/kL	67.4	0.2	0.2	67.8	17.2
+Aviation gasoline	33.1 GJ/kL	67	0.2	0.2	67.4	18
+Kerosene (other than for use as fuel in an aircraft)	37.5 GJ/kL	68.9	0.01	0.2	69.11	18
+Aviation turbine fuel/kerosene 	36.8 GJ/kL	69.6	0.02	0.2	69.82	18
+Heating oil	37.3 GJ/kL	69.5	0.03	0.2	69.73	18
+Diesel oil	38.6 GJ/kL	69.9	0.1	0.2	70.2	17.3
+Fuel oil	39.7 GJ/kL	73.6	0.04	0.2	73.84	18
+Liquefied aromatic hydrocarbons	34.4 GJ/kL	69.7	0.03	0.2	69.93	18
+Solvents: mineral turpentine or white spirits	34.4 GJ/kL	69.7	0.03	0.2	69.93	18
+Liquefied petroleum gas (LPG)	25.7 GJ/kL	60.2	0.2	0.2	60.6	20.2
+Naphtha	31.4 GJ/kL	69.8	0.01	0.01	69.82	18
+Petroleum coke	34.2 GJ/t	92.6	0.08	0.2	92.88	18
+Refinery gas and liquids	42.9 GJ/t	54.7	0.03	0.03	54.76	18
+Refinery coke	34.2 GJ/t	92.6	0.08	0.2	92.88	18
+Petroleum based products other than mentioned in the items above	34.4 GJ/kL	69.8	0.02	0.1	69.92	18
+Biodiesel	34.6 GJ/kL	0	0.08	0.2	0.28	NE
+Ethanol for use as a fuel in an internal combustion engine	23.4 GJ/kL	0	0.08	0.2	0.28	NE
+Biofuels other than those mentioned in the items above and below	23.4 GJ/kL	0	0.08	0.2	0.28	NE
+Renewable aviation kerosene	36.8 GJ/kL	0	0.02	0.2	0.22	NE
+Renewable diesel	38.6 GJ/kL	0	0.1	0.2	0.3	NE
+=== SHEET Table 9
+Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment							
+Transport type	Fuel combusted	Energy Content factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 1 Emission Factor	Scope 3 Emission Factor
+		(GJ per unit of fuel)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e/GJ)	(kg CO2‑e /GJ)
+			CO2	CH4	N2O	Combined gases	
+Cars and light commercial vehicles	Gasoline	34.2	67.4	0.02*	0.2*	67.62	17.2
+Cars and light commercial vehicles	Diesel oil	38.6	69.9	0.01*	0.5*	70.41	17.3
+Cars and light commercial vehicles	Liquefied petroleum gas (LPG)	26.2	60.2	0.5*	0.3*	61	20.2
+Cars and light commercial vehicles	Fuel oil	39.7	73.6	0.08	0.5	74.18	18
+Cars and light commercial vehicles	Ethanol	23.4	0	0.2*	0.2*	0.4	NE
+Cars and light commercial vehicles	Biodiesel	34.6	0	0.8	1.7	2.5	NE
+Cars and light commercial vehicles	Renewable diesel	38.6	0	0.01*	0.5*	0.51	NE
+Cars and light commercial vehicles	Other biofuels	23.4	0	0.8	1.7	2.5	NE
+Light duty vehicles	Compressed natural gas	0.0393 GJ/m3	51.4	7.3	0.3	59	18
+Light duty vehicles	Liquefied natural gas	25.3	51.4	7.3	0.3	59	18
+Heavy duty vehicles	Compressed natural gas	0.0393 GJ/m3	51.4	2.8	0.3	54.5	18
+Heavy duty vehicles	Liquefied natural gas	25.3	51.4	2.8	0.3	54.5	18
+Heavy duty vehicles	Diesel oil - Euro iv or higher	38.6	69.9	0.07	0.4	70.37	17.3
+Heavy duty vehicles	Diesel oil - Euro iii	38.6	69.9	0.1	0.4	70.4	17.3
+Heavy duty vehicles	Diesel oil - Euro i	38.6	69.9	0.2	0.4	70.5	17.3
+Heavy duty vehicles	Renewable diesel – Euro iv or higher	38.6	0	0.07	0.4	0.47	NE
+Heavy duty vehicles	Renewable diesel – Euro iii	38.6	0	0.1	0.4	0.5	NE
+Heavy duty vehicles	Renewable diesel – Euro i	38.6	0	0.2	0.4	0.6	NE
+Aviation	Gasoline for use as fuel in an aircraft	33.1	67	0.06	0.6	67.66	18
+Aviation	Kerosene for use as fuel in an aircraft	36.8	69.6	0.01	0.6	70.21	18
+Aviation	Renewable aviation kerosene	36.8	0	0.01	0.6	0.61	NE
+=== SHEET Table 10
+Table 10 Indicative leakage rates for common refrigeration and air-conditioning equipment	
+Product 	Annual leakage rate (%)
+Domestic refrigerators	1.7
+Transport refrigeration	15.7
+Domestic A/C portable	2.5
+Domestic A/C split	3.5
+Domestic A/C packaged	2.5
+Light vehicle A/C	6.7
+Heavy vehicle A/C	10.8
+=== SHEET Table 11
+Table 11 Global warming potentials of common refrigerants	
+Refrigerant	Global Warming Potentials (AR5)
+R22 (HCFC-22)	1760
+R32 (HFC-32)	677
+R134A (HFC-134A)	1300
+R410A (HFC blend)	1924
+R404A (HFC blend) 	3943
+=== SHEET Table 12
+Table 12 Direct (scope 1) emission factors for the calcination of carbonates	
+Source of carbonate consumption	Emission factor (t CO2/tonne)
+Limestone (calcium carbonate)	0.44
+Magnesium carbonate	0.522
+Dolomite	0.477
+=== SHEET Table 13
+Table 13 Direct (scope 1) emission factors for use of carbonates in clay materials by state and territory		
+State or Territory	Inorganic carbon content factor	Scope 1 emission factor t CO2-e/t clay material
+New South Wales	0.0061	0.0222
+Victoria	0.0002	0.0009
+Queensland	0.0025	0.0092
+Western Australia	0.0003	0.0012
+South Australia	0.0005	0.0019
+Tasmania	0.0011	0.0038
+Australian Capital Territory	0.0061	0.0222
+Northern Territory	0.0005	0.0019
+=== SHEET Table 14
+Table 14 Direct (scope 1) emission factors for the consumption of soda ash	
+Source	Scope 1 emission factor (t CO2-e/t)
+Soda Ash Use 	0.415
+=== SHEET Table 15
+Table 15 Waste mix methane conversion factors and emission factors		
+Waste types	Scope 3 emission factor (t CO2-e/t)	Volume to mass conversion factor (t/m3)
+Food	2.1	0.5
+Paper and cardboard	3.3	0.09
+Garden and green	1.6	0.24
+Wood	0.7	0.15
+Textiles	2	0.14
+Sludge	0.4	0.72
+Nappies	2	0.39
+Rubber and leather	3.3	0.14
+Inert waste (including concrete/metal/plastics/glass)	-	0.42
+=== SHEET Table 16
+Table 16 Indirect (scope 3) waste emission factors for total waste disposed to landfill by broad waste stream category		
+Waste stream	Scope 3 emission factor (t CO2-e/t)	Volume to mass conversion factor (t/m3)
+Municipal solid waste	1.5	0.36
+Commercial and industrial waste	1.2	0.33
+Construction and demolition waste	0.2	0.39
+=== SHEET Table 17
+Table 17 Emission factors by wastewater treatment type	
+Wastewater Treatment Method	Emission factors (t CO2-e per person)
+Managed aerobic treatment	-
+Unmanaged aerobic treatment	0.1229
+Anaerobic digester/reactor	0.3276
+Anaerobic lagoon shallow (<2 metres)	0.0819
+Anaerobic lagoon deep (>2 metres)	0.3276
+=== SHEET Table 18
+Table 18 Direct (scope 1) emission factors for the incineration of waste	
+Waste type 	Emission factors (t CO2-e/t)
+Clinical Waste 	0.879
+Sewage Sludge 	-
+Fossil Liquid 	2.931
+Industrial Waste 	1.649
+Municipal Solid Waste 	0.0537
+=== SHEET Table 19
+Table 19 Direct emission factors (scope 1) for biological treatment of waste	
+Waste treatment type  	Scope 1 emission factors (t CO2-e/t)
+Composting 	0.046
+Anaerobic digestion 	0.028
+=== SHEET Table 20
+Table 20 Implied emission factors (scope 1) from beef cattle on pasture (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+CH4 	52.95	52.42	48.22	50.61	50.55	52.94	56.07	49.48
+N2O	0.3	0.26	0.18	0.18	0.31	0.53	0.52	0.29
+CO2-e	1562.82	1535.42	1397.37	1463.69	1496.7	1623.65	1706.61	1461.72
+=== SHEET Table 21
+Table 21 Implied emission factors (scope 1) from feedlot beef cattle (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+CH4 	-	31.22	-	32.73	31.22	-	31.22	31.25
+N2O	-	1.29	-	1.28	1.3	-	1.31	1.29
+CO2-e	-	1216.73	-	1256.05	1218.48	-	1221.65	1218.1
+=== SHEET Table 22
+Table 22 Implied emission factors (scope 1) from dairy cattle (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+CH4 	-	112.75	-	95.96	117.81	101.02	113.1	103.23
+N2O	-	1.61	-	1.45	1.64	1.44	1.55	1.47
+CO2-e	-	3584.42	-	3071.06	3733.65	3210.73	3577.72	3280.5
+=== SHEET Table 23
+Table 23 Implied emission factors (scope 1) from sheep (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+CH4 	7.45	7.27	 - 	5.36	6.65	6.65	6.63	6.31
+N2O	0.08	0.06	 - 	0.02	0.04	0.05	0.04	0.04
+CO2-e	229.45	218.3	 - 	154.55	196.43	200.73	194.89	187.41
+=== SHEET Table 24
+Table 24 Implied emission factors (scope 1) from pigs (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+CH4 	 - 	21.02	31.85	28.92	26.36	24.83	21.47	24.98
+N2O	 - 	0.25	0.23	0.19	0.21	0.23	0.25	0.25
+CO2-e	 - 	654.69	953.73	860.27	794.24	756.84	668.22	765.01
+=== SHEET Table 25
+Table 25 Implied emission factors (scope 1) from other livestock (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+Alpacas								
+CH4 	7.94	8.12	-	8.12	8.11	8.11	8.11	8.12
+N2O	0.07	0.04	-	0.05	0.05	0.06	0.05	0.04
+CO2-e	239.97	238.81	-	239.27	240.61	243.55	240.7	238.62
+Buffalo								
+CH4 	-	77.39	76.95	76.93	76.84	47.32	76.9	77.52
+N2O	-	0.25	0.37	0.26	0.29	0.22	0.29	0.24
+CO2-e	-	2232.54	2252.77	2221.81	2227.12	1381.92	2229.23	2235.24
+Camels								
+CH4 	-	46.89	46.95	46.97	46.76	-	-	46.88
+N2O	-	0.25	0.37	0.26	0.28	-	-	0.24
+CO2-e	-	1378.19	1412.89	1382.84	1384.59	-	-	1376.95
+Deer								
+CH4 	-	20.31	20.34	20.31	20.31	20.3	20.31	20.31
+N2O	-	0.08	0.12	0.09	0.1	0.12	0.1	0.08
+CO2-e	-	590.49	602.27	591.35	593.96	599.32	594.04	590.17
+Donkeys and mules								
+CH4 	-	10.33	10.25	10.3	-	5.16	10.33	10.54
+N2O	-	0.08	0.12	0.09	-	0.06	0.1	0.08
+CO2-e	-	311.24	319.52	311.06	-	159.99	314.79	317.15
+Goats								
+CH4 	5.11	5.12	5.12	5.12	5.11	5.11	5.11	5.12
+N2O	0.07	0.04	0.07	0.05	0.05	0.06	0.05	0.04
+CO2-e	160.93	154.8	160.81	155.27	156.62	159.58	156.71	154.62
+Horses								
+CH4 	18.95	18.92	18.95	18.94	18.92	18.9	18.92	18.93
+N2O	0.38	0.25	0.37	0.26	0.29	0.35	0.29	0.24
+CO2-e	631.74	595.23	628.79	597.98	605.45	621.91	605.94	594.23
+Ostriches and emus								
+CH4 	-	5.11	-	5.12	5.11	5.14	5.11	5.11
+N2O	-	0.04	-	0.05	0.05	0.06	0.05	0.04
+CO2-e	-	154.79	-	155.46	156.6	160.37	156.69	154.6
+=== SHEET Table 26
+Table 26 Implied emission factors (scope 1) poultry (kg/head)								
+	ACT	NSW	NT	Qld	SA	Tas	Vic	WA
+Layers								
+CH4 	0.043	0.043	0.044	0.043	0.043	0.042	0.043	0.043
+N2O	0.015	0.015	0.016	0.014	0.014	0.015	0.015	0.014
+CO2-e	5.206	5.101	5.39	4.897	4.881	5.101	5.067	4.857
+Meat								
+CH4 	 - 	0.035	0.035	0.035	0.035	0.033	0.035	0.035
+N2O	 - 	0.012	0.013	0.013	0.012	0.013	0.012	0.012
+CO2-e	 - 	4.207	4.463	4.361	4.059	4.315	4.207	4.249
+=== SHEET Table 27
+Table 27 Direct emission factors (scope 1) for rice cultivation	
+Source  	Scope 1 emission factor (t CO2-e/ha)
+Rice cultivation	3.714
+=== SHEET Table 28
+Table 28 Implied emission factors (scope 1) for inorganic fertiliser (t CO2-e/t N)		
+Production system	Emission factor (kg N2O/ t N)	Emission factor (t CO2-e/ t N)
+Cotton	11.9	3.15
+Horticulture / vegetables	12.38	3.28
+Irrigated crops	16.36	4.34
+Irrigated pasture	14.44	3.83
+Non-irrigated crops	7.37	1.95
+Non-irrigated pasture	4.08	1.08
+Sugar cane	38.26	10.14
+=== SHEET Table 29
+Table 29 Implied emission factors (scope 1) for crop residues		
+Crop	Emission factor (kg N2O/ t N)	Emission factor (t CO2-e/ t N)
+Barley	0.07655	0.02029
+Maize	0.03793	0.01005
+Wheat	0.08095	0.02145
+Oats	0.09245	0.0245
+Rice	0.03115	0.00826
+Sorghum	0.08071	0.02139
+Triticale	0.09484	0.02513
+Other Cereals	0.08896	0.02357
+Pulses	0.11538	0.03057
+Roots and Tubers	0.00369	0.00098
+Sugar Cane	0.00406	0.00108
+Peanuts	0.13417	0.03556
+Cotton	0.23371	0.06193
+Oilseeds	0.16705	0.04427
+Hops	0.07106	0.01883
+Forage Crops	0.04796	0.01271
+=== SHEET Table 30
+Table 30 Implied emission factors (scope 1) for pasture residues		
+Pasture type	Emission factor (kg N2O/ ha)	Emission factor (t CO2-e/ ha)
+Lucerne	0.0593	0.0157
+Other Legume Pastures	0.0285	0.0075
+Grass Clover Mixture	0.092	0.0244
+Perennial Pasture	0.0397	0.0105
+Annual Grasses	0.0118	0.0031
+=== SHEET Table 31
+Table 31 Direct emission factors (scope 1) and default purity for liming		
+Source  	Scope 1 emission factor	Purity
+	(t CO2-e/t)	
+Limestone	0.108	0.9
+Dolomite	0.124	0.95
+=== SHEET Table 32
+Table 32 Direct emission factors (scope 1) for urea application	
+Source  	Scope 1 emission factor (t CO2-e/t)
+Urea application	0.733
+=== SHEET Table 33
+Table 33 Emission factors for forest clearing by bioregion and biome			
+Region	Primary Clearing (t CO2-e/ha)	Secondary Clearing (t CO2-e/ha)	Ongoing decay (t CO2-e/ha/year)
+Avon Wheatbelt	166.51	28.54	0.89
+Brigalow Belt North	132.98	21.85	1.37
+Brigalow Belt South	181.63	29.75	1.57
+Ben Lomond	406.46	58.98	4.97
+Central Mackay Coast	287.1	33.86	2.3
+Cobar Peneplain	148.02	27.09	0.69
+Daly Basin	194.29	20.15	1.31
+Desert Uplands	86.03	18	0.91
+Darling Riverine Plains	213.03	25.12	0.64
+Einasleigh Uplands	137.91	19.02	2.1
+Esperance Plains	207.15	31.3	1.35
+Eyre Yorke Block	201.25	28.64	0.71
+Furneaux	274.92	31.5	5.44
+Geraldton Sandplains	156.93	27.23	0.93
+Jarrah Forest	480.65	75.51	2.93
+Kanmantoo	268.52	45.95	2.03
+King	421.88	65.51	4.33
+Mallee	157.48	25.96	0.81
+Murray Darling Depression	114.99	20.81	0.53
+Mitchell Grass Downs	122.99	21.31	1.03
+Mulga Lands	125.42	23.14	1.34
+Nandewar	238.35	38.66	1.34
+Naracoorte Coastal Plain	215.62	32.55	0.91
+New England Tablelands	496.48	66.48	2.16
+NSW North Coast	602.76	84.11	3.54
+NSW South Western Slopes	372.4	46.71	1.22
+Riverina	242	25.76	0.81
+South East Coastal Plain	428.56	56.92	2.79
+South East Corner	667.51	89.18	5.17
+South Eastern Highlands	620.51	84.56	2.61
+South Eastern Queensland	333.33	56.82	2.89
+Southern Volcanic Plain	315.33	33.14	1.77
+Swan Coastal Plain	320.03	59.72	2.53
+Sydney Basin	493.59	61.5	2.64
+Tasmanian Central Highlands	592.42	75.19	7.9
+Tasmanian Northern Midlands	299.36	36.19	2.15
+Tasmanian Northern Slopes	634.26	128.53	8.8
+Tasmanian South East	287.64	42.96	2.44
+Tasmanian Southern Ranges	466.88	57.31	4.69
+Victorian Midlands	270.16	31.11	1.25
+Warren	565.97	81.52	5.58
+Wet Tropics	451.93	59.25	4.8
+Tropical & Subtropical Moist Broadleaf Forests*	369.51	46.55	3.55
+Temperate Broadleaf & Mixed Forests*	470.66	66.9	4.13
+Tropical & Subtropical Grasslands, Savannas & Shrublands*	164.72	21.65	1.48
+Temperate Grasslands, Savannas and Shrublands*	182.12	25.28	0.87
+Montane Grasslands & Shrublands*	741.79	110.78	5.72
+Mediterranean Forests, Woodlands & Scrub*	223.59	36.42	1.53
+Deserts & Xeric Shrublands*	46.14	8.05	0.35
+=== SHEET Table 34
+Table 34 Emission factors for forest regeneration by bioregion and biome		
+Region	Regeneration for ages 0-15 years old (t CO2-e/ha/year)	Regeneration for ages > 15 years (t CO2-e/ha/year)
+Avon Wheatbelt	-1.68	-2.21
+Brigalow Belt North	-2.39	-2.75
+Brigalow Belt South	-3.43	-4.33
+Ben Lomond	-3.57	-5.36
+Central Mackay Coast	-4.96	-6.1
+Cobar Peneplain	-1.29	-2.44
+Daly Basin	-1.87	-2.41
+Desert Uplands	-1.4	-1.93
+Darling Riverine Plains	-3.83	-4.71
+Einasleigh Uplands	-2.3	-3
+Esperance Plains	-3	-3.7
+Eyre Yorke Block	-2.17	-2.69
+Furneaux	-2.26	-4.86
+Geraldton Sandplains	-1.25	-1.4
+Jarrah Forest	-5.78	-8.05
+Kanmantoo	-2.59	-4.06
+King	-4.11	-5.74
+Mallee	-1.69	-1.79
+Murray Darling Depression	-1.21	-1.81
+Mitchell Grass Downs	-2.21	-3.1
+Mulga Lands	-1.09	-1.66
+Nandewar	-3.41	-4.26
+Naracoorte Coastal Plain	-2.4	-3.55
+New England Tablelands	-8.86	-10.87
+NSW North Coast	-10.96	-13.37
+NSW South Western Slopes	-5.97	-8.27
+Riverina	-1.49	-3.42
+South East Coastal Plain	-4.51	-5.95
+South East Corner	-11.06	-11.76
+South Eastern Highlands	-10.25	-13.35
+South Eastern Queensland	-4.15	-5.85
+Southern Volcanic Plain	-3.1	-5.28
+Swan Coastal Plain	-3.25	-4.03
+Sydney Basin	-9.47	-11.75
+Tasmanian Central Highlands	-3.74	-11.39
+Tasmanian Northern Midlands	-2.18	-3.53
+Tasmanian Northern Slopes	-6.18	-8.73
+Tasmanian South East	-1.95	-3.38
+Tasmanian Southern Ranges	-2.43	-7.19
+Victorian Midlands	-2.73	-4.2
+Warren	-5.95	-9.4
+Wet Tropics	-5.39	-6.95
+Tropical & Subtropical Moist Broadleaf Forests*	-5.18	-6.52
+Temperate Broadleaf & Mixed Forests*	-5.22	-7.89
+Tropical & Subtropical Grasslands, Savannas & Shrublands*	-2.15	-2.76
+Temperate Grasslands, Savannas and Shrublands*	-1.92	-3.06
+Montane Grasslands & Shrublands*	-9.06	-11.88
+Mediterranean Forests, Woodlands & Scrub*	-2.28	-3.15
+Deserts & Xeric Shrublands*	-0.34	-0.98
+=== SHEET Table 35
+=== SHEET Table 40
+Table 25 Transmission and distribution losses	
+State, Territory or grid description	Transmission and distribution losses kg CO2‑e/kWh
+New South Wales and Australian Capital Territory	0.02
+Victoria	0.08
+Queensland	0.06
+South Australia	0.02
+Western Australia -	0.04
+South-West Interconnected System (SWIS) 	
+Tasmania	0.02
+Northern territory -	0.03
+Darwin Katherine Interconnected System (DKIS) 	
+Western Australia – North-Western Interconnected System (NWIS) 	0.05
+=== SHEET Table 41
+Table 26 Simplification of emissions equations for wastewater treatment methods				
+Wastewater Treatment Method	Methane correction factor (MCFw)	Default Chemical Oxygen Demand (t/person/	Default methane emissions in wastewater	Emission factor
+		year)	(t CO2-e/t COD)	(t CO2-e/person)
+		(DCw)	(EFw)	(EF)
+Managed aerobic treatment 	0	0.0585	7	-
+Unmanaged aerobic treatment 	0.3	0.0585	7	0.1229
+Anaerobic digester/reactor 	0.8	0.0585	7	0.3276
+Anaerobic lagoon shallow (<2 metres) 	0.2	0.0585	7	0.0819
+Anaerobic lagoon deep (>2 metres) 	0.8	0.0585	7	0.3276
+=== SHEET Table 42
+Table 27 Simplification of emissions equations for waste incineration						
+Waste Type 	Carbon Content	Fossil Origin	Default Oxidation Factor	Convert to t CO2-e	Emission factor t CO2-e	
+	(CC)	(FCC)	(OF)		(EF)	
+Clinical Waste 	0.6	0.4	1	3.667	0.88	
+Sewage Sludge 	0.5	-	1	3.667	-	
+Fossil Liquid 	0.8	1	1	3.667	2.93	
+Industrial Waste 	0.5	0.9	1	3.667	1.65	
+=== SHEET Table 43
+Table 28 Simplification of emissions equations for waste incineration - municipal waste							
+Waste types in the Municipal Solid Waste broad stream 	Proportion of waste stream	Carbon Content	Fossil Origin	Default Oxidation Factor	Convert to t CO2	Weighted Emission factor t CO2-e	
+	(%)	(CC)	(FCC)	(OF)		(EF)	
+Food	0.35	0.38	0	1	3.667	-  	
+Paper	0.13	0.46	0.01	1	3.667	0.0022	
+Garden and Green	0.165	0.49	0	1	3.667	-   	
+Wood 	0.01	0.5	0	1	3.667	-   	
+Textiles	0.015	0.5	0.2	1	3.667	0.0055	
+Sludge	0	0.5	0	1	3.667	-   	
+Nappies	0.04	0.7	0.1	1	3.667	0.0103	
+Rubber and Leather	0.01	0.67	0.2	1	3.667	0.0049	
+Other	0.28	0.03	1	1	3.667	0.0308	
+=== SHEET Table 44
+Table 29 Simplification of emissions equations for biological treatment of waste			
+Biological treatment type 	CH4 emission factor	N2O emission factor	Scope 1 emission factor
+	(CO2-e)	(CO2-e)	(CO2-e)
+Composting	0.021	0.025	0.046
+Anaerobic Digestion	0.028	0	0.028
+=== SHEET Energy - Scope 1 
+		Emission factor				Energy content factor		Emission factor			
+		kg CO2‑e/GJ				GJ/Unit		kg CO2‑e/unit 			
+		(relevant oxidation factors incorporated)				(relevant unit indicated below)		(relevant oxidation factors incorporated)			
+Fuel Type 	Fuel Combusted 	CO2	CH4	N2O	Combined CO2-e/GJ	GJ	Unit 	CO2-e	Unit 	Scope 	Source
+Solid fuels 	Sulphite lyes	0	0.08	0.5	0.58	12.4	GJ/t	7.191999999999999	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Dry wood	0	0.1	1.1	1.2	16.2	GJ/t	19.439999999999998	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Green and air dried wood	0	0.1	1.1	1.2	10.4	GJ/t	12.48	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Bagasse	0	0.3	1.1	1.4	9.6	GJ/t	13.44	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Biomass, municipal and industrial materials, if combusted to produce heat or electricity	0	0.8	1	1.8	12.2	GJ/t	21.96	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Primary solid biomass fuels other than those mentioned in the items above	0	0.8	1	1.8	12.2	GJ/t	21.96	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Charcoal	0	5.3	1	6.3	31.1	GJ/t	195.93	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Truck and off-road tyres, if recycled and combusted to produce heat or electricity 	55.9	0.03	0.2	56.13	27.1	GJ/t	1521.123	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Passenger car tyres, if recycled and combusted to produce heat or electricity  	62.8	0.03	0.2	63.03	32	GJ/t	2016.96	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Industrial materials that are derived from fossil fuels, if recycled and combusted to produce heat or electricity	81.6	0.03	0.2	81.83	26.3	GJ/t	2152.129	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Coal tar	81.8	0.03	0.2	82.03	37.5	GJ/t	3076.125	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Non‑biomass municipal materials, if combusted to produce heat or electricity	87.1	0.8	1	88.9	10.5	GJ/t	933.45	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Bituminous coal	90	0.04	0.2	90.24	27	GJ/t	2436.48	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Sub-bituminous coal	90	0.04	0.2	90.24	21	GJ/t	1895.04	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Anthracite	90	0.04	0.2	90.24	29	GJ/t	2616.96	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Coking coal	91.8	0.03	0.2	92.03	30	GJ/t	2760.9	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Brown coal (lignite)	93.5	0.02	0.3	93.82	10.2	GJ/t	956.9639999999998	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Solid fossil fuels other than those mentioned in the items above	95	0.08	0.2	95.28	22.1	GJ/t	2105.688	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Coal briquettes	95	0.08	0.3	95.38	22.1	GJ/t	2107.898	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Coal coke	107	0.03	0.2	107.23	27	GJ/t	2895.21	kg CO2-e/t	1	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Gaseous fuels	Liquefied natural gas	51.4	0.1	0.03	51.53	25.3	GJ/kL	1303.709	kg CO2-e/kL	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Natural gas distributed in a pipeline	51.4	0.1	0.03	51.53	0.0393	GJ/m3	2.025129	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Coal seam methane that is captured for combustion	51.4	0.2	0.03	51.63	0.0377	GJ/m3	1.946451	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Coal mine waste gas that is captured for combustion	51.9	4.6	0.3	56.8	0.0377	GJ/m3	2.1413599999999997	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Compressed natural gas (reverting to standard conditions)	51.4	0.1	0.03	51.53	0.0393	GJ/m3	2.025129	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Unprocessed natural gas	51.4	0.1	0.03	51.53	0.0393	GJ/m3	2.025129	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Ethane	56.5	0.03	0.03	56.56	0.0629	GJ/m3	3.557624	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Coke oven gas	37	0.03	0.05	37.08	0.0181	GJ/m3	0.6711480000000001	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Blast furnace gas	234	0.03	0.02	234.05	0.004	GJ/m3	0.9362	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Town gas	60.2	0.04	0.03	60.27	0.039	GJ/m3	2.35053	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Gaseous fossil fuels other than those mentioned in the items above	51.4	0.1	0.03	51.53	0.039	GJ/m3	2.00967	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Landfill biogas that is captured for combustion (methane only)	0	6.4	0.03	6.43	0.0377	GJ/m3	0.24241099999999996	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Sludge biogas that is captured for combustion (methane only)	0	6.4	0.03	6.43	0.0377	GJ/m3	0.24241099999999996	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	A biogas that is captured for combustion, other than those mentioned in the items above	0	6.4	0.03	6.43	0.037	GJ/m3	0.23790999999999998	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Biomethane	0	0.1	0.03	0.13	0.0393	GJ/m3	0.005109000000000001	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Gaseous fuels	Hydrogen	0	0	0.05	0.05	0.0122	GJ/m3	0.0006100000000000001	kg CO2-e/m3	1	Table 5 Direct (Scope 1) emission factors for the consumption of gaseous fuels including liquefied natural gas
+Liquid fuels 	Petroleum based oils (other than petroleum based oil used as fuel), e.g. lubricants	13.9	0	0	13.9	38.8	GJ/kL	539.3199999999999	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum based greases	3.5	0	0	3.5	38.8	GJ/kL	135.79999999999998	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Automotive gasoline/petrol (other than for use as fuel in an aircraft)	67.4	0.2	0.2	67.8	34.2	GJ/kL	2318.76	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Aviation gasoline	67	0.2	0.2	67.4	33.1	GJ/kL	2230.9400000000005	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Kerosene (other than for use as fuel in an aircraft)	68.9	0.01	0.2	69.11	37.5	GJ/kL	2591.625	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Aviation turbine fuel/kerosene 	69.6	0.02	0.2	69.82	36.8	GJ/kL	2569.3759999999997	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Heating oil	69.5	0.03	0.2	69.73	37.3	GJ/kL	2600.929	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Diesel oil	69.9	0.1	0.2	70.2	38.6	GJ/kL	2709.7200000000003	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Fuel oil	73.6	0.04	0.2	73.84	39.7	GJ/kL	2931.4480000000003	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Liquefied aromatic hydrocarbons	69.7	0.03	0.2	69.93	34.4	GJ/kL	2405.592	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Solvents: mineral turpentine or white spirits	69.7	0.03	0.2	69.93	34.4	GJ/kL	2405.592	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Liquefied petroleum gas (LPG)	60.2	0.2	0.2	60.6	25.7	GJ/kL	1557.42	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Naphtha	69.8	0.01	0.01	69.82	31.4	GJ/kL	2192.3479999999995	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum based products other than mentioned in the items above	69.8	0.02	0.1	69.92	34.4	GJ/kL	2405.248	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Biodiesel	0	0.08	0.2	0.28	34.6	GJ/kL	9.688	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Ethanol for use as a fuel in an internal combustion engine	0	0.08	0.2	0.28	23.4	GJ/kL	6.5520000000000005	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Biofuels other than those mentioned in the items above	0	0.08	0.2	0.28	23.4	GJ/kL	6.5520000000000005	kg CO2-e/kL	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Crude oil including crude oil condensates	69.6	0.08	0.2	69.88	45.3	GJ/t	3165.5639999999994	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Other natural gas liquids	61	0.08	0.2	61.28	46.5	GJ/t	2849.52	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum coke	92.6	0.08	0.2	92.88	34.2	GJ/t	3176.496	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Refinery gas and liquids	54.7	0.03	0.03	54.76	42.9	GJ/t	2349.2039999999997	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Refinery coke	92.6	0.08	0.2	92.88	34.2	GJ/t	3176.496	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Renewable aviation kerosene	0	0.02	0.2	0.22	36.8	GJ/t	8.096	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Renewable diesel	0	0.1	0.2	0.3	38.6	GJ/t	11.58	kg CO2-e/t	1	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Gasoline-Cars and light commercial vehicles	67.4	0.02*	0.2*	67.62	34.2	GJ/kL	2312.6040000000003	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil-Cars and light commercial vehicles	69.9	0.01*	0.5*	70.41	38.6	GJ/kL	2717.826	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied petroleum gas (LPG)-Cars and light commercial vehicles	60.2	0.5*	0.3*	61	26.2	GJ/kL	1598.2	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Fuel oil-Cars and light commercial vehicles	73.6	0.08	0.5	74.18	39.7	GJ/kL	2944.9460000000004	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Ethanol-Cars and light commercial vehicles	0	0.2*	0.2*	0.4	23.4	GJ/kL	9.36	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Biodiesel-Cars and light commercial vehicles	0	0.8	1.7	2.5	34.6	GJ/kL	86.5	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Other biofuels-Cars and light commercial vehicles	0	0.8	1.7	2.5	23.4	GJ/kL	58.5	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied natural gas-Light duty vehicles	51.4	7.3	0.3	59	25.3	GJ/kL	1492.7	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied natural gas-Heavy duty vehicles	51.4	2.8	0.3	54.5	25.3	GJ/kL	1378.8500000000001	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro iv or higher-Heavy duty vehicles	69.9	0.07	0.4	70.37	38.6	GJ/kL	2716.282	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro iii-Heavy duty vehicles	69.9	0.1	0.4	70.4	38.6	GJ/kL	2717.4400000000005	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro i-Heavy duty vehicles	69.9	0.2	0.4	70.5	38.6	GJ/kL	2721.3	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Gasoline for use as fuel in an aircraft-Aviation	67	0.06	0.6	67.66	33.1	GJ/kL	2239.546	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Kerosene for use as fuel in an aircraft-Aviation	69.6	0.01	0.6	70.21	36.8	GJ/kL	2583.7279999999996	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Renewable aviation kerosene	0	0.01	0.6	0.61	36.8	GJ/kL	22.447999999999997	kg CO2-e/kL	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Compressed natural gas-Light duty vehicles	51.4	7.3	0.3	59	0.0393	GJ/m3	2.3187	kg CO2-e/m3	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Compressed natural gas-Heavy duty vehicles	51.4	2.8	0.3	54.5	0.0393	GJ/m3	2.1418500000000003	kg CO2-e/m3	1	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+=== SHEET Energy - Scope 3
+		Emission factor	Energy content factor		Emission factor			
+		kg CO2‑e/GJ	GJ/Unit		kg CO2‑e/unit 			
+		(relevant oxidation factors incorporated)	(relevant unit indicated below)		(relevant oxidation factors incorporated)			
+Fuel Type 	Fuel Combusted 	kg CO2-e/GJ	GJ	Unit 	CO2-e	Unit 	Scope 	Source
+Solid fuels 	Coking coal	6.4	30	GJ/t	192	kg CO2-e/t	3	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Bituminous coal	3	27	GJ/t	81	kg CO2-e/t	3	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Sub-bituminous coal	2.5	21	GJ/t	52.5	kg CO2-e/t	3	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Solid fuels 	Brown coal (lignite)	0.4	10.2	GJ/t	4.08	kg CO2-e/t	3	Table 4 Direct (scope 1) and Indirect (scope 3) emission factors for the combustion of solid fuels - including certain coal based products
+Gaseous fuels	Natural Gas-Non-metro-New South Wales and ACT	14	0.0393	GJ/m3	0.5502	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Metro -New South Wales and ACT	13.1	0.0393	GJ/m3	0.51483	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Metro -South Australia	10.7	0.0393	GJ/m3	0.42051	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Non-metro-South Australia	10.6	0.0393	GJ/m3	0.41658	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Metro -Queensland	8.8	0.0393	GJ/m3	0.34584000000000004	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Non-metro-Queensland	7.9	0.0393	GJ/m3	0.31047	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Metro -Western Australia	4.1	0.0393	GJ/m3	0.16113	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Metro -Victoria	4	0.0393	GJ/m3	0.1572	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Non-metro-Victoria	4	0.0393	GJ/m3	0.1572	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Natural Gas-Non-metro-Western Australia	4	0.0393	GJ/m3	0.1572	kg CO2-e/m3	3	Table 6 Indirect (Scope 3) emission factors for the consumption of natural gas
+Gaseous fuels	Ethane-New South Wales	23.7	0.0629	GJ/m3	1.4907299999999999	kg CO2-e/m3	3	Table 7 Indirect (Scope 3) emission factors for the consumption of ethane
+Gaseous fuels	Ethane-Victoria	5.7	0.0629	GJ/m3	0.35853	kg CO2-e/m3	3	Table 7 Indirect (Scope 3) emission factors for the consumption of ethane
+Liquid fuels 	Liquefied petroleum gas (LPG)	20.2	25.7	GJ/kL	519.14	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum based oils (other than petroleum based oil used as fuel), e.g. lubricants	18	38.8	GJ/kL	698.4	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum based greases	18	38.8	GJ/kL	698.4	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Aviation gasoline	18	33.1	GJ/kL	595.8000000000001	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Kerosene (other than for use as fuel in an aircraft)	18	37.5	GJ/kL	675	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Aviation turbine fuel/kerosene 	18	36.8	GJ/kL	662.4	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Heating oil	18	37.3	GJ/kL	671.4	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Fuel oil	18	39.7	GJ/kL	714.6	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Liquefied aromatic hydrocarbons	18	34.4	GJ/kL	619.1999999999999	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Solvents: mineral turpentine or white spirits	18	34.4	GJ/kL	619.1999999999999	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Naphtha	18	31.4	GJ/kL	565.1999999999999	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum based products other than mentioned in the items above	18	34.4	GJ/kL	619.1999999999999	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Diesel oil	17.3	38.6	GJ/kL	667.7800000000001	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Automotive gasoline/petrol (other than for use as fuel in an aircraft)	17.2	34.2	GJ/kL	588.24	kg CO2-e/kL	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Petroleum coke	18	34.2	GJ/t	615.6	kg CO2-e/t	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Refinery gas and liquids	18	42.9	GJ/t	772.1999999999999	kg CO2-e/t	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Refinery coke	18	34.2	GJ/t	615.6	kg CO2-e/t	3	Table 8 Direct (Scope 1) and indirect (scope 3) emission factors for the consumption of liquid fuels, including certain petroleum based products for stationary energy purposes
+Liquid fuels 	Gasoline-Cars and light commercial vehicles	17.2	34.2	GJ/kL	588.24	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil-Cars and light commercial vehicles	17.3	38.6	GJ/kL	667.7800000000001	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied petroleum gas (LPG)-Cars and light commercial vehicles	20.2	26.2	GJ/kL	529.24	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Fuel oil-Cars and light commercial vehicles	18	39.7	GJ/kL	714.6	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied natural gas-Light duty vehicles	18	25.3	GJ/kL	455.40000000000003	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Liquefied natural gas-Heavy duty vehicles	18	25.3	GJ/kL	455.40000000000003	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro iv or higher-Heavy duty vehicles	17.3	38.6	GJ/kL	667.7800000000001	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro iii-Heavy duty vehicles	17.3	38.6	GJ/kL	667.7800000000001	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Diesel oil - Euro i-Heavy duty vehicles	17.3	38.6	GJ/kL	667.7800000000001	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Gasoline for use as fuel in an aircraft-Aviation	18	33.1	GJ/kL	595.8000000000001	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Kerosene for use as fuel in an aircraft-Aviation	18	36.8	GJ/kL	662.4	kg CO2-e/kL	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Compressed natural gas-Light duty vehicles	18	0.0393	GJ/m3	0.7074	kg CO2-e/m3	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
+Liquid fuels 	Compressed natural gas-Heavy duty vehicles	18	0.0393	GJ/m3	0.7074	kg CO2-e/m3	3	Table 9 Direct (scope 1) and indirect (scope 3) emission factors for the consumption of transport fuels in different transport equipment
