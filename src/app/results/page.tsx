@@ -85,6 +85,8 @@ export default async function ResultsPage({
   const result = range ? range.lower : calculate(constants, tariffs, inputs);
 
   const deal = result.deal;
+  // What dropping the gas connection is worth: the daily supply charge, a full year of it.
+  const gasSupplyPerYear = 365 * tariffs.gasSupply;
   const isGas = result.currentSystem === "gas";
   const currentLabel = CURRENT_SYSTEM_LABEL[result.currentSystem];
 
@@ -172,6 +174,33 @@ export default async function ResultsPage({
                     range.upper.emissions.savedKgPerYear
                   )}{" "}
                   a year.
+                </p>
+              </div>
+            )}
+
+            {isGas && result.saving.supply === 0 && answers.cooktop === "gas" && (
+              <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50/60 p-4 text-sm text-stone-700">
+                <p className="max-w-prose">
+                  <span className="font-semibold text-stone-900">
+                    Your cooktop is the other half of this.
+                  </span>{" "}
+                  With gas hot water and a gas cooktop, switching either one alone keeps the gas
+                  connection, so the daily supply charge stays. Switch both and the connection
+                  goes, and so does {formatMoney(gasSupplyPerYear)} a year.
+                </p>
+                <dl className="mt-3 grid grid-cols-1 gap-1 sm:max-w-md">
+                  <StatRow label="Hot water alone" value={formatMoney(result.saving.total)} />
+                  <StatRow
+                    label="Both, before the cooktop's own running cost"
+                    value={formatMoney(result.saving.total + gasSupplyPerYear)}
+                    strong
+                  />
+                </dl>
+                <p className="mt-3 max-w-prose text-xs text-stone-500">
+                  The supply charge comes from the same {model.name} standing offer as everything
+                  else here. The cooktop&apos;s own running cost is not priced: we could not find a
+                  government or standards figure for cooktop efficiency that we would stand behind,
+                  so we leave it out rather than guess.
                 </p>
               </div>
             )}
