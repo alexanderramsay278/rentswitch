@@ -119,7 +119,7 @@ export default function Wizard() {
           <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">
             Question <span className="text-emerald-700">{stepIndex + 1}</span> of {totalSteps}
           </p>
-          <p className="text-xs tabular-nums text-stone-400">{Math.round(progressPct)}%</p>
+          <p className="text-xs tabular-nums text-stone-600">{Math.round(progressPct)}%</p>
         </div>
         <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-stone-100">
           <div
@@ -238,7 +238,7 @@ export default function Wizard() {
               />
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-sm text-stone-400"
+                className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-sm text-stone-600"
               >
                 /week
               </span>
@@ -253,7 +253,7 @@ export default function Wizard() {
           <button
             type="button"
             onClick={() => goNext({ weeklyRent: undefined })}
-            className="mt-3 text-sm font-medium text-stone-500 underline hover:text-stone-700"
+            className="mt-3 text-sm font-medium text-stone-500 underline transition-colors hover:text-stone-700"
           >
             Skip this question
           </button>
@@ -280,7 +280,7 @@ function Step({
         <button
           type="button"
           onClick={onBack}
-          className="mt-6 text-sm font-medium text-stone-500 hover:text-stone-700"
+          className="mt-6 text-sm font-medium text-stone-500 transition-colors hover:text-stone-700"
         >
           ← Back
         </button>

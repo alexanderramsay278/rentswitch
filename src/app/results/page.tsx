@@ -59,11 +59,11 @@ export default async function ResultsPage({
       <div className="mb-6 flex items-center justify-between">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-stone-900 hover:text-stone-700"
+          className="text-sm font-semibold tracking-tight text-stone-900 transition-colors hover:text-stone-700"
         >
           Rentswitch
         </Link>
-        <Link href="/start" className="text-sm font-medium text-stone-500 hover:text-stone-700">
+        <Link href="/start" className="text-sm font-medium text-stone-500 transition-colors hover:text-stone-700">
           Start over
         </Link>
       </div>
@@ -160,7 +160,7 @@ export default async function ResultsPage({
               Offer {deal.offer}
             </p>
             <p className="text-stone-800">{deal.headline}</p>
-            <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
+            <dl className="mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2 lg:grid-cols-4">
               {deal.vacancyValue > 0 && (
                 <StatRow label="Avoided vacancy value" value={formatMoney(deal.vacancyValue)} />
               )}
@@ -313,11 +313,11 @@ function Notes({ warnings }: { warnings: string[] }) {
   if (warnings.length === 0) return null;
   return (
     <div className="mt-6 space-y-2 border-t border-stone-200 pt-4">
-      <p className="text-xs font-semibold uppercase tracking-wide text-stone-400">
+      <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">
         Notes on these figures
       </p>
       {warnings.map((w, i) => (
-        <p key={i} className="max-w-prose text-sm leading-relaxed text-stone-500">
+        <p key={i} className="max-w-prose text-sm leading-relaxed text-stone-600">
           {w}
         </p>
       ))}
@@ -329,7 +329,7 @@ function StartOverButton() {
   return (
     <Link
       href="/start"
-      className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
+      className="inline-block rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
     >
       Start over
     </Link>
@@ -401,7 +401,7 @@ function BigStat({
 }) {
   return (
     <div className="rounded-xl bg-white p-5 text-center shadow-sm ring-1 ring-stone-200 sm:p-6">
-      <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">{eyebrow}</p>
+      <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">{eyebrow}</p>
       <p
         className={`mt-2 text-4xl font-bold tabular-nums sm:text-5xl ${
           accent ? "text-emerald-700" : "text-stone-900"
@@ -409,7 +409,7 @@ function BigStat({
       >
         {value}
       </p>
-      <p className="mt-2 text-xs leading-snug text-stone-500">{caption}</p>
+      <p className="mt-2 text-xs leading-snug text-stone-600">{caption}</p>
     </div>
   );
 }

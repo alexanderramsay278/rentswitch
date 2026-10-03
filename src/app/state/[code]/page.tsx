@@ -48,7 +48,7 @@ export default async function StatePage({
         </p>
         <Link
           href="/start"
-          className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
+          className="inline-block rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
         >
           Choose NSW instead
         </Link>

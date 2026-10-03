@@ -8,7 +8,7 @@ export default function StartPage() {
         <header className="mb-8 text-center">
           <Link
             href="/"
-            className="text-2xl font-semibold tracking-tight text-stone-900 hover:text-stone-700 sm:text-3xl"
+            className="text-2xl font-semibold tracking-tight text-stone-900 transition-colors hover:text-stone-700 sm:text-3xl"
           >
             Rentswitch
           </Link>

@@ -37,7 +37,7 @@ export default function LetterBlock({ letter }: { letter: string }) {
           <button
             type="button"
             onClick={handleCopy}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm font-medium text-stone-800 shadow-sm transition-colors hover:border-emerald-600 hover:bg-emerald-50"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm font-medium text-stone-800 shadow-sm transition-all hover:border-emerald-600 hover:bg-emerald-50 active:scale-[0.98]"
           >
             <CopyIcon />
             {copied ? "Copied" : "Copy"}
@@ -45,7 +45,7 @@ export default function LetterBlock({ letter }: { letter: string }) {
           <button
             type="button"
             onClick={handleDownload}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm font-medium text-stone-800 shadow-sm transition-colors hover:border-emerald-600 hover:bg-emerald-50"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm font-medium text-stone-800 shadow-sm transition-all hover:border-emerald-600 hover:bg-emerald-50 active:scale-[0.98]"
           >
             <DownloadIcon />
             Download

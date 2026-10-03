@@ -5,7 +5,7 @@ import { PercentBar, SupplyChargeBar, EmissionsCompareBars } from "@/components/
 
 const CTA_LABEL = "See your result";
 const CTA_BUTTON_CLASS =
-  "inline-block rounded-xl bg-emerald-600 px-8 py-4 text-base font-semibold text-white shadow-sm transition-colors hover:bg-emerald-700";
+  "inline-block rounded-xl bg-emerald-600 px-8 py-4 text-base font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]";
 
 export default function Home() {
   return (
@@ -107,7 +107,7 @@ function SiteNav() {
       <span className="text-sm font-semibold tracking-tight text-stone-900">Rentswitch</span>
       <Link
         href="/start"
-        className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
+        className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
       >
         {CTA_LABEL}
       </Link>
@@ -164,13 +164,13 @@ function StatSection({
       <Reveal className="flex w-full max-w-2xl flex-col items-center text-center">
         <p className="text-xs font-semibold uppercase tracking-widest text-emerald-700">{eyebrow}</p>
         <h2 className="mt-4">
-          <span className="block text-5xl font-bold tabular-nums tracking-tight text-stone-900 sm:text-7xl">
+          <span className="block text-4xl font-bold tabular-nums tracking-tight text-stone-900 sm:text-6xl md:text-7xl">
             {value}
           </span>
           <span className="mt-5 block text-lg text-stone-700 sm:text-xl">{lead}</span>
         </h2>
         {citation && (
-          <p className="mt-5 text-xs uppercase tracking-wide text-stone-400">{citation}</p>
+          <p className="mt-5 text-xs uppercase tracking-wide text-stone-600">{citation}</p>
         )}
         {visual && <div className="mt-10 w-full max-w-sm">{visual}</div>}
       </Reveal>
@@ -315,7 +315,7 @@ function HouseGrid({ count = 24 }: { count?: number }) {
 
 function Badge({ tone, children }: { tone: "accent" | "neutral" | "muted"; children: ReactNode }) {
   const bg =
-    tone === "accent" ? "bg-emerald-600 text-white" : tone === "neutral" ? "bg-stone-700 text-white" : "bg-stone-200 text-stone-500";
+    tone === "accent" ? "bg-emerald-600 text-white" : tone === "neutral" ? "bg-stone-700 text-white" : "bg-stone-200 text-stone-600";
   return (
     <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${bg}`}>
       {children}
