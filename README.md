@@ -26,9 +26,16 @@ is locked out by a contract.
 ## Scope
 
 Built and validated for **New South Wales**: NSW tariffs, NSW Energy Savings Scheme rules,
-NSW emissions factor. The model is parameterised by state — adding another is a tariff set,
-a rebate table and an emissions factor, **not a rewrite**. We scoped to one state deliberately
-in order to get the numbers right for that state.
+NSW emissions factor. **Victoria** is modelled too, through the same engine with only its own
+tariffs (AER CDR, Melbourne postcode 3000) and emissions factors changed. That proved the claim
+that adding a state is data, not a rewrite.
+
+**The Victorian finding.** For two people switching gas storage to a heat pump, the tenant saves
+about **$799/yr** in Victoria against $703 in NSW, but the emissions cut is only **40 kg CO₂e/yr
+(6%)** against 266 kg (37%). Victoria's grid is dirtier (0.85 vs 0.67 kg CO₂e/kWh) and its gas
+supply chain is cleaner (4.0 vs 13.1 kg CO₂e/GJ upstream), so at the minimum compliant heat pump
+efficiency the same switch abates far less. That is what the government factors say, and we
+report it rather than hide it.
 
 **P0 covers hot water: gas storage → heat pump.** That is the biggest household energy load,
 the best-documented, and the one with a real rebate attached. Everything else is in
@@ -307,8 +314,8 @@ const result = calculate(constants, tariffs, {
 > Everything here was consciously cut to protect the one flow that works. Listing it is the
 > scope contract — if it is in this section, it is **not** in the build.
 
-- **More states.** Victoria first: its hot water rebate excludes renters by design, which
-  sharpens the thesis. The engine is already parameterised; it needs data, not code.
+- **More states.** Victoria is done. Queensland, South Australia, the ACT and Tasmania need
+  only the same data: tariffs and emissions factors.
 - **Postcode-level accuracy** — exact distributor zone and exact STC zone rating.
 - Cooktop, space heating, insulation, solar, batteries, EV charging.
 - Bill upload and OCR instead of five questions.

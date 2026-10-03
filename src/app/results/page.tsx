@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { calculate, type CurrentSystem } from "@/lib/engine";
-import { generateLetter } from "@/lib/letter";
-import { constants, tariffs } from "@/lib/adapter";
+import { generateStateLetter } from "@/lib/stateLetter";
+import { STATE_MODELS, isModelledState } from "@/lib/adapter";
 import { queryToAnswers } from "@/lib/questions";
 import { occupancyRange } from "@/lib/occupancy";
 import {
@@ -51,12 +51,32 @@ export default async function ResultsPage({
     );
   }
 
+  if (!isModelledState(answers.state)) {
+    return (
+      <Shell>
+        <h1 className="mb-4 text-xl font-semibold text-stone-900">
+          We don&apos;t model that state yet
+        </h1>
+        <p className="mb-6 max-w-prose text-stone-600">
+          Rentswitch models New South Wales and Victoria. We would rather show no number than one
+          built on another state&apos;s tariffs.
+        </p>
+        <StartOverButton />
+      </Shell>
+    );
+  }
+
+  const model = STATE_MODELS[answers.state];
+  const { constants, tariffs } = model;
+  const isVic = answers.state === "VIC";
+
   const inputs = {
     occupants: answers.occupants,
     hotWaterFuel: answers.hotWater,
     isLastGasAppliance: answers.isLastGasAppliance,
     heatPumpRate: "offPeak" as const,
     weeklyRent: answers.weeklyRent,
+    gridName: model.gridName,
   };
   // Above two people the linear model over-states demand, so we report a range. Everything
   // below the headline (breakdown, deal, letter) uses the lower bound, so nothing we ask a
@@ -156,6 +176,20 @@ export default async function ResultsPage({
               </div>
             )}
 
+            {isVic && isGas && (
+              <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600">
+                <p className="max-w-prose">
+                  <span className="font-semibold text-stone-800">Why the emissions cut is small in Victoria.</span>{" "}
+                  Victoria&apos;s grid is dirtier than New South Wales&apos;s, at 0.85 kg CO₂e per kWh
+                  against 0.67, and its gas supply chain is cleaner. So the same switch abates far less
+                  here. That is what the government factors say, not a fault in the sum. We also price
+                  the heat pump at the minimum efficiency a compliant unit must reach. A more efficient
+                  unit, or a cleaner grid over time, would make the cut bigger. The bill saving holds
+                  either way.
+                </p>
+              </div>
+            )}
+
             <CostBreakdown
               currentLabel={currentLabel}
               usage={result.cost.gasUsagePerYear}
@@ -171,7 +205,7 @@ export default async function ResultsPage({
               You&apos;re already on the most efficient system
             </p>
             <p className="mt-4 max-w-prose text-stone-700">
-              {currentLabel} is the best available option on the NSW grid today, so there&apos;s
+              {currentLabel} is the best available option on the {model.gridName} grid today, so there&apos;s
               no upgrade to chase and nothing to ask your landlord for. There&apos;s still the
               electricity plan switch below, and that one only needs your own permission.
             </p>
@@ -212,7 +246,7 @@ export default async function ResultsPage({
       {/* ---------------------------------------------------------------- */}
       {result.upgradeModelled && deal && (
         <Section title="Ask your landlord" tone="primary">
-          {result.essActivity && (
+          {result.essActivity && !isVic && (
             <p className="mb-5 inline-block rounded-full border border-stone-300 bg-white px-3 py-1 text-xs font-medium text-stone-600">
               {ESS_ACTIVITY_COPY[result.essActivity]}
             </p>
@@ -255,7 +289,7 @@ export default async function ResultsPage({
           <p className="mb-4 max-w-prose text-stone-600">
             A landlord business case, not a request. Built from the numbers above.
           </p>
-          <LetterBlock letter={generateLetter(result, constants)} />
+          <LetterBlock letter={generateStateLetter(result, constants, answers.state)} />
         </Section>
       )}
 

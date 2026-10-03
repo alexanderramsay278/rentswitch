@@ -103,7 +103,7 @@ export default function Wizard() {
   }
 
   function pickState(code: StateCode) {
-    if (code !== "NSW") {
+    if (code !== "NSW" && code !== "VIC") {
       router.push(`/state/${code.toLowerCase()}`);
       return;
     }

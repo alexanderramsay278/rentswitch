@@ -96,3 +96,91 @@ export const tariffs: Tariffs = {
   gasBlocks,
   gasSupply: gasPlan.dailySupplyCharge,
 };
+
+// ---------------------------------------------------------------------------
+// Victoria. Same engine, same constants, VIC emissions factors and VIC tariffs.
+// See data/constants_vic.json for every choice made here and why.
+// ---------------------------------------------------------------------------
+
+import rawVic from "../../data/constants_vic.json" with { type: "json" };
+import vicElectricityDetail from "../../data/cdr_raw/vic/detail_AGD790710SR_at_VEC.json" with { type: "json" };
+import vicGasDetail from "../../data/cdr_raw/vic/detail_AGD790588SR_at_VEC.json" with { type: "json" };
+
+export const vicConstants: Constants = {
+  ...constants,
+  efElectricity: rawVic.emissions.EF_electricity_VIC_kgCO2e_per_kWh.value,
+  efGas: rawVic.emissions.EF_gas_VIC_kgCO2e_per_MJ.value,
+};
+
+interface CdrRate {
+  unitPrice: string;
+  volume?: number;
+}
+
+function vicElectricity() {
+  const d = vicElectricityDetail.data;
+  if (d.planId !== rawVic.tariffs.electricityPlanId) {
+    throw new Error(`Rentswitch adapter: VIC electricity detail is not ${rawVic.tariffs.electricityPlanId}.`);
+  }
+  const period = d.electricityContract.tariffPeriod[0];
+  // Both windows are typed SHOULDER in the CDR response. The dearer one (15:00 to 21:00)
+  // is the peak, the other covers every remaining hour and is what a timer can target.
+  const prices = period.timeOfUseRates.map((t) => Number((t.rates as CdrRate[])[0].unitPrice));
+  if (prices.length !== 2) {
+    throw new Error("Rentswitch adapter: expected two time of use rates on the VIC plan.");
+  }
+  const cl = d.electricityContract.controlledLoad[0].singleRate;
+  return {
+    peak: Math.max(...prices),
+    offPeak: Math.min(...prices),
+    controlledLoad: Number((cl.rates as CdrRate[])[0].unitPrice),
+    electricitySupply: Number(period.dailySupplyCharge),
+    // The plan lists no separate controlled load supply charge.
+    controlledLoadSupply: 0,
+  };
+}
+
+// AGL publishes VIC gas blocks per two-month billing period. 60 days per period
+// reproduces EnergyAustralia's daily blocks on the same network exactly.
+const VIC_GAS_DAYS_PER_P2M = 60;
+
+function vicGas() {
+  const d = vicGasDetail.data;
+  if (d.planId !== rawVic.tariffs.gasPlanId) {
+    throw new Error(`Rentswitch adapter: VIC gas detail is not ${rawVic.tariffs.gasPlanId}.`);
+  }
+  const period = d.gasContract.tariffPeriod[0];
+  if (period.singleRate.period !== "P2M") {
+    throw new Error("Rentswitch adapter: VIC gas blocks are no longer two-monthly. Recheck the conversion.");
+  }
+  const blocks: GasBlock[] = (period.singleRate.rates as CdrRate[]).map((r) => ({
+    volumeMJ: r.volume === undefined ? undefined : r.volume / VIC_GAS_DAYS_PER_P2M,
+    unitPrice: Number(r.unitPrice),
+  }));
+  return { gasBlocks: blocks, gasSupply: Number(period.dailySupplyCharge) };
+}
+
+export const vicTariffs: Tariffs = { ...vicElectricity(), ...vicGas() };
+
+// ---------------------------------------------------------------------------
+// One lookup for the pages.
+// ---------------------------------------------------------------------------
+
+export type ModelledState = "NSW" | "VIC";
+
+export interface StateModel {
+  constants: Constants;
+  tariffs: Tariffs;
+  /** As used in a sentence: "on the NSW grid", "on the Victorian grid". */
+  gridName: string;
+  name: string;
+}
+
+export const STATE_MODELS: Record<ModelledState, StateModel> = {
+  NSW: { constants, tariffs, gridName: "NSW", name: "New South Wales" },
+  VIC: { constants: vicConstants, tariffs: vicTariffs, gridName: "Victorian", name: "Victoria" },
+};
+
+export function isModelledState(code: string): code is ModelledState {
+  return code === "NSW" || code === "VIC";
+}

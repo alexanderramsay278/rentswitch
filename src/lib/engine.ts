@@ -67,6 +67,8 @@ export interface Inputs {
   heatPumpRate?: ElectricityRate;
   /** $/week. Optional - enables the deal calculator. */
   weeklyRent?: number;
+  /** Grid named in assumption text, e.g. "NSW" or "Victorian". Default: "NSW". */
+  gridName?: string;
 }
 
 /** What the household runs today, after resolving "unsure". */
@@ -355,7 +357,7 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
   }
   if (!isGas) {
     warnings.push(
-      "An electric storage tank is the most carbon-intensive way to heat water on the NSW grid, so the emissions saving here is large. The bill saving is smaller than a gas switch though, because there is no gas supply charge to shed."
+      `An electric storage tank is the most carbon-intensive way to heat water on the ${input.gridName ?? "NSW"} grid, so the emissions saving here is large. The bill saving is smaller than a gas switch though, because there is no gas supply charge to shed.`
     );
   }
 

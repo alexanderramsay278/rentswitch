@@ -1,13 +1,9 @@
 name: Fetch VIC tariffs
 
+# Manual only. Re-running replaces the cached Victorian tariffs, which changes the
+# figures `npm run verify` pins, so it should never run as a side effect of a push.
 on:
   workflow_dispatch:
-  push:
-    branches: [claude/run-routine-ylyotu]
-    paths:
-      - scripts/fetch_cdr_vic.py
-      - scripts/fetch_nga_factors.sh
-      - .github/workflows/fetch-vic-tariffs.yml
 
 permissions:
   contents: write
@@ -22,11 +18,14 @@ jobs:
           python-version: "3.12"
       - run: python scripts/fetch_cdr_vic.py
       - run: sudo apt-get install -y -q poppler-utils && scripts/fetch_nga_factors.sh
+        continue-on-error: true
+        timeout-minutes: 5
       - name: Commit cached responses
         run: |
           git config user.name "Alex Ramsay"
           git config user.email "alexanderramsay278@gmail.com"
-          git add data/cdr_raw/vic data/sources
+          git add data/cdr_raw/vic
+          [ -d data/sources ] && git add data/sources
           git diff --cached --quiet && exit 0
           git commit -m "Cache Victorian tariffs and the DCCEEW emissions factors"
           git push

@@ -18,6 +18,7 @@ Live retail electricity and gas tariffs. Regulator-served, no API key, no accred
 - 190 matching NSW plans found; 32 cached in full to `data/cdr_raw/` and reduced to `data/tariffs.json`.
 - Default plan used by the model: **AGL Residential Standing Offer** (electricity `AGL1189640SRE1@EME`, Ausgrid; gas `AGL1055990SRG3@EME`, Jemena) — chosen because the Standing Offer is the *regulated reference offer*, not a marketing plan.
 - **Units verified against live responses:** electricity `$/kWh`, gas `$/MJ`, supply charges `$/day`. These are dollars, not cents.
+- **Victoria (added 2026-10-03):** same API, postcode 3000 (Melbourne), standing and default offers only, fetched by `scripts/fetch_cdr_vic.py` running in GitHub Actions (`.github/workflows/fetch-vic-tariffs.yml`). Raw responses in `data/cdr_raw/vic/`. Plans used: AGL Residential Standing Offer, electricity `AGD790710SR@VEC` (CitiPower, time of use with controlled load) and gas `AGD790588SR@VEC` (Australian Gas Networks). AGL's gas blocks are two-monthly (`P2M`); converted to daily by dividing by 60, which reproduces EnergyAustralia's daily blocks on the same network (`TRU796856SR@VEC`) exactly. Every choice is recorded in `data/constants_vic.json`.
 - Licence: see the AER / CDR terms on the source. ⬜ **TO DO: copy the exact licence line from the source page.**
 
 ### DCCEEW — Australian National Greenhouse Accounts Factors 2026
@@ -26,6 +27,7 @@ Emission factors. Published August 2026.
 - **Table 1 (p.10)** — NSW/ACT purchased electricity: scope 2 = **0.60**, scope 3 = **0.07** kg CO₂-e/kWh.
 - **Table 5 (p.19)** — natural gas distributed in a pipeline, scope 1 combined = **51.53** kg CO₂-e/GJ.
 - **Table 6 (p.20)** — NSW/ACT metro, natural gas scope 3 = **13.1** kg CO₂-e/GJ.
+- **Victoria:** Table 1 electricity scope 2 = **0.74**, scope 3 = **0.11** kg CO₂-e/kWh; Table 6 natural gas scope 3 = **4.0** kg CO₂-e/GJ. Recorded in `data/constants_vic.json`.
 - Transcribed by hand from the published PDF. No PDF parser was written.
 - **Licence: CC BY 4.0** (stated on p.2 of the document). Attribution as required: *DCCEEW 2026, Australian National Greenhouse Accounts Factors, Department of Climate Change, Energy, the Environment and Water, Canberra, August. CC BY 4.0.*
 
