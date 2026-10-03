@@ -13,7 +13,7 @@ export default function StartPage() {
             Rentswitch
           </Link>
           <p className="mt-2 text-sm text-stone-600 sm:text-base">
-            Five questions. Your bill saving, your landlord&apos;s cost, and the letter that
+            Eight questions. Your bill saving, your landlord&apos;s cost, and the letter that
             closes the gap.
           </p>
         </header>

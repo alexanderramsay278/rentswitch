@@ -270,7 +270,7 @@ export default async function ResultsPage({
           </p>
           <p className="mt-3 max-w-prose">
             Your cooktop and space heating are asked about but deliberately not priced. Space
-            heating depends on insulation and glazing, which five questions cannot establish,
+            heating depends on insulation and glazing, which eight questions cannot establish,
             and a number we could not defend would undermine the two we can.
           </p>
         </div>

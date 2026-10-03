@@ -88,7 +88,7 @@ Rentswitch models the energy a household *must* be using, then prices it.
    it, so its COP exceeds 1.
 3. **Live tariffs turn energy into dollars; DCCEEW factors turn it into kg CO₂e.**
 
-That is why five questions is enough: **the appliance is the variable.**
+That is why eight questions is enough: **the appliance is the variable.**
 
 ### Inputs
 
@@ -186,7 +186,7 @@ also printed **on screen, next to the number it produces**.
 ### Deliberately not modelled
 
 **Space heating is not given a dollar figure.** It depends on the building's thermal fabric —
-insulation, glazing, orientation — which we cannot observe from five questions. Question 5
+insulation, glazing, orientation — which we cannot observe from eight questions. Question 5
 determines *which advice is shown*, never a number. A heating figure we cannot defend would
 contaminate the two we can.
 
@@ -352,7 +352,7 @@ const result = calculate(constants, tariffs, {
   zone tables can be read.
 - **Postcode-level accuracy** — exact distributor zone and exact STC zone rating.
 - Cooktop, space heating, insulation, solar, batteries, EV charging.
-- Bill upload and OCR instead of five questions.
+- Bill upload and OCR instead of eight questions.
 - A verified rebate table, once the ESS/STC amounts can be sourced primarily.
 - Landlord-side asset value and rental premium, if a defensible Australian dataset ever exists.
 - Saved comparisons, accounts, sharing — none of which the core argument needs.
