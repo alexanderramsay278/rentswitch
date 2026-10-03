@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "tariffs: re-fetch Victorian tariffs. sources: text copies of data/sources/_urls.txt"
+        description: "tariffs: re-fetch Victorian tariffs. sources: text copies of data/source_text/_urls.txt"
         default: sources
 
 permissions:
@@ -28,13 +28,13 @@ jobs:
         if: inputs.task != 'tariffs'
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          grep -v '^#' data/sources/_urls.txt | grep -v '^$' | while read -r url; do
+          grep -v '^#' data/source_text/_urls.txt | grep -v '^$' | while read -r url; do
             name=$(basename "${url%%\?*}"); name="${name%.pdf}"
             if curl -fsSL --http1.1 --max-time 90 --retry 2 -A "$UA" -o /tmp/src "$url"; then
               if file /tmp/src | grep -q PDF; then
-                pdftotext -layout /tmp/src "data/sources/$name.txt"
+                pdftotext -layout /tmp/src "data/source_text/$name.txt"
               else
-                python3 -c "import html,re,sys;t=open('/tmp/src',encoding='utf-8',errors='ignore').read();t=re.sub(r'(?s)<(script|style).*?</\1>','',t);t=re.sub(r'<[^>]+>','\n',t);t=html.unescape(t);print(re.sub(r'\n\s*\n+','\n',t))" > "data/sources/$name.txt"
+                python3 -c "import html,re,sys;t=open('/tmp/src',encoding='utf-8',errors='ignore').read();t=re.sub(r'(?s)<(script|style).*?</\1>','',t);t=re.sub(r'<[^>]+>','\n',t);t=html.unescape(t);print(re.sub(r'\n\s*\n+','\n',t))" > "data/source_text/$name.txt"
               fi
               echo "OK   $url"
             else
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "Alex Ramsay"
           git config user.email "alexanderramsay278@gmail.com"
-          git add data/cdr_raw/vic data/sources
+          git add data/cdr_raw/vic data/source_text
           git diff --cached --quiet && exit 0
           git commit -m "Cache fetched data and source documents"
           git push
