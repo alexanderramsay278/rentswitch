@@ -6,10 +6,163 @@
       "detail": "x-v: 3"
     },
     "retrieved": "2026-10-03",
-    "filter": "customerType=RESIDENTIAL, postcode 7000, effective=CURRENT, type=STANDING",
+    "filter": "customerType=RESIDENTIAL, postcode 7000, effective=CURRENT, type STANDING or REGULATED",
     "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
   },
   "plans": [
+    {
+      "planId": "AUR1119317RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Peak and Off-Peak",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.56679,
+      "flat": null,
+      "peak": 0.32898,
+      "offPeak": 0.154727,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AUR1119318RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Single Rate",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.654545,
+      "flat": 0.225,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AUR1119316RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Flat rate with Off-Peak option",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.191994,
+      "controlledLoadSupplyCharge": 0.166505
+    },
+    {
+      "planId": "AUR1119314RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Flat rate (Lights & Power) Off-Peak option",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.191994,
+      "controlledLoadSupplyCharge": 0.166505
+    },
+    {
+      "planId": "AUR1119312RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Flat rate (Light & Power)",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AUR1119267RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "aurora+ on Flat Rate",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.191994,
+      "controlledLoadSupplyCharge": 0.166505
+    },
+    {
+      "planId": "AUR1119313RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Flat rate (Lights & Power) Off-Peak (Night)",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.12747,
+      "controlledLoadSupplyCharge": 0.212422
+    },
+    {
+      "planId": "AUR1119311RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Flat Rate",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.524377,
+      "flat": 0.254125,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.191994,
+      "controlledLoadSupplyCharge": 0.166505
+    },
+    {
+      "planId": "AUR1119268RRE1@EME",
+      "brand": "aurora",
+      "fuel": "ELECTRICITY",
+      "displayName": "aurora+ on Time of Use",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.56679,
+      "flat": null,
+      "peak": 0.32898,
+      "offPeak": 0.154727,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
     {
       "planId": "SOL1140215SRE1@EME",
       "brand": "solstice",
