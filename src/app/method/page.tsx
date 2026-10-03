@@ -216,9 +216,10 @@ export default function MethodPage() {
             <p>
               <strong className="font-semibold text-stone-900">The consequence.</strong> The
               worked example used throughout this site is a two-person household, which sits
-              inside the range where the model holds. Beyond two occupants, treat the figure as
-              an upper bound. Calibrating the per-person curve against metered data is the first
-              item in the project&apos;s future work.
+              inside the range where the model holds. Beyond two occupants, every result quotes the
+              conservative figure, with hot water scaled to the metered curve above, and states the
+              straight model&apos;s higher figure next to it. Calibrating the per-person curve
+              against hot water metering is the first item in the project&apos;s future work.
             </p>
           </div>
 

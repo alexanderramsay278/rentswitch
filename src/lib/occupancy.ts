@@ -6,13 +6,14 @@
  * households are sub-linear: five people use 2.93x the gas of one person, not 5.00x.
  *
  * Those ratios come from TOTAL household gas, which includes cooking and space heating, so
- * they are not a calibration of hot water demand and we do not use them as the estimate.
- * They are used only to set a lower bound. The upper bound is the engine's linear figure,
- * unchanged. At one and two occupants the model sits inside the defensible range and a
- * single figure is reported.
+ * they are not a calibration of hot water demand. They set a conservative floor. The results
+ * page quotes that floor as its single figure, labelled as conservative, and states the
+ * engine's linear figure (the upper bound) next to it; it never presents the floor as a best
+ * estimate. At one and two occupants the model sits inside the defensible range and the
+ * linear figure is used as is.
  */
 
-import { calculate, type Constants, type Inputs, type Result, type Tariffs } from "./engine";
+import { calculate, type Constants, type Inputs, type Result, type Tariffs } from "./engine.ts";
 import validation from "../../data/validation_aer.json" with { type: "json" };
 
 /** Occupants -> AER metered total gas relative to a one-person household. */
