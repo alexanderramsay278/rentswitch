@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "tariffs: re-fetch Victorian tariffs. sources: text copies of data/source_text/_urls.txt"
+        description: "tariffs: re-fetch Victorian tariffs. sources: text copies of data/source_text/_urls.txt. live: check the deployed site"
         default: sources
 
 permissions:
@@ -23,9 +23,12 @@ jobs:
           python-version: "3.12"
       - if: inputs.task == 'tariffs'
         run: python scripts/fetch_cdr_vic.py
-      - run: sudo apt-get install -y -q poppler-utils
+      - if: inputs.task == 'live'
+        run: python scripts/check_live.py
+      - if: inputs.task == 'sources'
+        run: sudo apt-get install -y -q poppler-utils
       - name: Download and convert sources
-        if: inputs.task != 'tariffs'
+        if: inputs.task == 'sources'
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
           grep -v '^#' data/source_text/_urls.txt | grep -v '^$' | while read -r url; do
@@ -42,6 +45,7 @@ jobs:
             fi
           done
       - name: Commit cached responses
+        if: inputs.task != 'live'
         run: |
           git config user.name "Alex Ramsay"
           git config user.email "alexanderramsay278@gmail.com"
