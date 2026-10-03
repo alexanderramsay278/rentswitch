@@ -40,6 +40,9 @@ data, not a rewrite.
 | ACT | $710 | 2.8 yrs | 266 kg (37%) | 0.67 |
 | Tasmania | not priced | | | 0.26 |
 
+Every row is priced on one reference offer per fuel per state. For NSW, how that choice compares
+with the other cached plans is in [Tariff check](#tariff-check-did-we-pick-a-flattering-plan).
+
 **The finding.** The bill saving changes by up to about a quarter between states, from $703 a
 year in NSW to $875 in Queensland. The emissions cut changes far more, from 6% in Victoria to 76%
 in South Australia, because it depends mostly on the grid and partly on each state's upstream
@@ -144,6 +147,12 @@ to cover a cost the tenant has no authority to incur, and will never see a cent 
 
 Every figure above traces to a named Australian government source. None is a vendor estimate.
 
+**How the plan choice affects this.** These figures are priced on AGL's standing offers at
+postcode 2088. On the 256 cached plan pairs at that postcode, the same switch saves $440 to $787
+in year one. In year one, while EnergyAustralia's one-year discounts apply, $703 beats 75% of
+them: the generous end. After that, on list prices, it beats 47%: about the middle. See
+[Tariff check](#tariff-check-did-we-pick-a-flattering-plan).
+
 ---
 
 ## Data sources and licences
@@ -178,7 +187,7 @@ also printed **on screen, next to the number it produces**.
 | Rebates `R` | **$0** | ⚠️ **No primary dollar figure obtained.** NSW consumer incentive pages are JavaScript-rendered; every other result was an installer or comparison site, which we do not cite. The case is presented with **zero rebate** — any real rebate only improves it. |
 | Rebate stacking | *"may be able to claim both"* | NSW material indicates ESS certificates are **additional** to federal STCs for the same activity; heat pumps ≤425 L are excluded from the PDRS specifically to stop three-way stacking, which corroborates it. **Strongly indicated, not confirmed** — so we never say "you can". |
 | Electricity rate for the heat pump | **Off-peak, $0.2185/kWh** | Achievable with a timer, no meter change. Controlled load ($0.1755) is cheaper but carries its own daily charge, so the difference is small. Peak is shown as the worst case. |
-| Tariff plan | **AGL Residential Standing Offer** | The *regulated reference offer*, not a marketing plan. Cached 2026-10-02. |
+| Tariff plan | **AGL Residential Standing Offer** | The *regulated reference offer*, not a marketing plan. Cached 2026-10-02. On the cached plans at 2088 the saving runs $440 to $787 in year one: $703 is at the generous end in year one and about the middle after it. See [Tariff check](#tariff-check-did-we-pick-a-flattering-plan). |
 | Distributor zone | One representative NSW zone (Ausgrid / Jemena) | Postcode-level distributor mapping is future work. |
 | Landlord asset-value uplift, rental premium | **$0, user-adjustable** | No authoritative free Australian dataset prices either for a rental hot water system. Asserting a number here would be inventing data in the exact area judges are told to scrutinise. The output states what premium *would* be required rather than claiming one. |
 | Reduced vacancy *as a statistical claim* | **Excluded entirely** | No defensible basis. Note this is **not** the same as the lease offer in the deal calculator — that is a contract the tenant signs, not a prediction. |
@@ -256,6 +265,72 @@ Calibrating the per-person curve against hot-water-only metered data is still fu
 
 > We would rather publish the limit we found than an accuracy figure we did not measure.
 
+### Tariff check: did we pick a flattering plan?
+
+**The question.** The headline ($703 a year, $306 of it the gas supply charge, 2.8 year payback)
+is priced on one pair of plans: AGL's standing offers for electricity and gas at postcode 2088.
+A fair challenge is that we picked the plan that makes the number look best.
+
+**What we did.** Re-ran the same two-person case, through the same model (`tools/model.py`,
+unchanged), on every electricity and gas pair in the cached AER CDR data that is offered at
+postcode 2088: 16 electricity plans by 16 gas plans, 256 pairs. No new data. Reproduce it with
+`python tools/validate_tariffs.py`. Full output: `data/validation_tariffs.json`.
+
+| Plan pairs at postcode 2088 | Pairs | Lowest | Middle | Highest | $703 beats |
+|---|---|---|---|---|---|
+| Year one, all pairs | 256 | $440 | $564 | $787 | 75% |
+| Year one, plans open to any household | 120 | $517 | $671 | $781 | 63% |
+| After year one, all pairs | 256 | $416 | $709 | $787 | 47% |
+| After year one, plans open to any household | 120 | $492 | $709 | $781 | 27% |
+
+"Middle" is the saving of the middle pair. Where two middle pairs differ, both are shown below.
+No figure here is an average of two pairs.
+
+**The answer: in year one, partly yes. After that, no.** EnergyAustralia's market plans carry
+guaranteed discounts that last one year. While they apply, $703 beats 75% of the pairs. The
+middle pair saves $564, about $140 less, and would pay back in 3.5 years, not 2.8. So in year one
+the headline is the generous end, not the typical case. Once the discounts end, list prices
+apply, and $703 beats 47% of pairs: about the middle, where the middle pair saves $709. The
+payback runs past year one, so both periods matter.
+
+| Year one, by offer type | Pairs | Lowest | Middle | Highest |
+|---|---|---|---|---|
+| Standing electricity + standing gas | 4 | $703 | $703 / $765 | $765 |
+| Standing electricity + market gas | 28 | $472 | $549 | $711 |
+| Market electricity + standing gas | 28 | $671 | $724 / $733 | $787 |
+| Market electricity + market gas | 196 | $440 | $564 | $732 |
+
+**The finding.** A tenant already on market deals for both fuels usually saves less in year
+one. Their gas is usually cheaper today, so there is less to save by leaving it. The middle such
+pair saves $564; 30 of the 196 still save more than $703. Across the cached gas plans, the gas
+bill the switch removes runs from $623 to $916 a year. The heat pump's running cost runs only
+from $129 to $182. Most of the spread comes from the gas side. Among the four standing-offer
+pairs, the headline is tied for the lowest.
+
+**What held.** Every pair saves money, in year one and after. The lowest is $416 a year, on
+list prices. The supply charge part is $223 to $326, between 41% and 51% of the saving on every
+pair in year one. The emissions cut is 266.5 kg CO₂e a year on every pair, because it does not
+depend on the tariff.
+
+**One judgement call, shown three ways.** The parsers ignore discounts, and EnergyAustralia's
+wording does not say whether its discount (12% on electricity, 6% to 25% on gas) covers the
+supply charge. With the discount on usage and supply, $703 beats 75% of pairs in year one. On
+usage only, 71%. Without it, which is also the position after year one, 47%. The year one
+figures above use the first, the one least favourable to the headline.
+
+**Limits.** This is not the NSW market. The cache holds 32 NSW plans from two retailers (AGL and
+EnergyAustralia): the first eight per retailer and fuel as the API listed them, out of 170
+electricity and 20 gas plans those two listed for 2088. No other retailer's NSW plans are
+cached. Ten of the 32 plans are restricted by who the customer is (a loyalty scheme or bank, a
+Seniors Card, existing solar, new customers only); they are included and flagged. Plans sold
+only through a comparison site, a connection service or a sales agent count as open, because
+any household can sign up that way. One-off incentives and fees are ignored, as in the
+headline. The other 218 cached plans are from other states and are not offered at 2088, so they
+are tabled as skipped, not dropped. Nine of them could not be used even if they were: the
+parsers read them without error, but six Victorian electricity plans have every rate typed
+shoulder, and three gas plans have monthly or two-monthly (P2M) blocks that the model's daily
+block walk would misprice without a conversion.
+
 ### Per-household check — not completed
 
 | Household | Occupants | Hot water | Predicted | Actual | Error |
@@ -268,7 +343,8 @@ offered was a final bill for a vacant property (2.41 kWh/day against 21.62 the p
 which would have produced a meaningless error figure, so it was excluded rather than used.
 
 **No accuracy percentage is claimed anywhere in this project.** The external check above is a
-plausibility and scaling test against regulator data, and it is described as exactly that.
+plausibility and scaling test against regulator data, and it is described as exactly that. The
+tariff check is a robustness check of one input, the plan choice, and is described as that.
 
 ### Internal checks
 
@@ -327,6 +403,9 @@ python tools/model.py
 
 # A sample landlord letter with real numbers (2 occupants, $650/wk)
 python tools/letter.py 2 650
+
+# The tariff check: the headline case on every cached plan pair at postcode 2088
+python tools/validate_tariffs.py
 ```
 
 The TypeScript engine (`src/engine.ts`) has **zero dependencies** and one entry point:
