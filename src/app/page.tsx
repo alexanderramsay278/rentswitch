@@ -14,9 +14,9 @@ export default function Home() {
       <Hero />
 
       <StatSection
-        eyebrow="The scale"
+        eyebrow="Scale"
         value="29.5%"
-        lead="of Australian households rent their home."
+        lead="of Australian households are renters."
         citation="ABS, 2021 Census"
         visual={<PercentBar pct={29.5} />}
       />
@@ -33,7 +33,7 @@ export default function Home() {
       <TextSection
         eyebrow="The catch"
         headline="A renter can switch energy plans. They cannot replace the hot water system."
-        body="They don't own it. Under the Residential Tenancies Act 2010 (NSW), altering the property needs the owner's written consent."
+        body="Under the Residential Tenancies Act 2010 (NSW), altering the property needs the owner's written consent."
         visual={<SwitchVsFixed />}
       />
 
@@ -49,7 +49,7 @@ export default function Home() {
         tone="tint"
         eyebrow="The money"
         value="$703"
-        lead="a year. What a typical two-person household saves switching gas hot water to a heat pump."
+        lead="a year is what a typical two-person household saves switching gas hot water to a heat pump."
         citation="Rentswitch model, AER tariffs"
       />
 
@@ -57,29 +57,29 @@ export default function Home() {
         tone="tint"
         eyebrow="The part most calculators miss"
         value="$306"
-        lead="of that is the daily gas supply charge. It's billed whether you use gas or not, and it only disappears when the connection does."
+        lead="of that is the daily gas supply charge. It is always billed regardless if gas is used or not."
         visual={<SupplyChargeBar />}
       />
 
       <TextSection
         eyebrow="Why this never happens"
-        headline="2.8 years. How long the landlord takes to break even."
-        body="The tenant gets the saving. The landlord pays the cost. That gap is the whole problem."
+        headline="2.8 years is how long the landlord takes to break even."
+        body="The tenant saves while the landlord pays the cost. It simply isn't in the interest of the person who has the capacity to change it."
         visual={<PaybackSplit />}
       />
 
       <StatSection
         tone="white"
-        eyebrow="The climate payoff"
+        eyebrow="Environmental Impact"
         value="266 kg CO2-e"
-        lead="a year, cut by one household switching off gas hot water. 691 kg if the tank it's replacing is electric instead."
+        lead="saved per household each year by switching off gas hot water. 691 kg if the tank it's replacing is electric instead."
         visual={<EmissionsCompareBars />}
       />
 
       <StatSection
         eyebrow="At scale"
         value="80,000 tonnes"
-        lead="a year. What a quarter of New South Wales rental households switching would cut."
+        lead="a year is what a quarter of New South Wales rental households switching would cut."
         citation="944,585 x 25% x 346 kg"
         visual={<HouseGrid count={32} />}
       />
@@ -88,7 +88,7 @@ export default function Home() {
         tone="tint"
         eyebrow="The target"
         value="35%"
-        lead="electrification by 2035. The COP31 target. Australia cannot reach it while a third of its homes are locked out by a contract."
+        lead="electrification by 2035 is the COP31 target. Australia cannot reach it while a third of its homes are locked out by a contract."
         visual={<PercentBar pct={35} />}
       />
 
@@ -131,9 +131,25 @@ function Hero() {
       <Link href="/start" className={`${CTA_BUTTON_CLASS} mt-10`}>
         {CTA_LABEL}
       </Link>
+      <ScrollCue />
     </section>
   );
 }
+
+function ScrollCue() {
+  return (
+    <div
+      aria-hidden
+      className="pointer-events-none mt-14 flex flex-col items-center gap-2 text-stone-400 motion-safe:animate-bounce"
+    >
+      <span className="text-xs font-medium uppercase tracking-widest">Keep scrolling</span>
+      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    </div>
+  );
+}
+
 
 /* ------------------------------------------------------------------------ */
 /* Section shells                                                           */
@@ -213,14 +229,19 @@ function FinalCta() {
           Get your own number
         </p>
         <h2 className="mt-4 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
-          Five questions. About two minutes.
+          Eight questions and about a minute
         </h2>
         <p className="mt-5 max-w-md text-lg text-stone-600">
-          No account. No email. No meter reading.
+          is all we need to provide you a tailored figure and response. No account, email or meter reading necessary.
         </p>
         <Link href="/start" className={`${CTA_BUTTON_CLASS} mt-10`}>
           {CTA_LABEL}
         </Link>
+        <p className="mt-10 max-w-md text-sm text-stone-500">
+          Every figure here is a modelled estimate built from published tariffs and
+          government emissions factors. Your own bill depends on your household, your
+          plan and your appliances, so treat these as a guide rather than a quote.
+        </p>
       </Reveal>
     </section>
   );

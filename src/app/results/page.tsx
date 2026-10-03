@@ -64,7 +64,7 @@ export default async function ResultsPage({
           Rentswitch
         </Link>
         <Link href="/start" className="text-sm font-medium text-stone-500 transition-colors hover:text-stone-700">
-          Start over
+          Back to the numbers
         </Link>
       </div>
 
@@ -331,7 +331,7 @@ function StartOverButton() {
       href="/start"
       className="inline-block rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
     >
-      Start over
+      Back to the numbers
     </Link>
   );
 }
