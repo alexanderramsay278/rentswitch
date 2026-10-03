@@ -280,7 +280,7 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
 
   if (input.hotWaterFuel === "unsure") {
     warnings.push(
-      "You weren't sure what heats your water, so we assumed gas storage - the most common case. Change it above."
+      "You weren't sure what heats your water, so we assumed gas storage, which is the most common case. Change it above."
     );
   }
 
@@ -303,7 +303,7 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
   if (currentSystem === "heat_pump" || currentSystem === "solar") {
     const label = currentSystem === "heat_pump" ? "a heat pump" : "solar hot water";
     warnings.push(
-      `You already have ${label}, which is the most efficient option available - there is no hot water upgrade for us to recommend. The permission-free actions below still apply.`
+      `You already have ${label}, which is the most efficient option available. There is no hot water upgrade for us to recommend. The permission-free actions below still apply.`
     );
     const nil = computeDeal(c, 0, 0, input.weeklyRent);
     return {
@@ -355,7 +355,7 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
   }
   if (!isGas) {
     warnings.push(
-      "An electric storage tank is the most carbon-intensive way to heat water on the NSW grid, so the emissions saving here is large - but the bill saving is smaller than a gas switch, because there is no gas supply charge to shed."
+      "An electric storage tank is the most carbon-intensive way to heat water on the NSW grid, so the emissions saving here is large. The bill saving is smaller than a gas switch though, because there is no gas supply charge to shed."
     );
   }
 
@@ -373,7 +373,7 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
 
   if (S <= 0) {
     warnings.push(
-      "Modelled saving is zero or negative - check the tariff and efficiency inputs before trusting this."
+      "Modelled saving is zero or negative. Check the tariff and efficiency inputs before trusting this."
     );
   }
 

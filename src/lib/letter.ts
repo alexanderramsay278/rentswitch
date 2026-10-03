@@ -174,7 +174,7 @@ export function generateLetter(
   lines.push("");
   lines.push("Where these numbers come from");
   lines.push(
-    `Tariffs: AER Consumer Data Right, AGL Residential Standing Offer (the regulated reference offer), retrieved 2026-10-02. Emissions factors: DCCEEW National Greenhouse Accounts Factors 2026. Installed costs: DCCEEW Decision Regulation Impact Statement, Heat Pump Water Heaters, April 2026, Table 20. Hot water demand: ${c.L} L per person per day, the figure NSW used in its own Energy Savings Scheme modelling. Heat pump efficiency: COP ${c.cop}, derived from the minimum 60% saving a compliant unit must achieve - a worst-case compliant unit, not a best-case one.`
+    `Tariffs: AER Consumer Data Right, AGL Residential Standing Offer (the regulated reference offer), retrieved 2026-10-02. Emissions factors: DCCEEW National Greenhouse Accounts Factors 2026. Installed costs: DCCEEW Decision Regulation Impact Statement, Heat Pump Water Heaters, April 2026, Table 20. Hot water demand: ${c.L} L per person per day, the figure NSW used in its own Energy Savings Scheme modelling. Heat pump efficiency: COP ${c.cop}, derived from the minimum 60% saving a compliant unit must achieve, a worst-case compliant unit, not a best-case one.`
   );
 
   if (r.warnings.length) {
