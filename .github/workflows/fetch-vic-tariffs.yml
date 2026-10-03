@@ -4,6 +4,10 @@ name: Fetch VIC tariffs
 # figures `npm run verify` pins, so it should never run as a side effect of a push.
 on:
   workflow_dispatch:
+    inputs:
+      task:
+        description: "tariffs: re-fetch Victorian tariffs. sources: text copies of data/sources/_urls.txt"
+        default: sources
 
 permissions:
   contents: write
@@ -11,21 +15,37 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/fetch_cdr_vic.py
-      - run: sudo apt-get install -y -q poppler-utils && scripts/fetch_nga_factors.sh
-        continue-on-error: true
-        timeout-minutes: 5
+      - if: inputs.task == 'tariffs'
+        run: python scripts/fetch_cdr_vic.py
+      - run: sudo apt-get install -y -q poppler-utils
+      - name: Download and convert sources
+        if: inputs.task != 'tariffs'
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          grep -v '^#' data/sources/_urls.txt | grep -v '^$' | while read -r url; do
+            name=$(basename "${url%%\?*}"); name="${name%.pdf}"
+            if curl -fsSL --http1.1 --max-time 90 --retry 2 -A "$UA" -o /tmp/src "$url"; then
+              if file /tmp/src | grep -q PDF; then
+                pdftotext -layout /tmp/src "data/sources/$name.txt"
+              else
+                python3 -c "import html,re,sys;t=open('/tmp/src',encoding='utf-8',errors='ignore').read();t=re.sub(r'(?s)<(script|style).*?</\1>','',t);t=re.sub(r'<[^>]+>','\n',t);t=html.unescape(t);print(re.sub(r'\n\s*\n+','\n',t))" > "data/sources/$name.txt"
+              fi
+              echo "OK   $url"
+            else
+              echo "FAIL $url"
+            fi
+          done
       - name: Commit cached responses
         run: |
           git config user.name "Alex Ramsay"
           git config user.email "alexanderramsay278@gmail.com"
-          git add data/cdr_raw/vic
-          [ -d data/sources ] && git add data/sources
+          git add data/cdr_raw/vic data/sources
           git diff --cached --quiet && exit 0
-          git commit -m "Cache Victorian tariffs and the DCCEEW emissions factors"
+          git commit -m "Cache fetched data and source documents"
           git push
