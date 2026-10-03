@@ -105,6 +105,7 @@ export default function MethodPage() {
           lead="Seven sources, each a government publication or statutory dataset. None of them is a vendor estimate or a comparison site."
         >
           <DataTable
+            wide
             caption="Data sources, what each is used for, and its licence"
             head={["Source", "What we use it for", "Licence"]}
             rows={SOURCES.map((s) => [
@@ -345,7 +346,7 @@ function Section({
 function Card({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className="rounded-xl border border-stone-200 bg-white p-5">
-      <p className="text-sm font-semibold text-stone-900">{title}</p>
+      <h3 className="text-sm font-semibold text-stone-900">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-stone-600">{children}</p>
     </div>
   );
@@ -355,14 +356,20 @@ function DataTable({
   caption,
   head,
   rows,
+  wide = false,
 }: {
   caption: string;
   head: string[];
   rows: ReactNode[][];
+  /** Set for tables whose cell content (long source names, descriptions) genuinely
+   * needs room, so they get a horizontal scroll on narrow screens instead of
+   * cramming. The two short, numeric validation tables don't need this and size
+   * to fit a phone screen without scrolling. */
+  wide?: boolean;
 }) {
   return (
     <div className="overflow-x-auto rounded-xl border border-stone-200">
-      <table className="w-full min-w-[640px] text-left text-sm">
+      <table className={`w-full text-left text-sm ${wide ? "min-w-[640px]" : ""}`}>
         <caption className="sr-only">{caption}</caption>
         <thead className="bg-stone-50 text-xs uppercase tracking-wide text-stone-500">
           <tr>
