@@ -244,11 +244,14 @@ export default function MethodPage() {
         >
           <StateComparison />
           <p className="mt-6 max-w-prose text-stone-600">
-            The bill saving stays in a narrow band. The emissions cut does not, because it depends
-            on how clean each grid is. On the government&apos;s 2026 factors South Australia&apos;s
-            grid is the cleanest on the mainland and Victoria&apos;s the dirtiest, so the same heat
-            pump at the minimum compliant efficiency cuts most there and least here. Those are real
-            findings, not errors, and every cut grows as a grid gets cleaner or a unit gets better.
+            The bill saving changes by up to about a quarter between states. The emissions cut
+            changes far more, because it depends mostly on how clean each grid is and partly on
+            each state&apos;s upstream gas factor. On the government&apos;s 2026 factors South
+            Australia&apos;s grid is the cleanest in the country and Victoria&apos;s the dirtiest,
+            and Victoria&apos;s gas supply chain is also the cleanest of those published, so the same heat pump at the
+            minimum compliant efficiency cuts most in South Australia and least in Victoria. Those
+            are real findings, not errors. The gas switch&apos;s cut grows as a grid gets cleaner,
+            and every cut grows as a unit gets better.
           </p>
           <p className="mt-4 max-w-prose text-sm text-stone-500">
             Tariffs are each state&apos;s reference offer for its capital, retrieved from the AER on
@@ -396,23 +399,23 @@ function StateComparison() {
 
   return (
     <>
-      <div className="overflow-hidden rounded-xl border border-stone-200 bg-white">
+      <div className="overflow-x-auto rounded-xl border border-stone-200 bg-white">
         <table className="w-full text-sm">
           <caption className="sr-only">
             Two-person household, gas storage to heat pump, by state
           </caption>
           <thead className="bg-stone-50 text-left text-xs uppercase tracking-wide text-stone-500">
             <tr>
-              <th className="px-3 py-2 font-semibold sm:px-4">Gas to heat pump</th>
-              <th className="px-3 py-2 text-right font-semibold sm:px-4">Saving a year</th>
-              <th className="px-3 py-2 text-right font-semibold sm:px-4">Payback</th>
-              <th className="px-3 py-2 text-right font-semibold sm:px-4">Emissions cut</th>
+              <th className="px-2 py-2 font-semibold sm:px-4">Gas to heat pump</th>
+              <th className="px-2 py-2 text-right font-semibold sm:px-4">Saving a year</th>
+              <th className="px-2 py-2 text-right font-semibold sm:px-4">Payback</th>
+              <th className="px-2 py-2 text-right font-semibold sm:px-4">Emissions cut</th>
             </tr>
           </thead>
           <tbody>
             {rows.map(({ code, m, gas }) => (
               <tr key={code} className="border-t border-stone-100">
-                <td className="px-3 py-2 sm:px-4">
+                <td className="px-2 py-2 sm:px-4">
                   <span className="text-stone-900">{code}</span>
                   <span className="block text-xs text-stone-500">
                     grid {m.constants.efElectricity} kg/kWh
@@ -420,13 +423,13 @@ function StateComparison() {
                 </td>
                 {gas ? (
                   <>
-                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                    <td className="px-2 py-2 text-right tabular-nums text-stone-900 sm:px-4">
                       {formatMoney(gas.saving.total)}
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                    <td className="px-2 py-2 text-right tabular-nums text-stone-900 sm:px-4">
                       {formatYears(gas.landlord.yearsOfTenantSaving)}
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                    <td className="px-2 py-2 text-right tabular-nums text-stone-900 sm:px-4">
                       {formatKg(gas.emissions.savedKgPerYear)}
                       <span className="block text-xs text-stone-500">
                         {Math.round(gas.emissions.percentCut)}%
@@ -434,7 +437,7 @@ function StateComparison() {
                     </td>
                   </>
                 ) : (
-                  <td colSpan={3} className="px-3 py-2 text-right text-stone-500 sm:px-4">
+                  <td colSpan={3} className="px-2 py-2 text-right text-stone-500 sm:px-4">
                     Not priced, see below
                   </td>
                 )}
@@ -449,7 +452,7 @@ function StateComparison() {
           {m.gasTariffMissing && `The regulator's tariff data has no residential gas offer for ${m.city}`}
           {m.gasTariffMissing && m.gasFactorMissing && ", and "}
           {m.gasFactorMissing &&
-            `${m.gasTariffMissing ? "the" : "The"} government's gas emissions factor there is confidential`}
+            `${m.gasTariffMissing ? "the" : "The"} government does not publish an upstream (supply chain) emissions factor for gas there`}
           , so we price nothing rather than guess. Its electric tank case is priced: a heat pump
           saves {formatMoney(tank.saving.total)} a year and cuts{" "}
           {formatKg(tank.emissions.savedKgPerYear)} ({Math.round(tank.emissions.percentCut)}%).

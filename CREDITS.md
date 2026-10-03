@@ -4,7 +4,7 @@ Climate Hack-tion 2026 · Team **PPC Fans** · Track: **Electrification**
 
 Rule 9 requires everything disclosed — libraries, APIs, datasets, assets, paid tools, and AI
 assistance. This file was created in the first commit and is updated as things are added.
-**Last updated: 2026-10-02.**
+**Last updated: 2026-10-03.**
 
 ---
 
@@ -28,9 +28,9 @@ Emission factors. Published August 2026.
 - **Table 1 (p.10)** — NSW/ACT purchased electricity: scope 2 = **0.60**, scope 3 = **0.07** kg CO₂-e/kWh.
 - **Table 5 (p.19)** — natural gas distributed in a pipeline, scope 1 combined = **51.53** kg CO₂-e/GJ.
 - **Table 6 (p.20)** — NSW/ACT metro, natural gas scope 3 = **13.1** kg CO₂-e/GJ.
-- **Other states**, Table 1 electricity scope 2 + scope 3 (kg CO₂-e/kWh) and Table 6 natural gas metro scope 3 (kg CO₂-e/GJ): Victoria **0.74 + 0.11**, **4.0**; Queensland **0.65 + 0.11**, **8.8**; South Australia **0.21 + 0.03**, **10.7**; Tasmania **0.23 + 0.03**, gas **"C" (confidential)**; ACT shares the NSW rows. Recorded in `data/constants_<state>.json`.
-- **How these were read:** dcceew.gov.au refuses connections from the build environment, so the values come from the department's official XLSX of the same publication, via the Internet Archive's byte-for-byte capture (2026-09-10) of `https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx`. A text dump is kept at `data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt`. Three independent transcriptions agreed, and an adversarial audit checked metro vs non-metro, scope 2 vs scope 3, units and the ACT mapping. The Victorian values match the ones first transcribed by hand from the PDF.
-- Transcribed by hand from the published PDF. No PDF parser was written.
+- NSW/ACT values above: transcribed by hand from the published PDF. No PDF parser was written.
+- **Other states**, Table 1 electricity scope 2 + scope 3 (kg CO₂-e/kWh) and Table 6 natural gas metro scope 3 (kg CO₂-e/GJ): Victoria **0.74 + 0.11**, **4.0**; Queensland **0.65 + 0.11**, **8.8**; South Australia **0.21 + 0.03**, **10.7**; Tasmania **0.23 + 0.03**, gas **"C"** (no value published); ACT shares the NSW rows. Recorded in `data/constants_<state>.json`.
+- **How the other-state values were read:** dcceew.gov.au refuses connections from the build environment, so the values come from the department's official XLSX of the same publication, via the Internet Archive's byte-for-byte capture (2026-09-10) of `https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx`. A text dump, produced with openpyxl in the GitHub Actions workflow, is kept at `data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt`. Three independent transcriptions agreed, and an adversarial audit checked metro vs non-metro, scope 2 vs scope 3, units and the ACT mapping. The Victorian values match the ones first transcribed by hand from the PDF.
 - **Licence: CC BY 4.0** (stated on p.2 of the document). Attribution as required: *DCCEEW 2026, Australian National Greenhouse Accounts Factors, Department of Climate Change, Energy, the Environment and Water, Canberra, August. CC BY 4.0.*
 
 ### DCCEEW / E3 Program — Decision Regulation Impact Statement: Heat Pump Water Heaters (April 2026)
@@ -72,6 +72,8 @@ Hot water demand assumption.
 
 ## Frameworks, services and libraries
 - **Python 3.14** (standard library only — `json`, `urllib`, `os`, `sys`, `time`) — data fetching, model reference implementation, validation.
+- **GitHub Actions** (`.github/workflows/fetch-vic-tariffs.yml`, run manually) — fetches the CDR tariffs for every state outside NSW and keeps text copies of source documents, because government hosts refuse connections from the build environment. Its source-text step uses **openpyxl** (MIT licence) to dump the DCCEEW factors spreadsheet to text and **pdftotext** from **poppler-utils** (GPL) to dump source PDFs to text. Neither runs in the app or the model; they only produce the files in `data/source_text/`.
+- **Internet Archive (web.archive.org)** — byte-for-byte captures of official government documents whose own hosts refuse the build environment. Every such document is cited by its official URL, with the capture date.
 - **Next.js 16** (App Router) — MIT licence. The frontend framework; `src/engine.ts` and `src/letter.ts` were dropped in unmodified.
 - **React 19** / **react-dom 19** — MIT licence. UI runtime Next.js is built on.
 - **TypeScript 5** — Apache 2.0 licence. Type-checks the whole frontend, including the adapter between `data/*.json` and `engine.ts`'s types.
@@ -80,7 +82,8 @@ Hot water demand assumption.
 - **@types/node, @types/react, @types/react-dom** — MIT licence. Type definitions only, not shipped.
 - **Vercel** — hosting, zero-config deploy from this repo.
 
-> No third-party Python packages were used. No PDF parsing library was used. No database, auth
+> The model and the app use no third-party Python packages and no PDF parsing library; openpyxl
+> and pdftotext only produce the text copies in `data/source_text/`, as above. No database, auth
 > provider, state-management library or UI component library was added to the frontend — this
 > was a deliberate scope decision, not an oversight.
 

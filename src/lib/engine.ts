@@ -356,9 +356,26 @@ export function calculate(c: Constants, t: Tariffs, input: Inputs): Result {
     );
   }
   if (!isGas) {
-    warnings.push(
-      `An electric storage tank is the most carbon-intensive way to heat water on the ${input.gridName ?? "NSW"} grid, so the emissions saving here is large. The bill saving is smaller than a gas switch though, because there is no gas supply charge to shed.`
-    );
+    // Only claim the tank is the dirtiest option where the factors say so. On a clean grid
+    // (South Australia) a tank emits less than gas storage would; where the gas factor is
+    // not published (Tasmania, efGas = NaN) no comparison with gas, or about the grid, is made.
+    const grid = input.gridName ?? "NSW";
+    const tankKg = D_res * c.efElectricity;
+    const gasKg = D_gas * c.efGas;
+    const noSupply = "because there is no gas supply charge to shed.";
+    if (Number.isFinite(gasKg) && tankKg > gasKg) {
+      warnings.push(
+        `An electric storage tank is the most carbon-intensive way to heat water on the ${grid} grid, so the emissions saving here is large. The bill saving is smaller than a gas switch though, ${noSupply}`
+      );
+    } else if (Number.isFinite(gasKg)) {
+      warnings.push(
+        `On the ${grid} grid an electric storage tank emits less than gas storage would for the same hot water, so switching it cuts less than a gas switch does. The bill saving is smaller than a gas switch too, ${noSupply}`
+      );
+    } else {
+      warnings.push(
+        `No upstream gas emissions factor is published for this state, so we do not compare an electric tank with gas here. The bill saving comes from electricity alone, ${noSupply}`
+      );
+    }
   }
 
   // Section 7: emissions. Gas uses EF per MJ; electricity uses EF per kWh.

@@ -170,8 +170,8 @@ export default function Wizard() {
       {currentStep === "lastGas" && (
         <Step title="Is hot water your only gas appliance?" onBack={goBack}>
           <p className="mb-4 text-sm text-stone-500">
-            This decides whether the gas daily supply charge disappears if you switch. It&apos;s
-            worth 44% of the modelled saving.
+            This decides whether the gas daily supply charge disappears if you switch, which
+            is a large part of the saving.
           </p>
           <ChoiceGrid
             options={[

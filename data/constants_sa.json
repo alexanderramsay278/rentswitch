@@ -42,7 +42,7 @@
       "electricity": "SA Power Networks",
       "gas": "Australian Gas Networks (Metro)"
     },
-    "timeOfUse": "Three rates: peak $0.511107/kWh 06:00 to 09:59 and 16:00 to 23:59, off-peak $0.295914/kWh 00:00 to 05:59, shoulder $0.154936/kWh 10:00 to 15:59. At 03:00 the off-peak rate applies. The cheaper midday rate is not used, which keeps the saving conservative.",
+    "timeOfUse": "Three rates: peak $0.511107/kWh 06:00 to 09:59 and 16:00 to 23:59, off-peak $0.295914/kWh 00:00 to 05:59, shoulder $0.154936/kWh 10:00 to 15:59. At 03:00 the off-peak rate applies. The cheaper midday rate is not used. The same 03:00 rate prices both an existing electric tank and the heat pump, so this choice lowers the gas switch saving and raises the electric tank saving compared with midday pricing.",
     "gasBlockPeriod": "Daily (P1D) blocks: 109.589 MJ at $0.05648/MJ, then $0.03166/MJ.",
     "retrieved": "2026-10-03",
     "source": "AER Consumer Data Right, Energy Product Reference Data API, postcode 5000. Raw responses in data/cdr_raw/sa/ (scripts/fetch_cdr_states.py).",

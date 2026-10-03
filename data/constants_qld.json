@@ -42,7 +42,7 @@
       "electricity": "Energex",
       "gas": "Australian Gas Networks (Brisbane)"
     },
-    "timeOfUse": "Three rates: peak $0.434416/kWh 16:00 to 20:59, off-peak $0.063498/kWh 11:00 to 15:59, shoulder $0.22996/kWh 21:00 to 10:59. At 03:00 the shoulder rate applies. The cheaper midday rate is not used, which keeps the saving conservative.",
+    "timeOfUse": "Three rates: peak $0.434416/kWh 16:00 to 20:59, off-peak $0.063498/kWh 11:00 to 15:59, shoulder $0.22996/kWh 21:00 to 10:59. At 03:00 the shoulder rate applies. The cheaper midday rate is not used. The same 03:00 rate prices both an existing electric tank and the heat pump, so this choice lowers the gas switch saving and raises the electric tank saving compared with midday pricing.",
     "gasBlockPeriod": "One daily (P1D) block at $0.0612/MJ.",
     "retrieved": "2026-10-03",
     "source": "AER Consumer Data Right, Energy Product Reference Data API, postcode 4000. Raw responses in data/cdr_raw/qld/ (scripts/fetch_cdr_states.py).",

@@ -18,7 +18,7 @@
       "licence": "CC BY 4.0"
     },
     "EF_gas_kgCO2e_per_MJ": null,
-    "_gas_not_modelled": "Table 6 marks Tasmania's scope 3 natural gas factor 'C' (confidential), and no residential gas standing or regulated offer covering postcode 7000 appears in the CDR data. Gas hot water is therefore not priced for Tasmania."
+    "_gas_not_modelled": "Table 6 gives 'C' instead of a value for Tasmania's scope 3 natural gas factor, so no upstream gas factor is published, and no residential gas standing or regulated offer covering postcode 7000 appears in the CDR data. Gas hot water is therefore not priced for Tasmania."
   },
   "tariffs": {
     "electricityPlanId": "AUR1119317RRE1@EME",

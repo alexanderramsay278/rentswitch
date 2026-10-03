@@ -31,6 +31,12 @@ ROUTES = [
     f"/results?occ=2&state=TAS&hw=gas&lastGas=yes&cooktop=electric&{Q}",
     f"/results?occ=2&state=TAS&hw=unsure&lastGas=yes&cooktop=electric&{Q}",
 ]
+# Text only the current build serves, so a pass proves the live site is this version.
+MUST_CONTAIN = {
+    f"/results?occ=2&state=QLD&hw=gas&lastGas=yes&cooktop=electric&{Q}": "not adjusted them for Brisbane",
+    f"/results?occ=2&state=TAS&hw=gas&lastGas=yes&cooktop=electric&{Q}": "We can't price gas hot water in Tasmania",
+    "/method": "The same switch, a different grid",
+}
 # Accuracy claims the validation section must never make.
 BANNED = [
     r"\d+(\.\d+)?\s*%\s*accura", r"accura\w*\s+(of|to|within)\s+\d", r"tested to", r"validated at",
@@ -56,9 +62,12 @@ def main() -> int:
         t = text(body)
         dashes = [m.group(0) for m in re.finditer(r".{30}[–—].{30}", t)]
         claims = [m.group(0) for p in BANNED for m in re.finditer(r".{40}" + p + r".{20}", t, re.I)]
-        ok = status == 200 and not dashes and not claims
+        expected = MUST_CONTAIN.get(route)
+        missing = bool(expected) and expected not in t
+        ok = status == 200 and not dashes and not claims and not missing
         failures += not ok
-        print(f"{'OK  ' if ok else 'FAIL'} {status} dashes={len(dashes)} claims={len(claims)} {route}")
+        print(f"{'OK  ' if ok else 'FAIL'} {status} dashes={len(dashes)} claims={len(claims)} {route}"
+              + (f"  MISSING: {expected!r}" if missing else ""))
         for d in dashes + claims:
             print(f"       {d}")
     print(f"\n{len(ROUTES) - failures}/{len(ROUTES)} routes clean")

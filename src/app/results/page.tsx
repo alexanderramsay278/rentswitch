@@ -70,7 +70,7 @@ export default async function ResultsPage({
       model.gasTariffMissing &&
         `the regulator's tariff data has no residential gas offer for ${model.city}`,
       model.gasFactorMissing &&
-        `the government's emissions factor for gas in ${model.name} is confidential`,
+        `the government does not publish an upstream (supply chain) emissions factor for gas in ${model.name}`,
     ].filter(Boolean);
     return (
       <Shell>
@@ -215,7 +215,7 @@ export default async function ResultsPage({
                   />
                 </dl>
                 <p className="mt-3 max-w-prose text-xs text-stone-500">
-                  The supply charge comes from the same {model.name} standing offer as everything
+                  The supply charge comes from the same {model.city} standing offer as everything
                   else here. The cooktop&apos;s own running cost is not priced: we could not find a
                   government or standards figure for cooktop efficiency that we would stand behind,
                   so we leave it out rather than guess.
@@ -381,7 +381,9 @@ export default async function ResultsPage({
                       value={`${formatMoney(result.cost.gasSupplyPerYear)}${
                         result.cost.gasSupplyPerYear === 0
                           ? " (other gas appliances keep this charge)"
-                          : ", the single largest piece of the saving"
+                          : result.saving.supply > result.saving.usage
+                            ? ", the single largest piece of the saving"
+                            : ""
                       }`}
                     />
                   )}
@@ -544,7 +546,7 @@ function BigStat({
     <div className="rounded-xl bg-white p-5 text-center shadow-sm ring-1 ring-stone-200 sm:p-6">
       <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">{eyebrow}</p>
       <p
-        className={`mt-2 text-4xl font-bold tabular-nums sm:text-5xl ${
+        className={`mt-2 text-4xl font-bold tabular-nums sm:text-3xl lg:text-5xl ${
           accent ? "text-emerald-700" : "text-stone-900"
         }`}
       >
@@ -673,9 +675,18 @@ function GridNote({ state }: { state: ModelledState }) {
   const dirtier = ef > nsw.constants.efElectricity;
   const up = here.gasUpstreamKgPerGJ;
   const nswUp = nsw.gasUpstreamKgPerGJ;
-  const gasClause =
-    up !== null && nswUp !== null && up !== nswUp
-      ? `, and its gas supply chain is ${up < nswUp ? "cleaner" : "dirtier"}, at ${up} kg CO₂e per GJ upstream against ${nswUp}`
+  // A cleaner gas supply chain makes today's gas system cleaner, which SHRINKS the cut; a
+  // dirtier one grows it. Join it to the grid reason only when both push the same way.
+  const gasDiffers = up !== null && nswUp !== null && up !== nswUp;
+  const cleanerGas = up !== null && nswUp !== null && up < nswUp;
+  const gasFigures = `${up} kg CO₂e per GJ upstream against ${nswUp}`;
+  const sameWay = gasDiffers && cleanerGas === dirtier;
+  const gasClause = sameWay
+    ? `, and its gas supply chain is ${cleanerGas ? "cleaner" : "dirtier"}, at ${gasFigures}`
+    : "";
+  const gasAside =
+    gasDiffers && !sameWay
+      ? ` Its gas supply chain is ${cleanerGas ? "also a little cleaner" : "a little dirtier"}, at ${gasFigures}, which on its own would ${cleanerGas ? "shrink" : "grow"} the cut, but the grid matters more.`
       : "";
   const possessive = `${here.name.charAt(0).toUpperCase()}${here.name.slice(1)}'s`;
 
@@ -687,7 +698,7 @@ function GridNote({ state }: { state: ModelledState }) {
         </span>{" "}
         {possessive} grid is {dirtier ? "dirtier" : "cleaner"} than New South Wales&apos;s, at {ef}{" "}
         kg CO₂e per kWh against {nsw.constants.efElectricity}
-        {gasClause}.{" "}
+        {gasClause}.{gasAside}{" "}
         {dirtier
           ? "So the same switch abates less here. That is what the government factors say, not a fault in the sum. We also price the heat pump at the minimum efficiency a compliant unit must reach. A more efficient unit, or a cleaner grid over time, would make the cut bigger. The bill saving holds either way."
           : "So the same switch abates more here, because every kilowatt hour the heat pump draws carries less carbon. That is what the government factors say. The bill saving does not depend on it."}

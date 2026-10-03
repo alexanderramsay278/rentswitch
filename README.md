@@ -40,13 +40,16 @@ data, not a rewrite.
 | ACT | $710 | 2.8 yrs | 266 kg (37%) | 0.67 |
 | Tasmania | not priced | | | 0.26 |
 
-**The finding.** The bill saving barely moves between states; the emissions cut moves a lot,
-because it depends on the grid. At the minimum compliant heat pump efficiency the same switch
+**The finding.** The bill saving changes by up to about a quarter between states, from $703 a
+year in NSW to $875 in Queensland. The emissions cut changes far more, from 6% in Victoria to 76%
+in South Australia, because it depends mostly on the grid and partly on each state's upstream
+gas factor. At the minimum compliant heat pump efficiency the same switch
 cuts three quarters of the hot water's emissions in South Australia and six per cent in
 Victoria. That is what the government factors say, and we report it rather than hide it.
 
 **Tasmania's gas case is not priced.** No residential gas standing or regulated offer covers
-Hobart in the CDR data, and DCCEEW marks Tasmania's scope 3 gas factor "C" (confidential).
+Hobart in the CDR data, and DCCEEW's Table 6 gives "C" instead of a value for Tasmania's
+scope 3 gas factor, so no upstream gas factor is published.
 Its electric tank case is priced: $160/yr saved and 268 kg CO₂e/yr cut (60%).
 
 **How each state's data was chosen** (all recorded in `data/constants_<state>.json`):
@@ -61,8 +64,9 @@ Its electric tank case is priced: $160/yr saved and 268 kg CO₂e/yr cut (60%).
   archived copy, transcribed three times independently and audited. ACT shares NSW's rows.
 - **Efficiencies:** the Sydney-climate (Zone 3) values in every state, stated on every result
   outside NSW. Not adjusted for colder or warmer climates.
-- **Rebates:** zero everywhere. Outside NSW the letter names only Small scale Technology
-  Certificates, a Commonwealth scheme, and drops the NSW tenancy-law claim.
+- **Rebates:** zero everywhere. Outside NSW the only scheme the letter says applies is Small
+  scale Technology Certificates, a Commonwealth scheme (the Victorian letter also says Solar
+  Homes does not cover rentals), and the letter drops the NSW tenancy-law claim.
 
 **P0 covers hot water: gas storage → heat pump.** That is the biggest household energy load,
 the best-documented, and the one with a real rebate attached. Everything else is in

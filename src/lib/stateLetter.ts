@@ -20,8 +20,9 @@ const NSW_REBATE_MARKER = "a discount under the NSW Energy Savings Scheme";
 const NSW_TARIFF_SOURCE =
   "Tariffs: AER Consumer Data Right, AGL Residential Standing Offer (the regulated reference offer), retrieved 2026-10-02.";
 
-const STC_ONLY = (name: string) =>
-  `Those numbers assume no rebate at all, which is the cautious way to put it. Small scale Technology Certificates are a Commonwealth scheme, so they apply in ${name} too, and an accredited installer normally takes them straight off the invoice. I haven't counted any ${name} scheme on top, because I haven't checked what applies to a rental here. I haven't put a figure on any of it, because the amount depends on the model you pick and who fits it.`;
+/** `place` reads after "in" ("the ACT"); `adjective` reads before "scheme" ("ACT"). */
+const STC_ONLY = (place: string, adjective: string) =>
+  `Those numbers assume no rebate at all, which is the cautious way to put it. Small scale Technology Certificates are a Commonwealth scheme, so they apply in ${place} too, and an accredited installer normally takes them straight off the invoice. I haven't counted any ${adjective} scheme on top, because I haven't checked what applies to a rental here. I haven't put a figure on any of it, because the amount depends on the model you pick and who fits it.`;
 
 const STATE_LETTER: Record<Exclude<ModelledState, "NSW">, { rebate: string; tariffSource: string }> = {
   VIC: {
@@ -31,22 +32,22 @@ const STATE_LETTER: Record<Exclude<ModelledState, "NSW">, { rebate: string; tari
       "Tariffs: AER Consumer Data Right, AGL Residential Standing Offer for Melbourne postcode 3000 (CitiPower and Australian Gas Networks), retrieved 2026-10-03.",
   },
   QLD: {
-    rebate: STC_ONLY("Queensland"),
+    rebate: STC_ONLY("Queensland", "Queensland"),
     tariffSource:
       "Tariffs: AER Consumer Data Right, AGL Residential Standing Offer for Brisbane postcode 4000 (Energex and Australian Gas Networks), retrieved 2026-10-03.",
   },
   SA: {
-    rebate: STC_ONLY("South Australia"),
+    rebate: STC_ONLY("South Australia", "South Australian"),
     tariffSource:
       "Tariffs: AER Consumer Data Right, AGL Residential Standing Offer for Adelaide postcode 5000 (SA Power Networks and Australian Gas Networks), retrieved 2026-10-03.",
   },
   ACT: {
-    rebate: STC_ONLY("the ACT"),
+    rebate: STC_ONLY("the ACT", "ACT"),
     tariffSource:
       "Tariffs: AER Consumer Data Right, ActewAGL standing offers for Canberra postcode 2600 (Evoenergy), retrieved 2026-10-03.",
   },
   TAS: {
-    rebate: STC_ONLY("Tasmania"),
+    rebate: STC_ONLY("Tasmania", "Tasmanian"),
     tariffSource:
       "Tariffs: AER Consumer Data Right, Aurora Energy Residential Peak and Off-Peak regulated offer for Hobart postcode 7000 (TasNetworks), retrieved 2026-10-03.",
   },

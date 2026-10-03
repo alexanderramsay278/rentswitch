@@ -8,7 +8,8 @@
  *   - Heat pump rate: the rate in force at 03:00 on a weekday. A heat pump on a timer runs
  *     overnight. This reproduces the NSW off-peak rate and the Victorian overnight rate
  *     exactly. In Queensland and South Australia a cheaper midday rate exists; we do not
- *     use it, which keeps the saving conservative.
+ *     use it. Because the same rate prices an existing electric tank and the heat pump, this
+ *     lowers the gas switch saving and raises the electric tank saving against midday pricing.
  *   - Peak: the dearest time-of-use rate on the plan.
  *   - Gas blocks: converted to daily volumes. Two-monthly blocks divide by 60, which matches
  *     a retailer's own daily blocks on the same Victorian network exactly; other periods
