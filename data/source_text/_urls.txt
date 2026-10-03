@@ -1,7 +1,8 @@
 # One URL per line. The "sources" task of .github/workflows/fetch-vic-tariffs.yml downloads each and commits a text copy.
 # Government hosts block overseas runners, so documents are taken from the Internet Archive's
 # byte-for-byte capture of the official URL (web.archive.org/web/<year>id_/<official url>).
-https://web.archive.org/web/2026id_/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf
+https://web.archive.org/web/20260910105539id_/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx
+https://web.archive.org/web/20260910105525id_/https://www.dcceew.gov.au/climate-change/publications/national-greenhouse-accounts-factors-2026
 https://web.archive.org/web/2026id_/https://www.energyrating.gov.au/sites/default/files/2026-04/DRIS%20Energy%20efficiency%20policy%20options%20for%20heat%20pump%20water%20heaters.pdf
 https://web.archive.org/web/2026id_/https://www.energyrating.gov.au/sites/default/files/2022-12/report-residential-baseline-study-for-australia-2000-2030.pdf
 https://web.archive.org/web/2026id_/https://www.energy.vic.gov.au/__data/assets/pdf_file/0033/783573/Victorian-Energy-Upgrades-Specifications-2018-Version-23.0.pdf

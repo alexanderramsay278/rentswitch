@@ -8,6 +8,9 @@ on:
       task:
         description: "tariffs: re-fetch Victorian tariffs. states: fetch QLD, SA, ACT, TAS tariffs. sources: text copies of data/source_text/_urls.txt. live: check the deployed site"
         default: sources
+      states:
+        description: "states task only: which states to fetch"
+        default: "qld sa act tas"
 
 permissions:
   contents: write
@@ -24,13 +27,13 @@ jobs:
       - if: inputs.task == 'tariffs'
         run: python scripts/fetch_cdr_vic.py
       - if: inputs.task == 'states'
-        run: python scripts/fetch_cdr_states.py
+        run: python scripts/fetch_cdr_states.py ${{ inputs.states }}
       - if: inputs.task == 'lookup'
         run: scripts/archive_lookup.sh
       - if: inputs.task == 'live'
         run: python scripts/check_live.py
       - if: inputs.task == 'sources'
-        run: sudo apt-get install -y -q poppler-utils
+        run: sudo apt-get install -y -q poppler-utils && pip install -q openpyxl
       - name: Download and convert sources
         if: inputs.task == 'sources'
         run: |
@@ -40,6 +43,8 @@ jobs:
             if curl -fsSL --http1.1 --max-time 90 --retry 2 -A "$UA" -o /tmp/src "$url"; then
               if file /tmp/src | grep -q PDF; then
                 pdftotext -layout /tmp/src "data/source_text/$name.txt"
+              elif [ "${name##*.}" = "xlsx" ]; then
+                python3 -c "import openpyxl,sys;wb=openpyxl.load_workbook('/tmp/src',data_only=True);[print('=== SHEET',ws.title) or [print('\t'.join('' if c is None else str(c) for c in r)) for r in ws.iter_rows(values_only=True) if any(c is not None for c in r)] for ws in wb.worksheets]" > "data/source_text/$name.txt"
               else
                 python3 -c "import html,re,sys;t=open('/tmp/src',encoding='utf-8',errors='ignore').read();t=re.sub(r'(?s)<(script|style).*?</\1>','',t);t=re.sub(r'<[^>]+>','\n',t);t=html.unescape(t);print(re.sub(r'\n\s*\n+','\n',t))" > "data/source_text/$name.txt"
               fi

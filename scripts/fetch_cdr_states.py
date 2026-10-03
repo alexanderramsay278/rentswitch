@@ -9,7 +9,10 @@ Aurora in Tasmania) is not missed.
 
   Register  https://api.cdr.gov.au/cdr-register/v1/energy/data-holders/brands/summary (x-v: 1)
   LIST      {brand}/cds-au/v1/energy/plans  x-v: 1, RESIDENTIAL, postcode in includedPostcodes
-  DETAIL    {brand}/cds-au/v1/energy/plans/{planId}  x-v: 3, for STANDING plans only
+  DETAIL    {brand}/cds-au/v1/energy/plans/{planId}  x-v: 3, for STANDING and REGULATED plans
+            (Tasmania's reference offer is Aurora's REGULATED standard offer)
+
+Usage: python scripts/fetch_cdr_states.py [state ...]   (default: qld sa act tas)
 
 Output per state: data/cdr_raw/<state>/list_<brand>_<fuel>.json, detail_<planId>.json,
 _summary.json (reduced with the parsers in tools/extract_tariffs.py).
@@ -26,7 +29,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "tools"))
 from extract_tariffs import parse_electricity, parse_gas  # noqa: E402
 
-STATES = {"qld": "4000", "sa": "5000", "act": "2600", "tas": "7000"}
+ALL_STATES = {"qld": "4000", "sa": "5000", "act": "2600", "tas": "7000"}
+STATES = {k: v for k, v in ALL_STATES.items() if k in (sys.argv[1:] or ALL_STATES)}
+REFERENCE_TYPES = ("STANDING", "REGULATED")
 FUELS = ["ELECTRICITY", "GAS"]
 REGISTER = "https://api.cdr.gov.au/cdr-register/v1/energy/data-holders/brands/summary"
 AER = "https://cdr.energymadeeasy.gov.au/{slug}/cds-au/v1/energy/plans"
@@ -118,7 +123,7 @@ def main():
                         | {"distributors": (p.get("geography") or {}).get("distributors")} for p in matches]
                 with open(os.path.join(d, f"list_{slug}_{fuel.lower()}.json"), "w") as fh:
                     json.dump(slim, fh, indent=2)
-                standing = [p for p in matches if p.get("type") == "STANDING"]
+                standing = [p for p in matches if p.get("type") in REFERENCE_TYPES]
                 print(f"{state} {slug}/{fuel}: {len(matches)} plans, {len(standing)} standing")
                 for p in standing:
                     pid = p["planId"]
@@ -144,7 +149,7 @@ def main():
                 "name": "AER Consumer Data Right - Energy Product Reference Data API",
                 "headers": {"list": "x-v: 1", "detail": "x-v: 3"},
                 "retrieved": time.strftime("%Y-%m-%d"),
-                "filter": f"customerType=RESIDENTIAL, postcode {STATES[state]}, effective=CURRENT, type=STANDING",
+                "filter": f"customerType=RESIDENTIAL, postcode {STATES[state]}, effective=CURRENT, type STANDING or REGULATED",
                 "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day",
             }, "plans": recs}, fh, indent=2)
         print(f"{state}: {len(recs)} standing offers summarised")
