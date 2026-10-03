@@ -98,89 +98,114 @@ export const tariffs: Tariffs = {
 };
 
 // ---------------------------------------------------------------------------
-// Victoria. Same engine, same constants, VIC emissions factors and VIC tariffs.
-// See data/constants_vic.json for every choice made here and why.
+// The other states. Same engine and same constants; each state swaps in its own emissions
+// factors (DCCEEW NGA Factors 2026) and its own reference tariffs (AER CDR, capital-city
+// postcode), read straight from the raw API responses by src/lib/cdr.ts. Every choice and
+// its source is recorded in data/constants_<state>.json.
 // ---------------------------------------------------------------------------
 
+import { electricityFromCdr, gasFromCdr, type CdrPlanDetail } from "./cdr.ts";
 import rawVic from "../../data/constants_vic.json" with { type: "json" };
-import vicElectricityDetail from "../../data/cdr_raw/vic/detail_AGD790710SR_at_VEC.json" with { type: "json" };
-import vicGasDetail from "../../data/cdr_raw/vic/detail_AGD790588SR_at_VEC.json" with { type: "json" };
+import rawQld from "../../data/constants_qld.json" with { type: "json" };
+import rawSa from "../../data/constants_sa.json" with { type: "json" };
+import rawAct from "../../data/constants_act.json" with { type: "json" };
+import rawTas from "../../data/constants_tas.json" with { type: "json" };
+import vicElectricity from "../../data/cdr_raw/vic/detail_AGD790710SR_at_VEC.json" with { type: "json" };
+import vicGas from "../../data/cdr_raw/vic/detail_AGD790588SR_at_VEC.json" with { type: "json" };
+import qldElectricity from "../../data/cdr_raw/qld/detail_AGL1067193SRE2_at_EME.json" with { type: "json" };
+import qldGas from "../../data/cdr_raw/qld/detail_AGL15285SRG33_at_EME.json" with { type: "json" };
+import saElectricity from "../../data/cdr_raw/sa/detail_AGL1189631SRE1_at_EME.json" with { type: "json" };
+import saGas from "../../data/cdr_raw/sa/detail_AGL15384SRG33_at_EME.json" with { type: "json" };
+import actElectricity from "../../data/cdr_raw/act/detail_ACT62936SRE15_at_EME.json" with { type: "json" };
+import actGas from "../../data/cdr_raw/act/detail_ACT64470SRG12_at_EME.json" with { type: "json" };
+import tasElectricity from "../../data/cdr_raw/tas/detail_AUR1119317RRE1_at_EME.json" with { type: "json" };
 
-export const vicConstants: Constants = {
-  ...constants,
-  efElectricity: rawVic.emissions.EF_electricity_VIC_kgCO2e_per_kWh.value,
-  efGas: rawVic.emissions.EF_gas_VIC_kgCO2e_per_MJ.value,
-};
-
-interface CdrRate {
-  unitPrice: string;
-  volume?: number;
-}
-
-function vicElectricity() {
-  const d = vicElectricityDetail.data;
-  if (d.planId !== rawVic.tariffs.electricityPlanId) {
-    throw new Error(`Rentswitch adapter: VIC electricity detail is not ${rawVic.tariffs.electricityPlanId}.`);
-  }
-  const period = d.electricityContract.tariffPeriod[0];
-  // Both windows are typed SHOULDER in the CDR response. The dearer one (15:00 to 21:00)
-  // is the peak, the other covers every remaining hour and is what a timer can target.
-  const prices = period.timeOfUseRates.map((t) => Number((t.rates as CdrRate[])[0].unitPrice));
-  if (prices.length !== 2) {
-    throw new Error("Rentswitch adapter: expected two time of use rates on the VIC plan.");
-  }
-  const cl = d.electricityContract.controlledLoad[0].singleRate;
-  return {
-    peak: Math.max(...prices),
-    offPeak: Math.min(...prices),
-    controlledLoad: Number((cl.rates as CdrRate[])[0].unitPrice),
-    electricitySupply: Number(period.dailySupplyCharge),
-    // The plan lists no separate controlled load supply charge.
-    controlledLoadSupply: 0,
-  };
-}
-
-// AGL publishes VIC gas blocks per two-month billing period. 60 days per period
-// reproduces EnergyAustralia's daily blocks on the same network exactly.
-const VIC_GAS_DAYS_PER_P2M = 60;
-
-function vicGas() {
-  const d = vicGasDetail.data;
-  if (d.planId !== rawVic.tariffs.gasPlanId) {
-    throw new Error(`Rentswitch adapter: VIC gas detail is not ${rawVic.tariffs.gasPlanId}.`);
-  }
-  const period = d.gasContract.tariffPeriod[0];
-  if (period.singleRate.period !== "P2M") {
-    throw new Error("Rentswitch adapter: VIC gas blocks are no longer two-monthly. Recheck the conversion.");
-  }
-  const blocks: GasBlock[] = (period.singleRate.rates as CdrRate[]).map((r) => ({
-    volumeMJ: r.volume === undefined ? undefined : r.volume / VIC_GAS_DAYS_PER_P2M,
-    unitPrice: Number(r.unitPrice),
-  }));
-  return { gasBlocks: blocks, gasSupply: Number(period.dailySupplyCharge) };
-}
-
-export const vicTariffs: Tariffs = { ...vicElectricity(), ...vicGas() };
-
-// ---------------------------------------------------------------------------
-// One lookup for the pages.
-// ---------------------------------------------------------------------------
-
-export type ModelledState = "NSW" | "VIC";
+export type ModelledState = "NSW" | "VIC" | "QLD" | "SA" | "ACT" | "TAS";
 
 export interface StateModel {
   constants: Constants;
   tariffs: Tariffs;
   /** As used in a sentence: "on the NSW grid", "on the Victorian grid". */
   gridName: string;
+  /** As used in a sentence: "New South Wales", "the ACT". */
   name: string;
+  /** Capital city the tariffs were taken for. */
+  city: string;
+  /**
+   * False when gas hot water cannot be priced in this state (no reference gas offer, or no
+   * published emissions factor). The results page must say so rather than show a number.
+   */
+  hasGas: boolean;
+  /** Why hasGas is false, for the page to state plainly. */
+  gasTariffMissing: boolean;
+  gasFactorMissing: boolean;
+  /** Scope 3 (upstream) natural gas factor, kg CO2-e/GJ, DCCEEW Table 6 metro. */
+  gasUpstreamKgPerGJ: number | null;
+}
+
+interface RawState {
+  name: string;
+  gridName: string;
+  city: string;
+  emissions: {
+    EF_electricity_kgCO2e_per_kWh: { value: number };
+    EF_gas_kgCO2e_per_MJ: { value: number; scope3_kgCO2e_per_GJ: number } | null;
+  };
+  tariffs: { electricityPlanId: string; gasPlanId: string | null };
+}
+
+function cdrState(raw: RawState, electricity: unknown, gas: unknown | null): StateModel {
+  const e = electricity as CdrPlanDetail;
+  const g = gas as CdrPlanDetail | null;
+  if (e.data.planId !== raw.tariffs.electricityPlanId) {
+    throw new Error(`Rentswitch adapter: ${raw.name} electricity detail is not ${raw.tariffs.electricityPlanId}.`);
+  }
+  if ((g?.data.planId ?? null) !== raw.tariffs.gasPlanId) {
+    throw new Error(`Rentswitch adapter: ${raw.name} gas detail does not match ${raw.tariffs.gasPlanId}.`);
+  }
+  const efGas = raw.emissions.EF_gas_kgCO2e_per_MJ;
+  const hasGas = g !== null && efGas !== null;
+  return {
+    constants: {
+      ...constants,
+      efElectricity: raw.emissions.EF_electricity_kgCO2e_per_kWh.value,
+      // NaN, not a plausible number, so an unpriced gas case can never render as a figure.
+      efGas: efGas?.value ?? NaN,
+    },
+    tariffs: {
+      ...electricityFromCdr(e),
+      ...(g ? gasFromCdr(g) : { gasBlocks: [], gasSupply: NaN }),
+    },
+    gridName: raw.gridName,
+    name: raw.name,
+    city: raw.city,
+    hasGas,
+    gasTariffMissing: g === null,
+    gasFactorMissing: efGas === null,
+    gasUpstreamKgPerGJ: efGas?.scope3_kgCO2e_per_GJ ?? null,
+  };
 }
 
 export const STATE_MODELS: Record<ModelledState, StateModel> = {
-  NSW: { constants, tariffs, gridName: "NSW", name: "New South Wales" },
-  VIC: { constants: vicConstants, tariffs: vicTariffs, gridName: "Victorian", name: "Victoria" },
+  NSW: {
+    constants,
+    tariffs,
+    gridName: "NSW",
+    name: "New South Wales",
+    city: "Sydney",
+    hasGas: true,
+    gasTariffMissing: false,
+    gasFactorMissing: false,
+    gasUpstreamKgPerGJ: rawConstants.emissions.EF_gas_NSW_kgCO2e_per_MJ.scope3_kgCO2e_per_GJ,
+  },
+  VIC: cdrState(rawVic, vicElectricity, vicGas),
+  QLD: cdrState(rawQld, qldElectricity, qldGas),
+  SA: cdrState(rawSa, saElectricity, saGas),
+  ACT: cdrState(rawAct, actElectricity, actGas),
+  TAS: cdrState(rawTas as RawState, tasElectricity, null),
 };
 
 export function isModelledState(code: string): code is ModelledState {
-  return code === "NSW" || code === "VIC";
+  // Own keys only: `in` would also accept inherited names such as "constructor".
+  return Object.hasOwn(STATE_MODELS, code);
 }

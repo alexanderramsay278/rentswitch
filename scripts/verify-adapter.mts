@@ -7,7 +7,7 @@
  * the adapter - never "fix" it by changing engine.ts or the data files.
  */
 import { calculate } from "../src/lib/engine.ts";
-import { constants, tariffs, STATE_MODELS } from "../src/lib/adapter.ts";
+import { constants, tariffs, STATE_MODELS, type ModelledState } from "../src/lib/adapter.ts";
 import { generateStateLetter } from "../src/lib/stateLetter.ts";
 
 function runCase(
@@ -74,13 +74,14 @@ const electricOk = runCase("Electric storage -> heat pump (D17)", "electric_tank
   essActivity: "D17",
 });
 
-// --- Victoria: same engine, VIC tariffs (AER CDR, postcode 3000) and VIC emissions factors ---
-function vicCase(
-  label: string,
+// --- Other states: same engine, each state's own tariffs (AER CDR, capital-city postcode)
+// and emissions factors (DCCEEW NGA Factors 2026). Two people, last gas appliance, $650/wk.
+function stateCase(
+  code: Exclude<ModelledState, "NSW">,
   hotWaterFuel: "gas" | "electric_tank",
   expected: { saving: number; incremental: number; savedKg: number; offer: string }
 ): boolean {
-  const m = STATE_MODELS.VIC;
+  const m = STATE_MODELS[code];
   const result = calculate(m.constants, m.tariffs, {
     occupants: 2,
     hotWaterFuel,
@@ -89,7 +90,7 @@ function vicCase(
     weeklyRent: 650,
     gridName: m.gridName,
   });
-  console.log(`\n-- ${label} --`);
+  console.log(`\n-- ${code} ${hotWaterFuel} -> heat pump --`);
   const checks: [string, number, number, number][] = [
     ["saving.total", result.saving.total, expected.saving, 1],
     ["landlord.incremental", result.landlord.incremental, expected.incremental, 0.01],
@@ -105,30 +106,33 @@ function vicCase(
   ok = ok && offerPass;
   console.log(`${offerPass ? "PASS" : "FAIL"}  deal.offer = ${result.deal?.offer} (expected ${expected.offer})`);
 
-  // The letter must not carry NSW-only law or rebate schemes into a Victorian letter.
-  const letter = generateStateLetter(result, m.constants, "VIC");
+  // The letter must not carry NSW-only law, rebate schemes or the NSW tariff line.
+  const letter = generateStateLetter(result, m.constants, code);
   for (const banned of ["NSW Energy Savings Scheme", "(NSW)", "retrieved 2026-10-02"]) {
     const pass = !letter.includes(banned);
     ok = ok && pass;
-    console.log(`${pass ? "PASS" : "FAIL"}  VIC letter has no "${banned}"`);
+    console.log(`${pass ? "PASS" : "FAIL"}  ${code} letter has no "${banned}"`);
   }
   return ok;
 }
 
-const vicGasOk = vicCase("VIC gas storage -> heat pump", "gas", {
-  saving: 798.8,
-  incremental: 2000,
-  savedKg: 40.3,
-  offer: "B",
-});
-const vicElectricOk = vicCase("VIC electric storage -> heat pump", "electric_tank", {
-  saving: 198.8,
-  incremental: 2400,
-  savedKg: 876.6,
-  offer: "B",
-});
+const others = [
+  stateCase("VIC", "gas", { saving: 798.8, incremental: 2000, savedKg: 40.3, offer: "B" }),
+  stateCase("VIC", "electric_tank", { saving: 198.8, incremental: 2400, savedKg: 876.6, offer: "B" }),
+  stateCase("QLD", "gas", { saving: 874.9, incremental: 2000, savedKg: 156.2, offer: "B" }),
+  stateCase("QLD", "electric_tank", { saving: 237.2, incremental: 2400, savedKg: 783.8, offer: "B" }),
+  stateCase("SA", "gas", { saving: 799.3, incremental: 2000, savedKg: 535.1, offer: "B" }),
+  stateCase("SA", "electric_tank", { saving: 305.2, incremental: 2400, savedKg: 247.5, offer: "B" }),
+  stateCase("ACT", "gas", { saving: 710.1, incremental: 2000, savedKg: 266.5, offer: "B" }),
+  stateCase("ACT", "electric_tank", { saving: 280.5, incremental: 2400, savedKg: 691.0, offer: "B" }),
+  stateCase("TAS", "electric_tank", { saving: 159.6, incremental: 2400, savedKg: 268.1, offer: "B" }),
+];
 
-const ok = gasOk && electricOk && vicGasOk && vicElectricOk;
+// Tasmania has no gas reference offer and a confidential gas factor: it must not be priceable.
+const tasGasBlocked = !STATE_MODELS.TAS.hasGas && Number.isNaN(STATE_MODELS.TAS.constants.efGas);
+console.log(`\n${tasGasBlocked ? "PASS" : "FAIL"}  TAS gas is not priced (hasGas=false, efGas=NaN)`);
+
+const ok = gasOk && electricOk && others.every(Boolean) && tasGasBlocked;
 
 if (!ok) {
   console.error("\nAdapter verification FAILED.");

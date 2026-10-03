@@ -102,11 +102,8 @@ export default function Wizard() {
     router.push(`/results?${answersToQuery(complete)}`);
   }
 
+  // Every state in STATES is modelled, so the answer simply moves the survey on.
   function pickState(code: StateCode) {
-    if (code !== "NSW" && code !== "VIC") {
-      router.push(`/state/${code.toLowerCase()}`);
-      return;
-    }
     goNext({ state: code });
   }
 

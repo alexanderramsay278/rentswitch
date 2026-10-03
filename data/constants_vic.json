@@ -1,39 +1,51 @@
 {
-  "_note": "Victorian overrides. Every constant not listed here is taken from data/constants.json unchanged: hot water demand, efficiencies, COP, installed costs (DCCEEW RIS Table 20 is national), rebate (0) and deal parameters.",
+  "state": "VIC",
+  "name": "Victoria",
+  "gridName": "Victorian",
+  "city": "Melbourne",
+  "_note": "State overrides. Every constant not listed here is taken from data/constants.json unchanged: hot water demand, efficiencies, COP, installed costs (DCCEEW RIS Table 20 is national), rebate (0) and deal parameters. The efficiencies are the NSW climate zone (Zone 3) values; they have not been adjusted for this state's climate.",
   "emissions": {
-    "EF_electricity_VIC_kgCO2e_per_kWh": {
+    "EF_electricity_kgCO2e_per_kWh": {
       "value": 0.85,
       "scope2": 0.74,
       "scope3": 0.11,
       "unit": "kg CO2-e/kWh",
       "tier": "regulator",
-      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', August 2026, Table 1, 'Victoria': scope 2 = 0.74, scope 3 = 0.11.",
-      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', Table 1, 'Victoria': scope 2 = 0.74, scope 3 = 0.11.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
       "licence": "CC BY 4.0"
     },
-    "EF_gas_VIC_kgCO2e_per_MJ": {
+    "EF_gas_kgCO2e_per_MJ": {
       "value": 0.05553,
       "scope1_kgCO2e_per_GJ": 51.53,
       "scope3_kgCO2e_per_GJ": 4.0,
       "total_kgCO2e_per_GJ": 55.53,
       "unit": "kg CO2-e/MJ",
       "tier": "regulator",
-      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026'. Table 5, 'Natural gas distributed in a pipeline', scope 1 = 51.53 kg CO2-e/GJ. Table 6, 'Victoria', scope 3 = 4.0 kg CO2-e/GJ.",
-      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026'. Table 5, 'Natural gas distributed in a pipeline', scope 1 combined gases = 51.53 kg CO2-e/GJ. Table 6, 'Victoria', Metro, scope 3 = 4.0 kg CO2-e/GJ.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
       "licence": "CC BY 4.0",
-      "note": "UNIT TRAP: per MJ, not per GJ. 55.53 / 1000 = 0.05553."
+      "note": "UNIT TRAP: per MJ, not per GJ."
     }
   },
   "tariffs": {
     "electricityPlanId": "AGD790710SR@VEC",
     "gasPlanId": "AGD790588SR@VEC",
     "postcode": "3000",
-    "distributors": { "electricity": "CitiPower", "gas": "Australian Gas Networks" },
+    "distributors": {
+      "electricity": "CitiPower",
+      "gas": "Australian Gas Networks"
+    },
     "retrieved": "2026-10-03",
     "source": "AER Consumer Data Right, Energy Product Reference Data API. AGL Residential Standing Offer, time of use with controlled load, and AGL Residential Standing Offer gas. Raw responses in data/cdr_raw/vic/.",
     "timeOfUse": "Two rates: $0.3233/kWh from 15:00 to 21:00 every day, $0.1928/kWh at all other times. The heat pump is assumed to run outside 15:00 to 21:00 on a timer, as the NSW model assumes it runs off-peak.",
     "gasBlockPeriod": "AGL publishes Victorian gas blocks per two-month billing period (P2M): 1,644 MJ then 1,314 MJ. We convert to daily blocks by dividing by 60, which reproduces EnergyAustralia's daily (P1D) standing offer blocks on the same AGN network exactly: 27.4 and 21.9 MJ/day (data/cdr_raw/vic/detail_TRU796856SR_at_VEC.json).",
-    "gst": "CDR unit prices are stored the same way for both states, so NSW and VIC figures are on the same basis."
+    "gst": "CDR unit prices are stored the same way for both states, so NSW and VIC figures are on the same basis.",
+    "heatPumpRate": "The heat pump is priced at the rate in force at 03:00 on a weekday, the overnight window a timer targets, as in NSW and Victoria (src/lib/cdr.ts)."
   },
   "finding": "Victoria's grid is dirtier than NSW's (0.85 vs 0.67 kg CO2-e/kWh) and its gas supply chain is cleaner (scope 3 of 4.0 vs 13.1 kg CO2-e/GJ), so the same switch abates less in Victoria. That is a real result of the factors, not an error."
 }

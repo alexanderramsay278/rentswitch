@@ -1,0 +1,52 @@
+{
+  "_note": "State overrides. Every constant not listed here is taken from data/constants.json unchanged: hot water demand, efficiencies, COP, installed costs (DCCEEW RIS Table 20 is national), rebate (0) and deal parameters. The efficiencies are the NSW climate zone (Zone 3) values; they have not been adjusted for this state's climate.",
+  "state": "SA",
+  "name": "South Australia",
+  "gridName": "South Australian",
+  "city": "Adelaide",
+  "emissions": {
+    "EF_electricity_kgCO2e_per_kWh": {
+      "value": 0.24,
+      "scope2": 0.21,
+      "scope3": 0.03,
+      "unit": "kg CO2-e/kWh",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', Table 1, 'South Australia': scope 2 = 0.21, scope 3 = 0.03.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
+      "licence": "CC BY 4.0"
+    },
+    "EF_gas_kgCO2e_per_MJ": {
+      "value": 0.06223,
+      "scope1_kgCO2e_per_GJ": 51.53,
+      "scope3_kgCO2e_per_GJ": 10.7,
+      "total_kgCO2e_per_GJ": 62.23,
+      "unit": "kg CO2-e/MJ",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026'. Table 5, 'Natural gas distributed in a pipeline', scope 1 combined gases = 51.53 kg CO2-e/GJ. Table 6, 'South Australia', Metro, scope 3 = 10.7 kg CO2-e/GJ.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
+      "licence": "CC BY 4.0",
+      "note": "UNIT TRAP: per MJ, not per GJ."
+    }
+  },
+  "tariffs": {
+    "electricityPlanId": "AGL1189631SRE1@EME",
+    "electricityPlan": "AGL Residential Standing Offer - No Exit Fee (time of use with controlled load)",
+    "gasPlanId": "AGL15384SRG33@EME",
+    "gasPlan": "AGL Residential Standing Offer - No Exit Fee (gas)",
+    "postcode": "5000",
+    "distributors": {
+      "electricity": "SA Power Networks",
+      "gas": "Australian Gas Networks (Metro)"
+    },
+    "timeOfUse": "Three rates: peak $0.511107/kWh 06:00 to 09:59 and 16:00 to 23:59, off-peak $0.295914/kWh 00:00 to 05:59, shoulder $0.154936/kWh 10:00 to 15:59. At 03:00 the off-peak rate applies. The cheaper midday rate is not used, which keeps the saving conservative.",
+    "gasBlockPeriod": "Daily (P1D) blocks: 109.589 MJ at $0.05648/MJ, then $0.03166/MJ.",
+    "retrieved": "2026-10-03",
+    "source": "AER Consumer Data Right, Energy Product Reference Data API, postcode 5000. Raw responses in data/cdr_raw/sa/ (scripts/fetch_cdr_states.py).",
+    "heatPumpRate": "The heat pump is priced at the rate in force at 03:00 on a weekday, the overnight window a timer targets, as in NSW and Victoria (src/lib/cdr.ts).",
+    "gst": "CDR unit prices are stored the same way for every state, so all states are on the same basis."
+  }
+}

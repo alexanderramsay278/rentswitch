@@ -1,0 +1,40 @@
+{
+  "_note": "State overrides. Every constant not listed here is taken from data/constants.json unchanged: hot water demand, efficiencies, COP, installed costs (DCCEEW RIS Table 20 is national), rebate (0) and deal parameters. The efficiencies are the NSW climate zone (Zone 3) values; they have not been adjusted for this state's climate.",
+  "state": "TAS",
+  "name": "Tasmania",
+  "gridName": "Tasmanian",
+  "city": "Hobart",
+  "emissions": {
+    "EF_electricity_kgCO2e_per_kWh": {
+      "value": 0.26,
+      "scope2": 0.23,
+      "scope3": 0.03,
+      "unit": "kg CO2-e/kWh",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', Table 1, 'Tasmania': scope 2 = 0.23, scope 3 = 0.03.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
+      "licence": "CC BY 4.0"
+    },
+    "EF_gas_kgCO2e_per_MJ": null,
+    "_gas_not_modelled": "Table 6 marks Tasmania's scope 3 natural gas factor 'C' (confidential), and no residential gas standing or regulated offer covering postcode 7000 appears in the CDR data. Gas hot water is therefore not priced for Tasmania."
+  },
+  "tariffs": {
+    "electricityPlanId": "AUR1119317RRE1@EME",
+    "electricityPlan": "Aurora Energy Residential Peak and Off-Peak (regulated offer)",
+    "gasPlanId": null,
+    "gasPlan": null,
+    "postcode": "7000",
+    "distributors": {
+      "electricity": "TasNetworks",
+      "gas": null
+    },
+    "timeOfUse": "Two rates: peak $0.32898/kWh weekdays 07:00 to 09:59 and 16:00 to 20:59, off-peak $0.154727/kWh at all other times. At 03:00 the off-peak rate applies. The plan has no controlled load circuit.",
+    "retailer": "Aurora Energy's REGULATED offer is Tasmania's regulated reference offer.",
+    "retrieved": "2026-10-03",
+    "source": "AER Consumer Data Right, Energy Product Reference Data API, postcode 7000. Raw responses in data/cdr_raw/tas/ (scripts/fetch_cdr_states.py).",
+    "heatPumpRate": "The heat pump is priced at the rate in force at 03:00 on a weekday, the overnight window a timer targets, as in NSW and Victoria (src/lib/cdr.ts).",
+    "gst": "CDR unit prices are stored the same way for every state, so all states are on the same basis."
+  }
+}

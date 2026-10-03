@@ -22,6 +22,14 @@ ROUTES = [
     f"/results?occ=2&state=VIC&hw=gas&lastGas=no&cooktop=gas&{Q}",
     f"/results?occ=3&state=VIC&hw=electric_tank&lastGas=yes&cooktop=electric&{Q}",
     f"/results?occ=2&state=NSW&hw=solar&lastGas=yes&cooktop=electric&dwelling=house&heating=none",
+    f"/results?occ=2&state=QLD&hw=gas&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=3&state=QLD&hw=electric_tank&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=2&state=SA&hw=gas&lastGas=no&cooktop=gas&{Q}",
+    f"/results?occ=2&state=SA&hw=electric_tank&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=2&state=ACT&hw=gas&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=2&state=TAS&hw=electric_tank&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=2&state=TAS&hw=gas&lastGas=yes&cooktop=electric&{Q}",
+    f"/results?occ=2&state=TAS&hw=unsure&lastGas=yes&cooktop=electric&{Q}",
 ]
 # Accuracy claims the validation section must never make.
 BANNED = [

@@ -15,13 +15,13 @@ const SOURCES: { name: string; url: string; use: string; licence: string }[] = [
   {
     name: "AER Consumer Data Right, Energy Product Reference Data API",
     url: "https://cdr.energymadeeasy.gov.au",
-    use: "NSW and Victorian electricity and gas tariffs, including the daily supply charge.",
+    use: "Each state's reference electricity and gas tariffs, including the daily supply charge.",
     licence: "AER/CDR terms",
   },
   {
     name: "DCCEEW, National Greenhouse Accounts Factors 2026",
     url: "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.pdf",
-    use: "Emissions factors for NSW and Victorian electricity and natural gas.",
+    use: "Emissions factors for every state's electricity and natural gas, read from the 2026 spreadsheet.",
     licence: "CC BY 4.0",
   },
   {
@@ -237,26 +237,29 @@ export default function MethodPage() {
         </Section>
 
         <Section
-          eyebrow="Victoria"
+          eyebrow="Every state"
           title="The same switch, a different grid"
-          lead="Victoria runs through the same engine with its own tariffs and its own emissions factors. Nothing else changes, so the difference between the two columns is the state, not the model."
+          lead="Every state runs through the same engine. Each swaps in only its own tariffs, from the regulator's data for its capital city, and its own emissions factors. So the differences between rows are the states, not the model."
         >
           <StateComparison />
           <p className="mt-6 max-w-prose text-stone-600">
-            The bill saving is similar. The emissions cut is not. Victoria&apos;s grid is dirtier
-            than New South Wales&apos;s, at 0.85 kg CO₂e per kWh against 0.67, and its gas supply
-            chain is cleaner, at 4.0 kg CO₂e per GJ upstream against 13.1. A heat pump at the
-            minimum compliant efficiency therefore cuts far less in Victoria. That is a real
-            finding from the government factors, not an error, and it gets larger as the grid
-            gets cleaner or the unit gets better.
+            The bill saving stays in a narrow band. The emissions cut does not, because it depends
+            on how clean each grid is. On the government&apos;s 2026 factors South Australia&apos;s
+            grid is the cleanest on the mainland and Victoria&apos;s the dirtiest, so the same heat
+            pump at the minimum compliant efficiency cuts most there and least here. Those are real
+            findings, not errors, and every cut grows as a grid gets cleaner or a unit gets better.
           </p>
           <p className="mt-4 max-w-prose text-sm text-stone-500">
-            Victorian tariffs are the AGL Residential Standing Offer for Melbourne postcode 3000,
-            on the CitiPower and Australian Gas Networks networks, retrieved from the AER on
-            3 October 2026. AGL publishes Victorian gas blocks per two months; we convert them to
-            daily blocks by dividing by 60, which matches EnergyAustralia&apos;s daily blocks on
-            the same network exactly. Victoria&apos;s main hot water rebate is for
-            owner-occupiers only, so the renter case is modelled with no rebate, the same as NSW.
+            Tariffs are each state&apos;s reference offer for its capital, retrieved from the AER on
+            2 October 2026 for Sydney and 3 October for the rest: AGL&apos;s standing offer in
+            Sydney, Melbourne, Brisbane and Adelaide, ActewAGL&apos;s in Canberra and Aurora
+            Energy&apos;s regulated offer in Hobart. The heat pump is priced at the rate in force at
+            3am, the overnight window a timer targets. Brisbane and Adelaide also have a cheaper
+            midday rate, which we do not use. AGL publishes Victorian gas blocks per two months; we
+            divide by 60, which matches EnergyAustralia&apos;s daily blocks on the same network
+            exactly. Heat pump and gas efficiencies are the Sydney-climate values everywhere, which
+            we state on every result outside NSW. Rebates are zero in every state, and
+            Victoria&apos;s main hot water rebate is for owner-occupiers only.
           </p>
         </Section>
 
@@ -370,56 +373,88 @@ function Section({
   );
 }
 
-/** Two-person household, gas storage to heat pump, last gas appliance, $650 a week. */
+/** Two-person household, last gas appliance, $650 a week. One row per state. */
 function StateComparison() {
-  const rows = (["NSW", "VIC"] as ModelledState[]).map((code) => {
+  const run = (code: ModelledState, hotWaterFuel: "gas" | "electric_tank") => {
     const m = STATE_MODELS[code];
-    const r = calculate(m.constants, m.tariffs, {
+    return calculate(m.constants, m.tariffs, {
       occupants: 2,
-      hotWaterFuel: "gas",
+      hotWaterFuel,
       isLastGasAppliance: true,
       heatPumpRate: "offPeak",
       weeklyRent: 650,
       gridName: m.gridName,
     });
-    return { name: m.name, r };
+  };
+  const codes = Object.keys(STATE_MODELS) as ModelledState[];
+  const rows = codes.map((code) => {
+    const m = STATE_MODELS[code];
+    return { code, m, gas: m.hasGas ? run(code, "gas") : null, tank: run(code, "electric_tank") };
   });
-  const lines: [string, (r: (typeof rows)[number]["r"]) => string][] = [
-    ["Tenant saving, per year", (r) => formatMoney(r.saving.total)],
-    ["of which gas supply charge", (r) => formatMoney(r.saving.supply)],
-    ["Payback, landlord's extra cost", (r) => formatYears(r.landlord.yearsOfTenantSaving)],
-    ["Emissions cut, per year", (r) => `${formatKg(r.emissions.savedKgPerYear)} (${Math.round(r.emissions.percentCut)}%)`],
-  ];
+  const noGas = rows.filter((x) => x.gas === null);
+
   return (
-    <div className="overflow-hidden rounded-xl border border-stone-200 bg-white">
-      <table className="w-full text-sm">
-        <caption className="sr-only">
-          Two-person household, gas storage to heat pump, New South Wales against Victoria
-        </caption>
-        <thead className="bg-stone-50 text-left text-xs uppercase tracking-wide text-stone-500">
-          <tr>
-            <th className="px-3 py-2 font-semibold sm:px-4">Two people, gas to heat pump</th>
-            {rows.map((x) => (
-              <th key={x.name} className="px-3 py-2 text-right font-semibold sm:px-4">
-                {x.name}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {lines.map(([label, f]) => (
-            <tr key={label} className="border-t border-stone-100">
-              <td className="px-3 py-2 text-stone-600 sm:px-4">{label}</td>
-              {rows.map((x) => (
-                <td key={x.name} className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
-                  {f(x.r)}
-                </td>
-              ))}
+    <>
+      <div className="overflow-hidden rounded-xl border border-stone-200 bg-white">
+        <table className="w-full text-sm">
+          <caption className="sr-only">
+            Two-person household, gas storage to heat pump, by state
+          </caption>
+          <thead className="bg-stone-50 text-left text-xs uppercase tracking-wide text-stone-500">
+            <tr>
+              <th className="px-3 py-2 font-semibold sm:px-4">Gas to heat pump</th>
+              <th className="px-3 py-2 text-right font-semibold sm:px-4">Saving a year</th>
+              <th className="px-3 py-2 text-right font-semibold sm:px-4">Payback</th>
+              <th className="px-3 py-2 text-right font-semibold sm:px-4">Emissions cut</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {rows.map(({ code, m, gas }) => (
+              <tr key={code} className="border-t border-stone-100">
+                <td className="px-3 py-2 sm:px-4">
+                  <span className="text-stone-900">{code}</span>
+                  <span className="block text-xs text-stone-500">
+                    grid {m.constants.efElectricity} kg/kWh
+                  </span>
+                </td>
+                {gas ? (
+                  <>
+                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                      {formatMoney(gas.saving.total)}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                      {formatYears(gas.landlord.yearsOfTenantSaving)}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums text-stone-900 sm:px-4">
+                      {formatKg(gas.emissions.savedKgPerYear)}
+                      <span className="block text-xs text-stone-500">
+                        {Math.round(gas.emissions.percentCut)}%
+                      </span>
+                    </td>
+                  </>
+                ) : (
+                  <td colSpan={3} className="px-3 py-2 text-right text-stone-500 sm:px-4">
+                    Not priced, see below
+                  </td>
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {noGas.map(({ code, m, tank }) => (
+        <p key={code} className="mt-4 max-w-prose text-sm text-stone-600">
+          {m.name.charAt(0).toUpperCase() + m.name.slice(1)} has no gas figures.{" "}
+          {m.gasTariffMissing && `The regulator's tariff data has no residential gas offer for ${m.city}`}
+          {m.gasTariffMissing && m.gasFactorMissing && ", and "}
+          {m.gasFactorMissing &&
+            `${m.gasTariffMissing ? "the" : "The"} government's gas emissions factor there is confidential`}
+          , so we price nothing rather than guess. Its electric tank case is priced: a heat pump
+          saves {formatMoney(tank.saving.total)} a year and cuts{" "}
+          {formatKg(tank.emissions.savedKgPerYear)} ({Math.round(tank.emissions.percentCut)}%).
+        </p>
+      ))}
+    </>
   );
 }
 

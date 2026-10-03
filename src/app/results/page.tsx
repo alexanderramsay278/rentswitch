@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { calculate, type CurrentSystem } from "@/lib/engine";
+import { calculate, type CurrentSystem, type Result } from "@/lib/engine";
 import { generateStateLetter } from "@/lib/stateLetter";
-import { STATE_MODELS, isModelledState } from "@/lib/adapter";
+import { STATE_MODELS, isModelledState, type ModelledState } from "@/lib/adapter";
 import { queryToAnswers } from "@/lib/questions";
 import { occupancyRange } from "@/lib/occupancy";
 import {
@@ -59,8 +59,8 @@ export default async function ResultsPage({
           We don&apos;t model that state yet
         </h1>
         <p className="mb-6 max-w-prose text-stone-600">
-          Rentswitch models New South Wales and Victoria. We would rather show no number than one
-          built on another state&apos;s tariffs.
+          Rentswitch models New South Wales, Victoria, Queensland, South Australia, the ACT and
+          Tasmania. We would rather show no number than one built on another state&apos;s tariffs.
         </p>
         <StartOverButton />
       </Shell>
@@ -69,7 +69,37 @@ export default async function ResultsPage({
 
   const model = STATE_MODELS[answers.state];
   const { constants, tariffs } = model;
-  const isVic = answers.state === "VIC";
+  const isNsw = answers.state === "NSW";
+
+  // Gas hot water ("not sure" resolves to gas) cannot be priced where there is no gas
+  // reference offer or no published gas emissions factor. Say so; never show a number.
+  if (!model.hasGas && (answers.hotWater === "gas" || answers.hotWater === "unsure")) {
+    const reasons = [
+      model.gasTariffMissing &&
+        `the regulator's tariff data has no residential gas offer for ${model.city}`,
+      model.gasFactorMissing &&
+        `the government's emissions factor for gas in ${model.name} is confidential`,
+    ].filter(Boolean);
+    return (
+      <Shell>
+        <h1 className="mb-4 text-xl font-semibold text-stone-900">
+          We can&apos;t price gas hot water in {model.name}
+        </h1>
+        <p className="mb-4 max-w-prose text-stone-600">
+          {reasons.length === 2
+            ? `Two things are missing: ${reasons[0]}, and ${reasons[1]}.`
+            : `One thing is missing: ${reasons[0]}.`}{" "}
+          Any number we showed would be a guess, so we don&apos;t show one.
+        </p>
+        <p className="mb-6 max-w-prose text-stone-600">
+          {answers.hotWater === "unsure"
+            ? "You weren't sure what heats your water. If it's an electric tank, choose that and we can price the switch."
+            : "If your hot water is an electric tank instead, choose that and we can price the switch."}
+        </p>
+        <StartOverButton />
+      </Shell>
+    );
+  }
 
   const inputs = {
     occupants: answers.occupants,
@@ -84,6 +114,18 @@ export default async function ResultsPage({
   // landlord to act on rests on the figure we know runs high.
   const range = occupancyRange(constants, tariffs, inputs);
   const result = range ? range.lower : calculate(constants, tariffs, inputs);
+
+  // Outside NSW the efficiencies are still the Sydney-climate values. That is an assumption
+  // the reader should see, so it joins the notes and the letter's assumptions list.
+  const shown: Result = isNsw
+    ? result
+    : {
+        ...result,
+        warnings: [
+          ...result.warnings,
+          `The heat pump and gas system efficiencies are set for the Sydney climate. Both change with climate, and we have not adjusted them for ${model.city}.`,
+        ],
+      };
 
   const deal = result.deal;
   // What dropping the gas connection is worth: the daily supply charge, a full year of it.
@@ -206,19 +248,7 @@ export default async function ResultsPage({
               </div>
             )}
 
-            {isVic && isGas && (
-              <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600">
-                <p className="max-w-prose">
-                  <span className="font-semibold text-stone-800">Why the emissions cut is small in Victoria.</span>{" "}
-                  Victoria&apos;s grid is dirtier than New South Wales&apos;s, at 0.85 kg CO₂e per kWh
-                  against 0.67, and its gas supply chain is cleaner. So the same switch abates far less
-                  here. That is what the government factors say, not a fault in the sum. We also price
-                  the heat pump at the minimum efficiency a compliant unit must reach. A more efficient
-                  unit, or a cleaner grid over time, would make the cut bigger. The bill saving holds
-                  either way.
-                </p>
-              </div>
-            )}
+            {isGas && <GridNote state={answers.state} />}
 
             <CostBreakdown
               currentLabel={currentLabel}
@@ -227,7 +257,7 @@ export default async function ResultsPage({
               heatPump={result.cost.heatPumpUsagePerYear}
             />
 
-            <Notes warnings={result.warnings} />
+            <Notes warnings={shown.warnings} />
           </>
         ) : (
           <>
@@ -239,7 +269,7 @@ export default async function ResultsPage({
               no upgrade to chase and nothing to ask your landlord for. There&apos;s still the
               electricity plan switch below, and that one only needs your own permission.
             </p>
-            <Notes warnings={result.warnings} />
+            <Notes warnings={shown.warnings} />
           </>
         )}
       </div>
@@ -276,7 +306,7 @@ export default async function ResultsPage({
       {/* ---------------------------------------------------------------- */}
       {result.upgradeModelled && deal && (
         <Section title="Ask your landlord" tone="primary">
-          {result.essActivity && !isVic && (
+          {result.essActivity && isNsw && (
             <p className="mb-5 inline-block rounded-full border border-stone-300 bg-white px-3 py-1 text-xs font-medium text-stone-600">
               {ESS_ACTIVITY_COPY[result.essActivity]}
             </p>
@@ -329,7 +359,7 @@ export default async function ResultsPage({
           <p className="mb-4 max-w-prose text-stone-600">
             A landlord business case, not a request. Built from the numbers above.
           </p>
-          <LetterBlock letter={generateStateLetter(result, constants, answers.state)} />
+          <LetterBlock letter={generateStateLetter(shown, constants, answers.state)} />
         </Section>
       )}
 
@@ -655,6 +685,43 @@ function StatRow({
       <dd className={`tabular-nums ${strong ? "font-semibold text-stone-900" : "text-stone-700"}`}>
         {value}
       </dd>
+    </div>
+  );
+}
+
+/**
+ * Why the emissions cut differs from NSW. Every figure comes from the state models, which
+ * read the DCCEEW NGA Factors 2026; nothing here is typed in by hand. Shown only where the
+ * state's electricity factor differs from NSW's (so not in the ACT, which shares NSW's row).
+ */
+function GridNote({ state }: { state: ModelledState }) {
+  const nsw = STATE_MODELS.NSW;
+  const here = STATE_MODELS[state];
+  const ef = here.constants.efElectricity;
+  if (state === "NSW" || ef === nsw.constants.efElectricity) return null;
+
+  const dirtier = ef > nsw.constants.efElectricity;
+  const up = here.gasUpstreamKgPerGJ;
+  const nswUp = nsw.gasUpstreamKgPerGJ;
+  const gasClause =
+    up !== null && nswUp !== null && up !== nswUp
+      ? `, and its gas supply chain is ${up < nswUp ? "cleaner" : "dirtier"}, at ${up} kg CO₂e per GJ upstream against ${nswUp}`
+      : "";
+  const possessive = `${here.name.charAt(0).toUpperCase()}${here.name.slice(1)}'s`;
+
+  return (
+    <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600">
+      <p className="max-w-prose">
+        <span className="font-semibold text-stone-800">
+          Why the emissions cut is {dirtier ? "smaller" : "bigger"} in {here.name}.
+        </span>{" "}
+        {possessive} grid is {dirtier ? "dirtier" : "cleaner"} than New South Wales&apos;s, at {ef}{" "}
+        kg CO₂e per kWh against {nsw.constants.efElectricity}
+        {gasClause}.{" "}
+        {dirtier
+          ? "So the same switch abates less here. That is what the government factors say, not a fault in the sum. We also price the heat pump at the minimum efficiency a compliant unit must reach. A more efficient unit, or a cleaner grid over time, would make the cut bigger. The bill saving holds either way."
+          : "So the same switch abates more here, because every kilowatt hour the heat pump draws carries less carbon. That is what the government factors say. The bill saving does not depend on it."}
+      </p>
     </div>
   );
 }

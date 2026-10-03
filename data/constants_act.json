@@ -1,0 +1,53 @@
+{
+  "_note": "State overrides. Every constant not listed here is taken from data/constants.json unchanged: hot water demand, efficiencies, COP, installed costs (DCCEEW RIS Table 20 is national), rebate (0) and deal parameters. The efficiencies are the NSW climate zone (Zone 3) values; they have not been adjusted for this state's climate.",
+  "state": "ACT",
+  "name": "the ACT",
+  "gridName": "ACT",
+  "city": "Canberra",
+  "emissions": {
+    "EF_electricity_kgCO2e_per_kWh": {
+      "value": 0.67,
+      "scope2": 0.6,
+      "scope3": 0.07,
+      "unit": "kg CO2-e/kWh",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026', Table 1, 'New South Wales and Australian Capital Territory': scope 2 = 0.6, scope 3 = 0.07.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
+      "licence": "CC BY 4.0"
+    },
+    "EF_gas_kgCO2e_per_MJ": {
+      "value": 0.06463,
+      "scope1_kgCO2e_per_GJ": 51.53,
+      "scope3_kgCO2e_per_GJ": 13.1,
+      "total_kgCO2e_per_GJ": 64.63,
+      "unit": "kg CO2-e/MJ",
+      "tier": "regulator",
+      "source": "DCCEEW, 'Australian National Greenhouse Accounts Factors 2026'. Table 5, 'Natural gas distributed in a pipeline', scope 1 combined gases = 51.53 kg CO2-e/GJ. Table 6, 'New South Wales and ACT', Metro, scope 3 = 13.1 kg CO2-e/GJ.",
+      "url": "https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "archived": "https://web.archive.org/web/20260910105539/https://www.dcceew.gov.au/sites/default/files/documents/national-greenhouse-accounts-factors-2026.xlsx",
+      "check": "Read from the official XLSX (archived copy, captured 2026-09-10, text dump in data/source_text/national-greenhouse-accounts-factors-2026.xlsx.txt).",
+      "licence": "CC BY 4.0",
+      "note": "UNIT TRAP: per MJ, not per GJ."
+    }
+  },
+  "tariffs": {
+    "electricityPlanId": "ACT62936SRE15@EME",
+    "electricityPlan": "ActewAGL Home time-of-use with controlled load (standing offer)",
+    "gasPlanId": "ACT64470SRG12@EME",
+    "gasPlan": "ActewAGL Home Gas plan - ACT region (standing offer)",
+    "postcode": "2600",
+    "distributors": {
+      "electricity": "Evoenergy",
+      "gas": "Evoenergy"
+    },
+    "timeOfUse": "Three rates: peak $0.452/kWh 07:00 to 08:59 and 17:00 to 19:59, off-peak $0.272/kWh 22:00 to 06:59, shoulder $0.305146/kWh otherwise. At 03:00 the off-peak rate applies.",
+    "gasBlockPeriod": "Daily (P1D) blocks: 41.0959 MJ at $0.0533/MJ, 442.1918 MJ at $0.0435/MJ, 1489.3151 MJ at $0.03735/MJ, then $0.0369/MJ.",
+    "retailer": "ActewAGL is the ACT's incumbent retailer; AGL does not offer an ACT standing offer in the CDR data.",
+    "retrieved": "2026-10-03",
+    "source": "AER Consumer Data Right, Energy Product Reference Data API, postcode 2600. Raw responses in data/cdr_raw/act/ (scripts/fetch_cdr_states.py).",
+    "heatPumpRate": "The heat pump is priced at the rate in force at 03:00 on a weekday, the overnight window a timer targets, as in NSW and Victoria (src/lib/cdr.ts).",
+    "gst": "CDR unit prices are stored the same way for every state, so all states are on the same basis."
+  }
+}

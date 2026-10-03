@@ -25,17 +25,44 @@ is locked out by a contract.
 
 ## Scope
 
-Built and validated for **New South Wales**: NSW tariffs, NSW Energy Savings Scheme rules,
-NSW emissions factor. **Victoria** is modelled too, through the same engine with only its own
-tariffs (AER CDR, Melbourne postcode 3000) and emissions factors changed. That proved the claim
-that adding a state is data, not a rewrite.
+Built and validated first for **New South Wales**: NSW tariffs, NSW Energy Savings Scheme rules,
+NSW emissions factor. **Every other state the survey offers is now modelled too**: Victoria,
+Queensland, South Australia, the ACT and Tasmania. Each runs through the same engine with only
+its own tariffs and emissions factors changed, which proved the claim that adding a state is
+data, not a rewrite.
 
-**The Victorian finding.** For two people switching gas storage to a heat pump, the tenant saves
-about **$799/yr** in Victoria against $703 in NSW, but the emissions cut is only **40 kg CO₂e/yr
-(6%)** against 266 kg (37%). Victoria's grid is dirtier (0.85 vs 0.67 kg CO₂e/kWh) and its gas
-supply chain is cleaner (4.0 vs 13.1 kg CO₂e/GJ upstream), so at the minimum compliant heat pump
-efficiency the same switch abates far less. That is what the government factors say, and we
-report it rather than hide it.
+| 2 people, gas storage → heat pump | Saving/yr | Payback | Emissions cut | Grid (kg CO₂e/kWh) |
+|---|---|---|---|---|
+| New South Wales | $703 | 2.8 yrs | 266 kg (37%) | 0.67 |
+| Victoria | $799 | 2.5 yrs | 40 kg (6%) | 0.85 |
+| Queensland | $875 | 2.3 yrs | 156 kg (23%) | 0.76 |
+| South Australia | $799 | 2.5 yrs | 535 kg (76%) | 0.24 |
+| ACT | $710 | 2.8 yrs | 266 kg (37%) | 0.67 |
+| Tasmania | not priced | | | 0.26 |
+
+**The finding.** The bill saving barely moves between states; the emissions cut moves a lot,
+because it depends on the grid. At the minimum compliant heat pump efficiency the same switch
+cuts three quarters of the hot water's emissions in South Australia and six per cent in
+Victoria. That is what the government factors say, and we report it rather than hide it.
+
+**Tasmania's gas case is not priced.** No residential gas standing or regulated offer covers
+Hobart in the CDR data, and DCCEEW marks Tasmania's scope 3 gas factor "C" (confidential).
+Its electric tank case is priced: $160/yr saved and 268 kg CO₂e/yr cut (60%).
+
+**How each state's data was chosen** (all recorded in `data/constants_<state>.json`):
+
+- **Tariffs:** the AER CDR reference offer for each capital city (postcodes 2088, 3000, 4000,
+  5000, 2600, 7000): AGL's standing offer in Sydney, Melbourne, Brisbane and Adelaide,
+  ActewAGL's in Canberra, Aurora Energy's regulated offer in Hobart. Read straight from the raw
+  API responses by `src/lib/cdr.ts`, which reproduces the NSW and Victorian tariffs exactly.
+- **Heat pump rate:** the rate in force at 03:00 on a weekday, the overnight window a timer
+  targets. Brisbane and Adelaide also have a cheaper midday rate; we do not use it.
+- **Emissions:** DCCEEW NGA Factors 2026, Tables 1, 5 and 6, read from the official XLSX via its
+  archived copy, transcribed three times independently and audited. ACT shares NSW's rows.
+- **Efficiencies:** the Sydney-climate (Zone 3) values in every state, stated on every result
+  outside NSW. Not adjusted for colder or warmer climates.
+- **Rebates:** zero everywhere. Outside NSW the letter names only Small scale Technology
+  Certificates, a Commonwealth scheme, and drops the NSW tenancy-law claim.
 
 **P0 covers hot water: gas storage → heat pump.** That is the biggest household energy load,
 the best-documented, and the one with a real rebate attached. Everything else is in
@@ -314,8 +341,10 @@ const result = calculate(constants, tariffs, {
 > Everything here was consciously cut to protect the one flow that works. Listing it is the
 > scope contract — if it is in this section, it is **not** in the build.
 
-- **More states.** Victoria is done. Queensland, South Australia, the ACT and Tasmania need
-  only the same data: tariffs and emissions factors.
+- **More states.** Every state the survey offers is modelled. Western Australia and the
+  Northern Territory are not in the survey yet.
+- **Climate-adjusted efficiencies** for colder and warmer capitals, once the heat pump RIS
+  zone tables can be read.
 - **Postcode-level accuracy** — exact distributor zone and exact STC zone rating.
 - Cooktop, space heating, insulation, solar, batteries, EV charging.
 - Bill upload and OCR instead of five questions.
