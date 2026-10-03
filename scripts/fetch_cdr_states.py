@@ -32,6 +32,9 @@ from extract_tariffs import parse_electricity, parse_gas  # noqa: E402
 ALL_STATES = {"qld": "4000", "sa": "5000", "act": "2600", "tas": "7000"}
 STATES = {k: v for k, v in ALL_STATES.items() if k in (sys.argv[1:] or ALL_STATES)}
 REFERENCE_TYPES = ("STANDING", "REGULATED")
+# Some gas plans state coverage by network only, with no postcode list. For those, match the
+# capital's gas network by name. Only used when a plan lists no postcodes at all.
+GAS_NETWORK_HINTS = {"qld": ("brisbane",), "sa": ("agn metro",), "act": ("evoenergy",), "tas": ("tas",)}
 FUELS = ["ELECTRICITY", "GAS"]
 REGISTER = "https://api.cdr.gov.au/cdr-register/v1/energy/data-holders/brands/summary"
 AER = "https://cdr.energymadeeasy.gov.au/{slug}/cds-au/v1/energy/plans"
@@ -94,13 +97,19 @@ def list_all(base, fuel):
     return plans
 
 
-def covers(plan, postcode):
+def covers(plan, postcode, state):
     if plan.get("customerType") != "RESIDENTIAL":
         return False
     geo = plan.get("geography") or {}
     if postcode in (geo.get("excludedPostcodes") or []):
         return False
-    return postcode in (geo.get("includedPostcodes") or [])
+    included = geo.get("includedPostcodes") or []
+    if included:
+        return postcode in included
+    if plan.get("fuelType") == "GAS":
+        networks = " ".join(geo.get("distributors") or []).lower()
+        return any(h in networks for h in GAS_NETWORK_HINTS.get(state, ()))
+    return False
 
 
 def main():
@@ -114,7 +123,7 @@ def main():
                 print(f"  ! {slug}/{fuel}: {e}")
                 continue
             for state, postcode in STATES.items():
-                matches = [p for p in plans if covers(p, postcode)]
+                matches = [p for p in plans if covers(p, postcode, state)]
                 if not matches:
                     continue
                 d = os.path.join(OUT, state)
