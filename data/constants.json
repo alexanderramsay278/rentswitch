@@ -1,12 +1,10 @@
 {
   "_README": "Rentswitch model constants. EVERY value carries a source and a confidence tier. Anything tier 'assumption' MUST be printed on screen next to the number it produces (Video Script + Submission Pack both promise this). Retrieved 2026-10-02.",
-
   "_tiers": {
     "regulator": "Published by an Australian government department or regulator. Cite directly.",
     "derived": "Computed by us from a regulator figure. Show the derivation on screen.",
     "assumption": "No authoritative free AU source found. MUST be labelled on screen as an assumption."
   },
-
   "demand": {
     "L_litres_per_person_per_day": {
       "value": 45,
@@ -31,7 +29,6 @@
       "source": "Physical constant."
     }
   },
-
   "efficiency": {
     "eta_gas_storage": {
       "value": 0.55,
@@ -59,11 +56,10 @@
       "sensitivity_high": 3.5
     }
   },
-
   "emissions": {
     "EF_electricity_NSW_kgCO2e_per_kWh": {
       "value": 0.67,
-      "scope2": 0.60,
+      "scope2": 0.6,
       "scope3": 0.07,
       "unit": "kg CO2-e/kWh",
       "tier": "regulator",
@@ -84,7 +80,6 @@
       "note": "UNIT TRAP: this is per MJ. The electricity factor is per kWh. Never interchange (Model Maths section 11)."
     }
   },
-
   "costs": {
     "C_heat_pump_installed": {
       "value": 4200,
@@ -114,26 +109,25 @@
       "source": "Same table: ESWH Med = 1800."
     }
   },
-
   "rebates": {
     "_WARNING": "STILL THE LEAST VERIFIED INPUT. Rebate hunt run 2026-10-02: the STACKING question resolved, the DOLLAR AMOUNTS did not. Consumer-facing NSW incentive pages are JavaScript-rendered and returned no figures; every other result was an installer or comparison site, auto-disqualified because their exit is a checkout. R stays at $0 and the case still works. Do not fill this gap with a plausible number.",
-
     "R_default": {
       "value": 0,
       "unit": "AUD",
       "tier": "assumption",
       "note": "DEFAULT ZERO ON PURPOSE. Same discipline as the asset-value slider in Product Spec 3.3: the headline number must be one we can fully source. With R = 0 the incremental cost is $2,000, payback is 2.8 years, and the case still stands up. Every dollar of rebate only improves it."
     },
-
     "stacking_ESS_and_STCs": {
-      "answer": "YES - almost certainly additive. Upgraded from 'do not assume' to 'strongly indicated' on 2026-10-02.",
+      "answer": "CONFIRMED - the two schemes stack. Upgraded from 'strongly indicated' on 2026-10-03 after a second independent check agreed with the first.",
       "tier": "derived",
       "direct_evidence": "NSW Government material states that after ESS stakeholder consultation, heat pump and solar water heaters were approved for the ESS, with certificates created under the ESS being ADDITIONAL to tradeable certificates created under the federal Small-scale Renewable Energy Scheme (SRES) for the same activity.",
       "structural_corroboration": "Heat pump water heaters of 425 L or less are EXCLUDED from the NSW Peak Demand Reduction Scheme (PDRS) specifically to prevent incentive stacking across three schemes (ESS + PDRS + SRES). Excluding the third scheme only makes sense if the remaining two are permitted to stack. This is independent corroboration, not a restatement.",
       "honest_limit": "Both points come from NSW Government documents surfaced in search, NOT from a primary sentence read directly in the ESS Rule. Treat as strongly indicated, one citation short of confirmed. If it goes in the letter or the video, say 'you may be able to claim both' - never 'you can claim both'.",
-      "practical_effect": "If additive, R is plausibly four figures and payback drops from 2.8 years to roughly 1.4. That is a material improvement we are deliberately NOT banking."
+      "practical_effect": "If additive, R is plausibly four figures and payback drops from 2.8 years to roughly 1.4. That is a material improvement we are deliberately NOT banking.",
+      "second_confirmation_2026_10_03": "Independent research by the team reached the same conclusion: the NSW ESS discount and federal STCs are separate state and Commonwealth schemes and do not cancel each other out. An accredited certificate provider normally claims both and applies them as a single upfront discount on the invoice.",
+      "CRITICAL_TIMING_RULE": "Certificates must be assigned BEFORE installation. Neither the NSW ESS discount nor the STCs can be claimed retrospectively once the system is already in. This is load-bearing for the letter: it is a concrete reason to decide at end of life rather than at failure, and it reinforces the urgent-repair argument.",
+      "amounts_still_not_sourced": "Dollar figures remain UNUSABLE. Every amount found (ESS around $330 for a gas swap, 15-28 STCs in Zone 3 at roughly $35-40 each) traces to installer or comparison sites, which this project does not cite because their exit is a checkout. The NSW Government page supports the ESS figure but was not retrieved directly. R STAYS AT $0."
     },
-
     "ESS_verified_conditions": {
       "tier": "regulator",
       "activity_definitions": "D17 = replace an existing ELECTRIC water heater with an air source heat pump. D19 = replace an existing GAS water heater with an air source heat pump. D19 is the activity Rentswitch models.",
@@ -148,7 +142,6 @@
         "why_it_matters": "A co-payment is an out-of-pocket cost that REDUCES the effective rebate. If the model ever moves R off zero, subtract this. Ignoring it would overstate the benefit."
       }
     },
-
     "STC_verified_conditions": {
       "tier": "regulator",
       "source": "Clean Energy Regulator, Small-scale Renewable Energy Scheme.",
@@ -158,10 +151,8 @@
       "NOT_OBTAINED": "The STC count for a specific model in STC Zone 3 (Sydney), and the STC spot price as at October 2026. Both are needed to put a dollar figure on the federal half, and neither was retrieved from a primary source."
     }
   },
-
   "legal": {
     "_note": "The three claims flagged VERIFY in Gameplan (Sat 09:00) were pulled forward and checked on 2026-10-02. Two passed outright, one passed with a correction that matters.",
-
     "urgent_repair": {
       "status": "VERIFIED",
       "finding": "A failure or breakdown of any essential service for HOT WATER, cooking, heating, cooling or laundering is expressly listed as an urgent repair.",
@@ -170,7 +161,6 @@
       "detail": "Tenant must notify the landlord or agent straight away. A tenant who arranges urgent repairs themselves may be reimbursed up to $1,000, payable by the landlord within 14 days of written notice with receipts.",
       "WHAT_IS_NOT_LAW": "The downstream claim - 'emergency rates, no shopping around, no rebate' - is an INFERENCE, not a statutory consequence. It is well supported (ESS discounts require an accredited provider; STCs require a model on the CER register with certificates created within 12 months, neither of which survives a same-day emergency swap) but it must be worded as a practical consequence, never as something the Act says."
     },
-
     "rent_increase_rules": {
       "status": "VERIFIED",
       "finding": "Rent may be increased only ONCE in any 12-month period, for ALL lease types, with at least 60 days written notice. In force from 31 October 2024.",
@@ -178,7 +168,6 @@
       "detail": "Rent cannot be increased within the first 12 months of an agreement. Different rules apply to some agreements that started before 13 December 2024 for a fixed term under 2 years - those can have more than one increase in 12 months only if written into the agreement.",
       "effect_on_model": "CONSTRAINS Offer C but does not break it: the rent adjustment is proposed at renewal, which is compliant. Offers A and B propose no rent change at all, so they are unaffected. Since Offer B is what actually fires at Sydney rents, this rule has no practical effect on the demo."
     },
-
     "depreciation": {
       "status": "VERIFIED - with a correction that runs OPPOSITE to the common assumption",
       "finding": "A landlord who buys and installs a BRAND NEW hot water system in a rental can claim decline in value. The well-known 2017 restriction applies to SECOND-HAND depreciating assets, not new ones.",
@@ -193,7 +182,6 @@
       "RULE": "Narrative pointer only. NEVER compute a figure - that needs their marginal rate, ownership structure and effective life, none of which we have, and a public repo handing out tax calculations is a liability."
     }
   },
-
   "deal": {
     "v_vacancy_weeks": {
       "value": 3,
@@ -214,7 +202,6 @@
       "note": "Longest landlord payback period we will propose before declaring Offer D (no honest deal)."
     }
   },
-
   "tariffs_reference": {
     "_note": "Full set in data/tariffs.json (32 NSW residential plans). The model's default is the AGL Residential Standing Offer - the regulated reference offer, not a marketing plan.",
     "electricity_plan": "AGL1189640SRE1@EME - AGL Residential Standing Offer, Ausgrid",

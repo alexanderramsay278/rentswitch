@@ -50,6 +50,19 @@ def letter(r, k, tenant="[your name]", landlord="[landlord or agent]",
     L += ["", "So the question isn't whether to spend %s. It's whether to spend %s more "
               "than you were already going to." % (money(C), money(r["I"])), ""]
 
+    # Rebates: state the mechanism, never an amount. See tools/add_rebate_para.py.
+    if R == 0:
+        L += ["Those numbers assume no rebate at all, which is the cautious way to put it. "
+              "Two schemes can apply here and they stack, because one is run by New South "
+              "Wales and the other by the Commonwealth: a discount under the NSW Energy "
+              "Savings Scheme, and Small scale Technology Certificates. An accredited "
+              "installer normally claims both and takes them straight off the invoice. I "
+              "haven't put a figure on either, because the amount depends on the model you "
+              "pick and who fits it.", ""]
+        L += ["Timing does matter though. The certificates have to be assigned before the "
+              "system goes in, and nobody can claim them back afterwards. That is the "
+              "practical reason to settle this before the current unit settles it for us.", ""]
+
     L += ["What it saves, and who gets the saving", ""]
     L += ["The switch cuts the hot water bill by roughly %s a year." % money(r["S"])]
     if r["S_supply"] > 0:

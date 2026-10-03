@@ -85,6 +85,19 @@ export function generateLetter(
   );
   lines.push("");
 
+  // Rebates: state the mechanism, never an amount. No primary source gave us a
+  // dollar figure, so the model runs at zero and the letter says so plainly.
+  if (c.rebate === 0) {
+    lines.push(
+      `Those numbers assume no rebate at all, which is the cautious way to put it. Two schemes can apply here and they stack, because one is run by New South Wales and the other by the Commonwealth: a discount under the NSW Energy Savings Scheme, and Small scale Technology Certificates. An accredited installer normally claims both and takes them straight off the invoice. I haven't put a figure on either, because the amount depends on the model you pick and who fits it.`
+    );
+    lines.push("");
+    lines.push(
+      `Timing does matter though. The certificates have to be assigned before the system goes in, and nobody can claim them back afterwards. That is the practical reason to settle this before the current unit settles it for us.`
+    );
+    lines.push("");
+  }
+
   // --- The split incentive, stated plainly. ---
   lines.push("What it saves, and who gets the saving");
   lines.push("");
