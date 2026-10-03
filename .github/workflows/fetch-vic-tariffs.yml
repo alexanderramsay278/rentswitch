@@ -1,0 +1,30 @@
+name: Fetch VIC tariffs
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/run-routine-ylyotu]
+    paths:
+      - scripts/fetch_cdr_vic.py
+      - .github/workflows/fetch-vic-tariffs.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/fetch_cdr_vic.py
+      - name: Commit cached responses
+        run: |
+          git config user.name "Alex Ramsay"
+          git config user.email "alexanderramsay278@gmail.com"
+          git add data/cdr_raw/vic
+          git diff --cached --quiet && exit 0
+          git commit -m "Cache Victorian tariffs from the AER CDR API (postcode 3000)"
+          git push
