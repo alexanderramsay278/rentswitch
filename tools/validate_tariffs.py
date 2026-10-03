@@ -321,6 +321,16 @@ def main():
         b, _, nn = position([c["S"] for c in pairs], ref["S"])
         return 100 * b / nn
 
+    # Payback with the saving that actually applies: the year-one saving first, then the
+    # list-price saving once the one-year discounts end.
+    after_by_pair = {(c["electricity"], c["gas"]): c["S"] for c in combos["none"]}
+    for c in combos["bill"]:
+        s1, s2 = c["S"], after_by_pair[(c["electricity"], c["gas"])]
+        I = ref["I"]
+        c["S_after_year_one"] = s2
+        c["payback_years"] = (I / s1 if s1 >= I else
+                              1 + (I - s1) / s2 if s2 > 0 else float("inf"))
+
     primary = combos["bill"]
     S_all = [c["S"] for c in primary]
     stats = summary(S_all)
@@ -355,6 +365,15 @@ def main():
     elec_spread = elec_rows[-1][1] - elec_rows[0][1]
     discounted = sorted({r["benefit_period"] for r in elec + gas if r["discount"]} - {None})
     restricted = [r for r in elec + gas if r["restricted_to"]]
+    paybacks = sorted(c["payback_years"] for c in primary)
+    payback_mid = summary(paybacks)["middle_pairs"]
+    every_pair_saves = all(c["S"] > 0 for t in TREATMENTS for c in combos[t])
+    lowest_any = min(c["S"] for t in TREATMENTS for c in combos[t])
+    supply_share = [c["S_supply"] / c["S"] for c in primary]
+    e_disc = sorted({round(r["discount"] * 100) for r in elec if r["discount"]})
+    g_disc = sorted({round(r["discount"] * 100) for r in gas if r["discount"]})
+    parser_limited = [sk for sk in skipped if any(not r.startswith("not offered") for r in sk["reasons"])]
+    payback_longer = sum(1 for x in paybacks if x > ref["years"] + 1e-9)
 
     # --- Print ---------------------------------------------------------------------
     print("=" * 78)
@@ -375,19 +394,26 @@ def main():
     print("-" * 78)
     print("TEST 1 - SPREAD: what does the same household save on every pair?")
     print("-" * 78)
-    print(f"  {'pairs':>6}{'min':>10}{'middle':>16}{'max':>10}{'headline':>11}   payback range")
-    mid_yrs = " / ".join(dict.fromkeys(f"{yrs(x):.1f}" for x in stats["middle_pairs"]))
+    print(f"  {'pairs':>6}{'min':>10}{'middle':>16}{'max':>10}{'headline':>11}   payback range*")
+    mid_yrs = " / ".join(dict.fromkeys(f"{x:.1f}" for x in payback_mid))
     print(f"  {stats['n']:>6}{money(stats['min']):>10}{mid(stats):>16}"
           f"{money(stats['max']):>10}{money(ref['S']):>11}   "
-          f"{yrs(stats['max']):.1f} to {yrs(stats['min']):.1f} yrs ({mid_yrs} at the middle)")
+          f"{paybacks[0]:.1f} to {paybacks[-1]:.1f} yrs ({mid_yrs} at the middle)")
+    print("  * year-one saving for the first year, then the list-price saving once discounts end.")
     print(f"\n  The headline saves more than {below} of {n} pairs ({pct_below:.0f}%)"
           f"{f' and ties {tied - 1} other (same off-peak rate, same gas plan)' if tied > 1 else ''}.")
-    print(f"  Emissions cut is {min(d_ems):.1f} kg CO2e/yr on every pair: it does not depend on the tariff.")
+    if len(d_ems) == 1:
+        print(f"  Emissions cut is {min(d_ems):.1f} kg CO2e/yr on every pair: it does not depend on the tariff.")
+    else:
+        print(f"  Emissions cut varies across pairs: {sorted(d_ems)} kg CO2e/yr.")
+    print(f"  The supply charge is {100 * min(supply_share):.0f}% to {100 * max(supply_share):.0f}% "
+          "of the year-one saving across the pairs.")
     if refused:
         print(f"  {len(refused)} pair(s) save nothing or lose money; run() refuses them (S <= 0). See JSON.")
 
     print()
-    print(f"  EnergyAustralia's guaranteed discounts have a benefit period of {', '.join(discounted)}.")
+    print(f"  EnergyAustralia's guaranteed discounts ({'/'.join(map(str, e_disc))}% on electricity, "
+          f"{', '.join(map(str, g_disc))}% on gas) have a benefit period of {', '.join(discounted)}.")
     print("  So year one and the years after differ. Share of pairs the headline beats:")
     print(f"    {'treatment':<50}{'all pairs':>10}{'open to all':>13}{'middle (all)':>16}")
     for t in TREATMENTS:
@@ -440,6 +466,9 @@ def main():
         print(f"  {'':>6}  [{states}]")
     print(f"  Total plans skipped: {len(skipped)} of {total}. The parsers read every one of them without")
     print("  error; the reasons above say why the model could not use them, or should not.")
+    print(f"  {len(parser_limited)} distinct plans carry a reason other than the postcode; all are outside NSW.")
+    print("  The live site prices its own state reference plans with src/lib/cdr.ts, which converts")
+    print("  these block periods and reads the overnight rate; this script deliberately does not.")
 
     # --- Verdict, computed from the numbers above -------------------------------------
     def end_of(pct):
@@ -469,10 +498,15 @@ def main():
                      "still save more than it.")
     lines.append(f"  Most of the spread comes from the gas side ({money(gas_spread)}) rather than the "
                  f"heat pump side ({money(elec_spread)}).")
-    lines.append(f"  Every pair saves money. The supply charge part is {money(min(c['S_supply'] for c in primary))} "
-                 f"to {money(max(c['S_supply'] for c in primary))}.")
-    lines.append(f"  Payback in year one terms: {yrs(stats['max']):.1f} to {yrs(stats['min']):.1f} years; "
-                 f"{mid_yrs} at the middle pair (headline {ref['years']:.1f}).")
+    if every_pair_saves:
+        lines.append(f"  Every pair saves money, in year one and after (lowest {money(lowest_any)}). "
+                     f"The supply charge part is {money(min(c['S_supply'] for c in primary))} "
+                     f"to {money(max(c['S_supply'] for c in primary))}.")
+    else:
+        bad = sorted({(c["electricity"], c["gas"]) for t in TREATMENTS for c in combos[t] if c["S"] <= 0})
+        lines.append(f"  {len(bad)} pair(s) save nothing or lose money in at least one period: {bad}")
+    lines.append(f"  Payback: {paybacks[0]:.1f} to {paybacks[-1]:.1f} years; {mid_yrs} at the middle "
+                 f"(headline {ref['years']:.1f}, shorter than {payback_longer} of {n} pairs).")
     print("\n".join(lines))
     print("""
   LIMITS, stated plainly: 32 NSW plans from 2 retailers is not the NSW market. The
@@ -520,6 +554,13 @@ def main():
             for t in TREATMENTS},
         "groups_year_one": {g: rounded(summary([c["S"] for c in cs])) for g, cs in groups.items()},
         "market_market_pairs_above_headline": mm_above,
+        "payback_years": {"min": round(paybacks[0], 3), "middle_pairs": [round(x, 3) for x in payback_mid],
+                          "max": round(paybacks[-1], 3), "headline_shorter_than_pairs": payback_longer,
+                          "method": "year-one saving for the first year, then the list-price saving"},
+        "every_pair_saves_money_in_every_treatment": every_pair_saves,
+        "supply_share_of_year_one_saving": [round(min(supply_share), 4), round(max(supply_share), 4)],
+        "discount_rates_percent": {"electricity": e_disc, "gas": g_disc},
+        "parser_limited_plans": len(parser_limited),
         "spread_by_side": {"gas_bill_today": [round(gas_rows[0][1] + gas_rows[0][2], 2),
                                               round(gas_rows[-1][1] + gas_rows[-1][2], 2)],
                            "heat_pump_cost": [round(elec_rows[0][1], 2), round(elec_rows[-1][1], 2)]},

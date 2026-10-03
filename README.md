@@ -40,8 +40,9 @@ data, not a rewrite.
 | ACT | $710 | 2.8 yrs | 266 kg (37%) | 0.67 |
 | Tasmania | not priced | | | 0.26 |
 
-Every row is priced on one reference offer per fuel per state. For NSW, how that choice compares
-with the other cached plans is in [Tariff check](#tariff-check-did-we-pick-a-flattering-plan).
+Each priced row uses one reference offer per fuel. For NSW we checked that choice against the
+other cached plans at postcode 2088: in year one $703 is at the generous end, and after that it
+is about the middle. See [Tariff check](#tariff-check-did-we-pick-a-flattering-plan).
 
 **The finding.** The bill saving changes by up to about a quarter between states, from $703 a
 year in NSW to $875 in Queensland. The emissions cut changes far more, from 6% in Victoria to 76%
@@ -283,15 +284,18 @@ postcode 2088: 16 electricity plans by 16 gas plans, 256 pairs. No new data. Rep
 | After year one, all pairs | 256 | $416 | $709 | $787 | 47% |
 | After year one, plans open to any household | 120 | $492 | $709 | $781 | 27% |
 
-"Middle" is the saving of the middle pair. Where two middle pairs differ, both are shown below.
-No figure here is an average of two pairs.
+"Middle" is the saving of the middle pair. Where the two middle pairs differ by a dollar or more,
+both are shown. No figure here is an average of two pairs.
 
-**The answer: in year one, partly yes. After that, no.** EnergyAustralia's market plans carry
-guaranteed discounts that last one year. While they apply, $703 beats 75% of the pairs. The
-middle pair saves $564, about $140 less, and would pay back in 3.5 years, not 2.8. So in year one
-the headline is the generous end, not the typical case. Once the discounts end, list prices
-apply, and $703 beats 47% of pairs: about the middle, where the middle pair saves $709. The
-payback runs past year one, so both periods matter.
+**The answer: in year one, yes. After that, no.** EnergyAustralia's market plans carry
+guaranteed discounts that last one year. While they apply, $703 beats 75% of the pairs, and the
+middle pair saves $564, about $140 less. So in year one the headline is the generous end, not the
+typical case. Once the discounts end, list prices apply, and $703 beats 47% of pairs: about the
+middle, where the middle pair saves $709.
+
+**Payback.** Counting each pair's year-one saving and then its list-price saving, payback runs
+from 2.5 to 4.8 years. The middle is 2.9 to 3.1 years. The headline's 2.8 years is shorter than
+169 of the 256 pairs (66%). So on payback the headline is a little better than typical.
 
 | Year one, by offer type | Pairs | Lowest | Middle | Highest |
 |---|---|---|---|---|
@@ -326,10 +330,13 @@ Seniors Card, existing solar, new customers only); they are included and flagged
 only through a comparison site, a connection service or a sales agent count as open, because
 any household can sign up that way. One-off incentives and fees are ignored, as in the
 headline. The other 218 cached plans are from other states and are not offered at 2088, so they
-are tabled as skipped, not dropped. Nine of them could not be used even if they were: the
-parsers read them without error, but six Victorian electricity plans have every rate typed
-shoulder, and three gas plans have monthly or two-monthly (P2M) blocks that the model's daily
-block walk would misprice without a conversion.
+are tabled as skipped, not dropped. Nine of them also have a second problem for the Python tools
+used here, which read them without error but cannot price them. Six Victorian electricity plans
+label every time window "shoulder", so there is no off-peak or flat rate to find. Three gas
+plans bill in monthly or two-monthly (P2M) blocks, two of them over more than one tariff period,
+and `tools/model.py` treats blocks as daily. The live site prices its own state plans, Victoria's
+included, with a separate reader (`src/lib/cdr.ts`) that handles both. This check uses the
+existing Python tools unchanged, on purpose.
 
 ### Per-household check — not completed
 

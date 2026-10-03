@@ -132,6 +132,33 @@
     }
   },
   "market_market_pairs_above_headline": 30,
+  "payback_years": {
+    "min": 2.543,
+    "middle_pairs": [
+      2.942,
+      3.058
+    ],
+    "max": 4.753,
+    "headline_shorter_than_pairs": 169,
+    "method": "year-one saving for the first year, then the list-price saving"
+  },
+  "every_pair_saves_money_in_every_treatment": true,
+  "supply_share_of_year_one_saving": [
+    0.4144,
+    0.5071
+  ],
+  "discount_rates_percent": {
+    "electricity": [
+      12
+    ],
+    "gas": [
+      6,
+      12,
+      23,
+      25
+    ]
+  },
+  "parser_limited_plans": 9,
   "spread_by_side": {
     "gas_bill_today": [
       622.7,
@@ -3956,7 +3983,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -3972,7 +4001,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -3988,7 +4019,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4004,7 +4037,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4020,7 +4055,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 487.47,
@@ -4036,7 +4073,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 487.47,
+      "payback_years": 4.1
     },
     {
       "S": 717.78,
@@ -4052,7 +4091,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 717.78,
+      "payback_years": 2.79
     },
     {
       "S": 564.27,
@@ -4068,7 +4109,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 725.57,
@@ -4084,7 +4127,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 725.57,
@@ -4100,7 +4145,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 780.52,
@@ -4116,7 +4163,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.56
     },
     {
       "S": 569.9,
@@ -4132,7 +4181,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 725.57,
@@ -4148,7 +4199,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 569.9,
@@ -4164,7 +4217,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 670.63,
@@ -4180,7 +4235,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.7
     },
     {
       "S": 551.58,
@@ -4196,7 +4253,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.86
     },
     {
       "S": 564.27,
@@ -4212,7 +4271,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4228,7 +4289,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4244,7 +4307,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4260,7 +4325,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4276,7 +4343,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 487.47,
@@ -4292,7 +4361,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 487.47,
+      "payback_years": 4.1
     },
     {
       "S": 717.78,
@@ -4308,7 +4379,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 717.78,
+      "payback_years": 2.79
     },
     {
       "S": 564.27,
@@ -4324,7 +4397,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 725.57,
@@ -4340,7 +4415,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 725.57,
@@ -4356,7 +4433,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 780.52,
@@ -4372,7 +4451,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.56
     },
     {
       "S": 569.9,
@@ -4388,7 +4469,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 725.57,
@@ -4404,7 +4487,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 569.9,
@@ -4420,7 +4505,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 670.63,
@@ -4436,7 +4523,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.7
     },
     {
       "S": 551.58,
@@ -4452,7 +4541,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.86
     },
     {
       "S": 549.25,
@@ -4468,7 +4559,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -4484,7 +4577,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -4500,7 +4595,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -4516,7 +4613,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -4532,7 +4631,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 472.44,
@@ -4548,7 +4649,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 472.44,
+      "payback_years": 4.23
     },
     {
       "S": 702.76,
@@ -4564,7 +4667,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 702.76,
+      "payback_years": 2.85
     },
     {
       "S": 549.25,
@@ -4580,7 +4685,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 710.55,
@@ -4596,7 +4703,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.68
     },
     {
       "S": 710.55,
@@ -4612,7 +4721,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.68
     },
     {
       "S": 765.5,
@@ -4628,7 +4739,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.61
     },
     {
       "S": 554.87,
@@ -4644,7 +4757,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.89
     },
     {
       "S": 710.55,
@@ -4660,7 +4775,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.68
     },
     {
       "S": 554.87,
@@ -4676,7 +4793,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.89
     },
     {
       "S": 655.61,
@@ -4692,7 +4811,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.76
     },
     {
       "S": 536.56,
@@ -4708,7 +4829,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.5,
+      "payback_years": 2.91
     },
     {
       "S": 564.27,
@@ -4724,7 +4847,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4740,7 +4865,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4756,7 +4883,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4772,7 +4901,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -4788,7 +4919,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 487.47,
@@ -4804,7 +4937,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 487.47,
+      "payback_years": 4.1
     },
     {
       "S": 717.78,
@@ -4820,7 +4955,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 717.78,
+      "payback_years": 2.79
     },
     {
       "S": 564.27,
@@ -4836,7 +4973,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 725.57,
@@ -4852,7 +4991,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 725.57,
@@ -4868,7 +5009,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 780.52,
@@ -4884,7 +5027,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.56
     },
     {
       "S": 569.9,
@@ -4900,7 +5045,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 725.57,
@@ -4916,7 +5063,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 569.9,
@@ -4932,7 +5081,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 670.63,
@@ -4948,7 +5099,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.7
     },
     {
       "S": 551.58,
@@ -4964,7 +5117,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.86
     },
     {
       "S": 549.25,
@@ -4980,7 +5135,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -4996,7 +5153,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5012,7 +5171,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5028,7 +5189,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5044,7 +5207,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 472.44,
@@ -5060,7 +5225,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 472.44,
+      "payback_years": 4.23
     },
     {
       "S": 702.75,
@@ -5076,7 +5243,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "STANDING",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 702.75,
+      "payback_years": 2.85
     },
     {
       "S": 549.25,
@@ -5092,7 +5261,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 710.55,
@@ -5108,7 +5279,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 710.55,
@@ -5124,7 +5297,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 765.49,
@@ -5140,7 +5315,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "STANDING",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.61
     },
     {
       "S": 554.87,
@@ -5156,7 +5333,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.89
     },
     {
       "S": 710.55,
@@ -5172,7 +5351,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 554.87,
@@ -5188,7 +5369,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.89
     },
     {
       "S": 655.6,
@@ -5204,7 +5387,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.76
     },
     {
       "S": 536.56,
@@ -5220,7 +5405,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.91
     },
     {
       "S": 564.27,
@@ -5236,7 +5423,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -5252,7 +5441,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -5268,7 +5459,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -5284,7 +5477,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 564.27,
@@ -5300,7 +5495,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 487.47,
@@ -5316,7 +5513,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 487.47,
+      "payback_years": 4.1
     },
     {
       "S": 717.78,
@@ -5332,7 +5531,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 717.78,
+      "payback_years": 2.79
     },
     {
       "S": 564.27,
@@ -5348,7 +5549,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 564.27,
+      "payback_years": 3.54
     },
     {
       "S": 725.57,
@@ -5364,7 +5567,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 725.57,
@@ -5380,7 +5585,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 780.52,
@@ -5396,7 +5603,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.56
     },
     {
       "S": 569.9,
@@ -5412,7 +5621,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 725.57,
@@ -5428,7 +5639,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.63
     },
     {
       "S": 569.9,
@@ -5444,7 +5657,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.83
     },
     {
       "S": 670.63,
@@ -5460,7 +5675,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.7
     },
     {
       "S": 551.58,
@@ -5476,7 +5693,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 780.52,
+      "payback_years": 2.86
     },
     {
       "S": 570.28,
@@ -5492,7 +5711,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 570.28,
@@ -5508,7 +5729,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 570.28,
@@ -5524,7 +5747,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 570.28,
@@ -5540,7 +5765,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 570.28,
@@ -5556,7 +5783,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 493.48,
@@ -5572,7 +5801,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 493.48,
+      "payback_years": 4.05
     },
     {
       "S": 723.79,
@@ -5588,7 +5819,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 723.79,
+      "payback_years": 2.76
     },
     {
       "S": 570.28,
@@ -5604,7 +5837,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 570.28,
+      "payback_years": 3.51
     },
     {
       "S": 731.58,
@@ -5620,7 +5855,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.61
     },
     {
       "S": 731.58,
@@ -5636,7 +5873,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.61
     },
     {
       "S": 786.53,
@@ -5652,7 +5891,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.54
     },
     {
       "S": 575.91,
@@ -5668,7 +5909,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.81
     },
     {
       "S": 731.58,
@@ -5684,7 +5927,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.61
     },
     {
       "S": 575.91,
@@ -5700,7 +5945,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.81
     },
     {
       "S": 676.64,
@@ -5716,7 +5963,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.68
     },
     {
       "S": 557.59,
@@ -5732,7 +5981,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 786.53,
+      "payback_years": 2.83
     },
     {
       "S": 549.25,
@@ -5748,7 +5999,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5764,7 +6017,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5780,7 +6035,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5796,7 +6053,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 549.25,
@@ -5812,7 +6071,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 472.44,
@@ -5828,7 +6089,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 472.44,
+      "payback_years": 4.23
     },
     {
       "S": 702.75,
@@ -5844,7 +6107,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "STANDING",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 702.75,
+      "payback_years": 2.85
     },
     {
       "S": 549.25,
@@ -5860,7 +6125,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 549.25,
+      "payback_years": 3.64
     },
     {
       "S": 710.55,
@@ -5876,7 +6143,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 710.55,
@@ -5892,7 +6161,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 765.49,
@@ -5908,7 +6179,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "STANDING",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.61
     },
     {
       "S": 554.87,
@@ -5924,7 +6197,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.89
     },
     {
       "S": 710.55,
@@ -5940,7 +6215,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.68
     },
     {
       "S": 554.87,
@@ -5956,7 +6233,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.89
     },
     {
       "S": 655.6,
@@ -5972,7 +6251,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.76
     },
     {
       "S": 536.56,
@@ -5988,7 +6269,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "STANDING",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 765.49,
+      "payback_years": 2.91
     },
     {
       "S": 561.82,
@@ -6004,7 +6287,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6020,7 +6305,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6036,7 +6323,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6052,7 +6341,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6068,7 +6359,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 485.02,
@@ -6084,7 +6377,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 466.24,
+      "payback_years": 4.25
     },
     {
       "S": 715.33,
@@ -6100,7 +6395,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 696.56,
+      "payback_years": 2.84
     },
     {
       "S": 561.82,
@@ -6116,7 +6413,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 723.12,
@@ -6132,7 +6431,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 723.12,
@@ -6148,7 +6449,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 778.07,
@@ -6164,7 +6467,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.61
     },
     {
       "S": 567.45,
@@ -6180,7 +6485,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 723.12,
@@ -6196,7 +6503,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 567.45,
@@ -6212,7 +6521,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 668.18,
@@ -6228,7 +6539,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.75
     },
     {
       "S": 549.13,
@@ -6244,7 +6557,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.91
     },
     {
       "S": 517.25,
@@ -6260,7 +6575,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6276,7 +6593,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6292,7 +6611,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6308,7 +6629,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6324,7 +6647,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 440.44,
@@ -6340,7 +6665,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 415.59,
+      "payback_years": 4.75
     },
     {
       "S": 670.75,
@@ -6356,7 +6683,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 645.9,
+      "payback_years": 3.06
     },
     {
       "S": 517.25,
@@ -6372,7 +6701,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 678.55,
@@ -6388,7 +6719,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 678.55,
@@ -6404,7 +6737,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 733.49,
@@ -6420,7 +6755,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.79
     },
     {
       "S": 522.87,
@@ -6436,7 +6773,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 678.55,
@@ -6452,7 +6791,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 522.87,
@@ -6468,7 +6809,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 623.6,
@@ -6484,7 +6827,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.94
     },
     {
       "S": 504.55,
@@ -6500,7 +6845,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.11
     },
     {
       "S": 561.82,
@@ -6516,7 +6863,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6532,7 +6881,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6548,7 +6899,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6564,7 +6917,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -6580,7 +6935,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 485.02,
@@ -6596,7 +6953,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 466.24,
+      "payback_years": 4.25
     },
     {
       "S": 715.33,
@@ -6612,7 +6971,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 696.56,
+      "payback_years": 2.84
     },
     {
       "S": 561.82,
@@ -6628,7 +6989,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 723.12,
@@ -6644,7 +7007,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 723.12,
@@ -6660,7 +7025,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 778.07,
@@ -6676,7 +7043,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.61
     },
     {
       "S": 567.45,
@@ -6692,7 +7061,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 723.12,
@@ -6708,7 +7079,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 567.45,
@@ -6724,7 +7097,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 668.18,
@@ -6740,7 +7115,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.75
     },
     {
       "S": 549.13,
@@ -6756,7 +7133,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.91
     },
     {
       "S": 517.25,
@@ -6772,7 +7151,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6788,7 +7169,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6804,7 +7187,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6820,7 +7205,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -6836,7 +7223,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 440.44,
@@ -6852,7 +7241,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 415.59,
+      "payback_years": 4.75
     },
     {
       "S": 670.75,
@@ -6868,7 +7259,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 645.9,
+      "payback_years": 3.06
     },
     {
       "S": 517.25,
@@ -6884,7 +7277,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 678.55,
@@ -6900,7 +7295,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 678.55,
@@ -6916,7 +7313,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 733.49,
@@ -6932,7 +7331,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.79
     },
     {
       "S": 522.87,
@@ -6948,7 +7349,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 678.55,
@@ -6964,7 +7367,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 522.87,
@@ -6980,7 +7385,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 623.6,
@@ -6996,7 +7403,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.94
     },
     {
       "S": 504.55,
@@ -7012,7 +7421,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.11
     },
     {
       "S": 561.82,
@@ -7028,7 +7439,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7044,7 +7457,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7060,7 +7475,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7076,7 +7493,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7092,7 +7511,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 485.02,
@@ -7108,7 +7529,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 466.24,
+      "payback_years": 4.25
     },
     {
       "S": 715.33,
@@ -7124,7 +7547,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 696.56,
+      "payback_years": 2.84
     },
     {
       "S": 561.82,
@@ -7140,7 +7565,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 723.12,
@@ -7156,7 +7583,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 723.12,
@@ -7172,7 +7601,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 778.07,
@@ -7188,7 +7619,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.61
     },
     {
       "S": 567.45,
@@ -7204,7 +7637,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 723.12,
@@ -7220,7 +7655,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 567.45,
@@ -7236,7 +7673,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 668.18,
@@ -7252,7 +7691,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.75
     },
     {
       "S": 549.13,
@@ -7268,7 +7709,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.91
     },
     {
       "S": 517.25,
@@ -7284,7 +7727,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7300,7 +7745,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7316,7 +7763,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7332,7 +7781,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7348,7 +7799,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 440.44,
@@ -7364,7 +7817,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 415.59,
+      "payback_years": 4.75
     },
     {
       "S": 670.75,
@@ -7380,7 +7835,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 645.9,
+      "payback_years": 3.06
     },
     {
       "S": 517.25,
@@ -7396,7 +7853,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 678.55,
@@ -7412,7 +7871,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 678.55,
@@ -7428,7 +7889,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 733.49,
@@ -7444,7 +7907,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.79
     },
     {
       "S": 522.87,
@@ -7460,7 +7925,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 678.55,
@@ -7476,7 +7943,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 522.87,
@@ -7492,7 +7961,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 623.6,
@@ -7508,7 +7979,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.94
     },
     {
       "S": 504.55,
@@ -7524,7 +7997,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.11
     },
     {
       "S": 561.82,
@@ -7540,7 +8015,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7556,7 +8033,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7572,7 +8051,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7588,7 +8069,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 561.82,
@@ -7604,7 +8087,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 485.02,
@@ -7620,7 +8105,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 466.24,
+      "payback_years": 4.25
     },
     {
       "S": 715.33,
@@ -7636,7 +8123,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 696.56,
+      "payback_years": 2.84
     },
     {
       "S": 561.82,
@@ -7652,7 +8141,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 543.05,
+      "payback_years": 3.65
     },
     {
       "S": 723.12,
@@ -7668,7 +8159,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 723.12,
@@ -7684,7 +8177,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 778.07,
@@ -7700,7 +8195,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.61
     },
     {
       "S": 567.45,
@@ -7716,7 +8213,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 723.12,
@@ -7732,7 +8231,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.68
     },
     {
       "S": 567.45,
@@ -7748,7 +8249,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.89
     },
     {
       "S": 668.18,
@@ -7764,7 +8267,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.75
     },
     {
       "S": 549.13,
@@ -7780,7 +8285,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 759.29,
+      "payback_years": 2.91
     },
     {
       "S": 517.25,
@@ -7796,7 +8303,9 @@
       "gas": "AGL1055746MRG5@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7812,7 +8321,9 @@
       "gas": "AGL1055858MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7828,7 +8339,9 @@
       "gas": "AGL1055879MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7844,7 +8357,9 @@
       "gas": "AGL1055880MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 517.25,
@@ -7860,7 +8375,9 @@
       "gas": "AGL1055916MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 440.44,
@@ -7876,7 +8393,9 @@
       "gas": "AGL1055932MRG3@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 415.59,
+      "payback_years": 4.75
     },
     {
       "S": 670.75,
@@ -7892,7 +8411,9 @@
       "gas": "AGL1055990SRG3@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 645.9,
+      "payback_years": 3.06
     },
     {
       "S": 517.25,
@@ -7908,7 +8429,9 @@
       "gas": "AGL1055999MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 492.39,
+      "payback_years": 4.01
     },
     {
       "S": 678.55,
@@ -7924,7 +8447,9 @@
       "gas": "ENE1000069MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 678.55,
@@ -7940,7 +8465,9 @@
       "gas": "ENE1000075MRG4@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 733.49,
@@ -7956,7 +8483,9 @@
       "gas": "ENE19241SRG37@EME",
       "e_type": "MARKET",
       "g_type": "STANDING",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.79
     },
     {
       "S": 522.87,
@@ -7972,7 +8501,9 @@
       "gas": "ENE379614MRG28@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 678.55,
@@ -7988,7 +8519,9 @@
       "gas": "ENE477582MRG16@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.86
     },
     {
       "S": 522.87,
@@ -8004,7 +8537,9 @@
       "gas": "ENE670158MRG14@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.08
     },
     {
       "S": 623.6,
@@ -8020,7 +8555,9 @@
       "gas": "ENE681366MRG13@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": true
+      "open_to_all": true,
+      "S_after_year_one": 708.64,
+      "payback_years": 2.94
     },
     {
       "S": 504.55,
@@ -8036,7 +8573,9 @@
       "gas": "ENE831712MRG10@EME",
       "e_type": "MARKET",
       "g_type": "MARKET",
-      "open_to_all": false
+      "open_to_all": false,
+      "S_after_year_one": 708.64,
+      "payback_years": 3.11
     }
   ],
   "pairs_after_year_one": [
