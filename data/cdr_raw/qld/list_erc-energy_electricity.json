@@ -1,0 +1,82 @@
+[
+  {
+    "planId": "ERC1153004SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL1",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153009SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153010SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL1 & CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153003SRE1@EME",
+    "displayName": "Standing  Offer - Anytime",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153006SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL & CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153008SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL1",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153005SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ERC1153007SRE1@EME",
+    "displayName": "Standing Offer -  Time of Use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

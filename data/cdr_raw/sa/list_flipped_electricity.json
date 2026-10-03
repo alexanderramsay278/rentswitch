@@ -1,0 +1,82 @@
+[
+  {
+    "planId": "FEA1154656SRE2@EME",
+    "displayName": "Freedom Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154591MRE2@EME",
+    "displayName": "Freedom Switched On 2.2! Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154607MRE2@EME",
+    "displayName": "Freedom Switched On 2.2!",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154590MRE2@EME",
+    "displayName": "Anytime Switched On 2.2! Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154617MRE2@EME",
+    "displayName": "Anytime Switched On 2.2!",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154662SRE2@EME",
+    "displayName": "Anytime Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154646SRE2@EME",
+    "displayName": "Freedom Standing Offer - Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FEA1154648SRE2@EME",
+    "displayName": "Anytime Standing Offer - Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

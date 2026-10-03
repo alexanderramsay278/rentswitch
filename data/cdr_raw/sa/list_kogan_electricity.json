@@ -1,0 +1,112 @@
+[
+  {
+    "planId": "KOG1060403MRE4@EME",
+    "displayName": "Kogan Solar Sharer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060400MRE2@EME",
+    "displayName": "Kogan Energy Basic",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060399MRE2@EME",
+    "displayName": "Kogan Energy for current FIRST members",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060401MRE2@EME",
+    "displayName": "Kogan Energy Basic",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060393MRE2@EME",
+    "displayName": "Kogan Energy with free FIRST",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060394MRE2@EME",
+    "displayName": "Kogan Energy with free FIRST",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060398MRE2@EME",
+    "displayName": "Kogan Energy for current FIRST members",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060396MRE2@EME",
+    "displayName": "Kogan Energy with free FIRST",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060392MRE2@EME",
+    "displayName": "Kogan Energy with free FIRST",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060397MRE2@EME",
+    "displayName": "Kogan Energy for current FIRST members",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "KOG1060395MRE2@EME",
+    "displayName": "Kogan Energy for current FIRST members",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

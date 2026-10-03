@@ -1,0 +1,142 @@
+[
+  {
+    "planId": "AGL907674MRG12@EME",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL907664MRG11@EME",
+    "displayName": "Residential Smart Saver",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL726404MRG27@EME",
+    "displayName": "Residential Smart Saver - Velocity New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL360503MRG38@EME",
+    "displayName": "Residential Seniors Saver",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL737859MRG18@EME",
+    "displayName": "Residential Smart Saver - Westpac New to AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL827739MRG13@EME",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL662876MRG23@EME",
+    "displayName": "Residential Smart Saver - Westpac",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL726413MRG20@EME",
+    "displayName": "Residential Smart Saver - Velocity",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL15285SRG33@EME",
+    "displayName": "Residential Standing Offer",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL1189551MRG1@EME",
+    "displayName": "Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL1189545MRG1@EME",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL1063774MRG3@EME",
+    "displayName": "Residential Seniors Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL1063777MRG2@EME",
+    "displayName": "Residential Smart Saver - New to AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "AGL1063771MRG2@EME",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  }
+]

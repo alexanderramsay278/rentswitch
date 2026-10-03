@@ -1,0 +1,58 @@
+[
+  {
+    "planId": "GLO1165667MRG2@EME",
+    "displayName": "GLOHOME Residential(AGN SA)-AGN SA",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough",
+      "AGN Mount Gambier",
+      "AGN Port Pirie",
+      "AGN Riverland/Murray Bridge",
+      "AGN Whyalla"
+    ]
+  },
+  {
+    "planId": "GLO1165666MRG2@EME",
+    "displayName": "FULLHOUSE Residential(AGN SA)-AGN SA",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough",
+      "AGN Mount Gambier",
+      "AGN Port Pirie",
+      "AGN Riverland/Murray Bridge",
+      "AGN Whyalla"
+    ]
+  },
+  {
+    "planId": "GLO1165668MRG2@EME",
+    "displayName": "ULTRAEASY Residential(AGN SA)-AGN SA",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough",
+      "AGN Mount Gambier",
+      "AGN Port Pirie",
+      "AGN Riverland/Murray Bridge",
+      "AGN Whyalla"
+    ]
+  },
+  {
+    "planId": "GLO1127703SRG2@EME",
+    "displayName": "Resi Standing Offer Prices (AGN SA)-AGN SA",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough",
+      "AGN Mount Gambier",
+      "AGN Port Pirie",
+      "AGN Riverland/Murray Bridge",
+      "AGN Whyalla"
+    ]
+  }
+]

@@ -1,0 +1,762 @@
+[
+  {
+    "planId": "ENE379814MRE32@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE360420MRE28@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE360427MRE28@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE360409MRE28@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE19229SRE42@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE19245SRE42@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE999996MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE999997MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE999998MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE999999MRE8@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1147743SRE3@EME",
+    "displayName": "Standing Offer Solar Sharer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976979MRE7@EME",
+    "displayName": "Solar Max - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1147742SRE3@EME",
+    "displayName": "Standing Offer Solar Sharer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE19190SRE42@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE19209SRE42@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1147741SRE3@EME",
+    "displayName": "Standing Offer Solar Sharer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1147740SRE3@EME",
+    "displayName": "Standing Offer Solar Sharer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976986MRE10@EME",
+    "displayName": "Flexi Plan - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976994MRE10@EME",
+    "displayName": "Flexi Plan - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE977002MRE10@EME",
+    "displayName": "QLD Seniors Offer - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976989MRE6@EME",
+    "displayName": "Balance Plan - Connect Now - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE977003MRE10@EME",
+    "displayName": "QLD Seniors Offer - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976992MRE6@EME",
+    "displayName": "Balance Plan - Connect Now - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976988MRE10@EME",
+    "displayName": "Flexi Plan - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976996MRE10@EME",
+    "displayName": "Rate Fix - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976991MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976977MRE7@EME",
+    "displayName": "Solar Max - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976990MRE6@EME",
+    "displayName": "Balance Plan - Connect Now - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976981MRE7@EME",
+    "displayName": "Solar Max - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976993MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976999MRE10@EME",
+    "displayName": "Rate Fix - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976998MRE10@EME",
+    "displayName": "Rate Fix - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976984MRE10@EME",
+    "displayName": "Flexi Plan - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976987MRE6@EME",
+    "displayName": "Balance Plan - Connect Now - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976978SRE8@EME",
+    "displayName": "Standing Offer (Home) - 7 Day TOU + CL 1",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE977001MRE10@EME",
+    "displayName": "QLD Seniors Offer - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976982SRE8@EME",
+    "displayName": "Standing Offer (Home) - 7 Day TOU + CL 1 & 2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976997MRE10@EME",
+    "displayName": "Rate Fix - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE977000MRE10@EME",
+    "displayName": "QLD Seniors Offer - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976995MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976983SRE8@EME",
+    "displayName": "Standing Offer (Home) - 7 Day TOU + CL 2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976980SRE8@EME",
+    "displayName": "Standing Offer (Home) - 7 Day TOU",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976985MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE888447MRE12@EME",
+    "displayName": "QLD Seniors Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE888445MRE12@EME",
+    "displayName": "QLD Seniors Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE888448MRE12@EME",
+    "displayName": "QLD Seniors Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE888446MRE12@EME",
+    "displayName": "QLD Seniors Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE976976MRE7@EME",
+    "displayName": "Solar Max - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000001MRE6@EME",
+    "displayName": "Balance Plan - My Connect - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE681812MRE19@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000010MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000003MRE6@EME",
+    "displayName": "Balance Plan - My Connect - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE681822MRE19@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000004MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000005MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000002MRE6@EME",
+    "displayName": "Balance Plan - My Connect - 7 Day TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000007MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000008MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000006MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000009MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections - 7 Day TOU + CL 1 & 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000011MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections - 7 Day TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE676760MRE19@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE1000000MRE6@EME",
+    "displayName": "Balance Plan - My Connect - 7 Day TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE676765MRE19@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE681800MRE19@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE676770MRE19@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE681805MRE19@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE676767MRE19@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE477671MRE19@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE477659MRE19@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE477680MRE19@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE477678MRE19@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE379819MRE32@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE379828MRE32@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE379820MRE32@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "ENE360410MRE28@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

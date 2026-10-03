@@ -1,0 +1,42 @@
+[
+  {
+    "planId": "FXP1125561SRE1@EME",
+    "displayName": "Energex - RESI Time of Use FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FXP1125551SRE1@EME",
+    "displayName": "Energex - RESI Anytime FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FXP1125571SRE1@EME",
+    "displayName": "Energex - RESI Anytime + CL1 FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FXP1125576SRE1@EME",
+    "displayName": "Energex - RESI Solar Sharer Offer FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

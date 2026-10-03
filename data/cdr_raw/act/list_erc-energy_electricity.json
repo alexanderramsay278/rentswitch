@@ -1,0 +1,82 @@
+[
+  {
+    "planId": "ERC1152999SRE1@EME",
+    "displayName": "Standing Offer -  Time of Use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1152997SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1152995SRE1@EME",
+    "displayName": "Standing  Offer - Anytime",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1152998SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL & CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1153001SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1153002SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL1 & CL2",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1153000SRE1@EME",
+    "displayName": "Standing Offer -   Time of Use + CL1",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ERC1152996SRE1@EME",
+    "displayName": "Standing  Offer - Anytime + CL1",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-29T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  }
+]

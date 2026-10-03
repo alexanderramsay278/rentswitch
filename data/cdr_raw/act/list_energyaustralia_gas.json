@@ -1,0 +1,72 @@
+[
+  {
+    "planId": "ENE996122MRG5@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE996121MRG5@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE19194SRG36@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE681815MRG10@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE682976MRG9@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE379832MRG26@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ENE477669MRG12@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  }
+]

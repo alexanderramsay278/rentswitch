@@ -1,0 +1,42 @@
+[
+  {
+    "planId": "FXP1125577SRE1@EME",
+    "displayName": "SAPN - RESI Solar Sharer Offer FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FXP1125552SRE1@EME",
+    "displayName": "SAPN - RESI Anytime FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FXP1125562SRE1@EME",
+    "displayName": "SAPN - RESI Time of Use FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "FXP1125572SRE1@EME",
+    "displayName": "SAPN - RESI Anytime + CL1 FY27",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

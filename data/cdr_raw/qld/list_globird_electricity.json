@@ -1,0 +1,362 @@
+[
+  {
+    "planId": "GLO1176088MRE2@EME",
+    "displayName": "FREELUNCH Resi (Flexible Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1176089MRE2@EME",
+    "displayName": "FREELUNCH Resi (Flexible Rate CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1171783MRE1@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-17T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1171782MRE1@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-17T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168970MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flexible Energy)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168968MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flat Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168967MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flat Rate CTL Load)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168916MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Two Rate) estimate-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168917MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Two Rate CTL) estimate-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168914MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Single Rate) estimate-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168915MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Single Rate CTL) estimate-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1168969MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flexible Energy CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165606MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible Energy CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165610MRE2@EME",
+    "displayName": "SOLARPLUS Residential (Flexible Energy CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165604MRE2@EME",
+    "displayName": "GLOHOME Residential (Flat Rate CTL Load)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165605MRE2@EME",
+    "displayName": "GLOHOME Residential (Flat Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165608MRE2@EME",
+    "displayName": "SOLARPLUS Residential (Flat Rate CTL Load)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165612MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flat Rate CTL Load)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165607MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible Energy)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165611MRE2@EME",
+    "displayName": "SOLARPLUS Residential (Flexible Energy)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165613MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flat Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165609MRE2@EME",
+    "displayName": "SOLARPLUS Residential (Flat Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165615MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flexible Energy)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165614MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flexible Energy CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165683MRE1@EME",
+    "displayName": "EASYEV Residential (Flexible Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165684MRE1@EME",
+    "displayName": "EASYEV Residential (Flexible Rate CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165674MRE1@EME",
+    "displayName": "FOUR4FREE Residential (Flexible Rate CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1165673MRE1@EME",
+    "displayName": "FOUR4FREE Residential (Flexible Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127668MRE2@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127669MRE2@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate CTL)-Energex",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127711SRE2@EME",
+    "displayName": "Resi Standing Offer (Flat Rate CTL Load)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127713SRE2@EME",
+    "displayName": "Resi Standing Offer (Flexible Rate Energy CTL)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1128315SRE2@EME",
+    "displayName": "Resi Standing Offer (Solar Sharer Offer CTL)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1128314SRE2@EME",
+    "displayName": "Resi Standing Offer (Solar Sharer Offer)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127714SRE2@EME",
+    "displayName": "Resi Standing Offer (Flexible Rate Energy)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GLO1127712SRE2@EME",
+    "displayName": "Resi Standing Offer (Flat Rate)-Energex",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

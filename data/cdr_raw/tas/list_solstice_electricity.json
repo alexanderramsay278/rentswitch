@@ -1,0 +1,322 @@
+[
+  {
+    "planId": "SOL1140190MRE1@EME",
+    "displayName": "Select Residential Single Rate + Heating & Hot Water",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140215SRE1@EME",
+    "displayName": "Standard Residential Single Rate + H&H/W + Off Peak",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140205MRE1@EME",
+    "displayName": "Select Resi Single Rate + H&H/W + Off Peak Night",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140222MRE1@EME",
+    "displayName": "Scoreboard Residential Single Rate + H&H/W + Off Peak",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140203SRE1@EME",
+    "displayName": "Standard Resi Single Rate + H&H/W + Off Peak Night",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140198MRE1@EME",
+    "displayName": "Scoreboard Resi Single Rate + Heating & Hot Water",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140188SRE1@EME",
+    "displayName": "Standard Residential Single Rate + Heating & Hot Water",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140280MRE1@EME",
+    "displayName": "Select Residential Flat Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140217MRE1@EME",
+    "displayName": "Select Residential Single Rate + H&H/W + Off Peak",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140210MRE1@EME",
+    "displayName": "Scoreboard Resi Single Rate + H&H/W + Off Peak Night",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140227SRE1@EME",
+    "displayName": "Standard Residential Single Rate + Off Peak",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140229MRE1@EME",
+    "displayName": "Select Residential Single Rate + Off Peak",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140273MRE1@EME",
+    "displayName": "Scoreboard Residential Time of Use + Off Peak Night",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140266SRE1@EME",
+    "displayName": "Standard Residential Time of Use + Off Peak Night",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140286SRE1@EME",
+    "displayName": "Standard Resi Flat Rate + Off Peak Night Only",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140282MRE1@EME",
+    "displayName": "Scoreboard Residential Flat Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140241MRE1@EME",
+    "displayName": "Select Resi Single Rate + Off Peak Night Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140278SRE1@EME",
+    "displayName": "Standard Residential Flat Rate",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140234MRE1@EME",
+    "displayName": "Scoreboard Residential Single Rate + Off Peak",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140296MRE1@EME",
+    "displayName": "Select Residential Consumer Energy Resources",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140246MRE1@EME",
+    "displayName": "Scoreboard Resi Single Rate + Off Peak Night Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140288MRE1@EME",
+    "displayName": "Select Resi Flat Rate + Off Peak Night Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140290MRE1@EME",
+    "displayName": "Scoreboard Resi Flat Rate + Off Peak Night Only",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140294SRE1@EME",
+    "displayName": "Standard Residential Consumer Energy Resources",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140268MRE1@EME",
+    "displayName": "Select Residential Time of Use + Off Peak Night",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1142933SRE1@EME",
+    "displayName": "Standard Residential Time of Use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1142935MRE1@EME",
+    "displayName": "Select Residential Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1142943MRE1@EME",
+    "displayName": "Scoreboard Residential Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140239SRE1@EME",
+    "displayName": "Standard Resi Single Rate + Off Peak Night Only",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140176SRE1@EME",
+    "displayName": "Standard Residential Single Rate",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140183MRE1@EME",
+    "displayName": "Scoreboard Residential Single Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "SOL1140178MRE1@EME",
+    "displayName": "Select Residential Single Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-14T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  }
+]

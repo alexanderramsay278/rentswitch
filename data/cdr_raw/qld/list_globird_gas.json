@@ -1,0 +1,42 @@
+[
+  {
+    "planId": "GLO1165663MRG2@EME",
+    "displayName": "ULTRAEASY Residential(AGN-Brisbane)-AGN QLD",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "GLO1165657MRG2@EME",
+    "displayName": "FULLHOUSE Residential(AGN-Brisbane)-AGN QLD",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "GLO1165660MRG2@EME",
+    "displayName": "GLOHOME Residential(AGN-Brisbane)-AGN QLD",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  },
+  {
+    "planId": "GLO1127704SRG2@EME",
+    "displayName": "Resi Standing Offer Prices (AGN-Brisbane)-AGN QLD",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "AGN - Brisbane and Riverview"
+    ]
+  }
+]

@@ -1,0 +1,1097 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-03",
+    "filter": "customerType=RESIDENTIAL, postcode 5000, effective=CURRENT, type=STANDING",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
+  },
+  "plans": [
+    {
+      "planId": "AGL15385SRE32@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.636828,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL15386SRE32@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.201967,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1189631SRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295914,
+      "shoulder": 0.154936,
+      "controlledLoad": 0.201967,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1123054SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Sharer Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.319734,
+      "shoulder": 0.0,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1175153SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Sharer Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.319734,
+      "shoulder": 0.0,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1175154SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Sharer Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.319734,
+      "shoulder": 0.0,
+      "controlledLoad": 0.201967,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1067324SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295914,
+      "shoulder": 0.154936,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1067263SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295914,
+      "shoulder": 0.154936,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL15384SRG33@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Standing Offer - No Exit Fee",
+      "distributors": [
+        "AGN Metro/Barossa/Peterborough"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.0064,
+      "blocks": [
+        {
+          "volumeMJ": 109.589,
+          "unitPrice": 0.05648
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.03166
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.05648,
+      "lastBlockRate": 0.03166
+    },
+    {
+      "planId": "DOD146947SRE16@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295915,
+      "shoulder": 0.154937,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "DOD146946SRE12@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295915,
+      "shoulder": 0.154937,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "DOD14016SRE11@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.47,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "DOD14015SRE12@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.1596,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "DOD1110329SRE1@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.319735,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ELU1021362SRE6@EME",
+      "brand": "energy-locals-urban",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.62,
+      "flat": 0.38,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE247405SRE31@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295914,
+      "shoulder": 0.154937,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19219SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.63682,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19189SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.63682,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2022,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE1147744SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.319734,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE1147745SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.63682,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.319734,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE94153SRE35@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.63682,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295914,
+      "shoulder": 0.154937,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19248SRG37@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "AGN Metro/Barossa/Peterborough"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.08,
+      "blocks": [
+        {
+          "volumeMJ": 27.4,
+          "unitPrice": 0.07572
+        },
+        {
+          "volumeMJ": 21.9,
+          "unitPrice": 0.04329
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.03459
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.07572,
+      "lastBlockRate": 0.03459
+    },
+    {
+      "planId": "FEA1154656SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Freedom Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.826259,
+      "flat": null,
+      "peak": 0.605598,
+      "offPeak": 0.148475,
+      "shoulder": 0.415408,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FEA1154662SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Anytime Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.826259,
+      "flat": 0.363812,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FEA1154646SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Freedom Standing Offer - Controlled Load",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.837741,
+      "flat": null,
+      "peak": 0.605597,
+      "offPeak": 0.148474,
+      "shoulder": 0.415407,
+      "controlledLoad": 0.283866,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "FEA1154648SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Anytime Standing Offer - Controlled Load",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.837741,
+      "flat": 0.363766,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.283866,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "FP11199342SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer FY27 SR",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": 0.38100273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FP11199356SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer FY27 TOU",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": null,
+      "peak": 0.51110727,
+      "offPeak": 0.29591455,
+      "shoulder": 0.15493727,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FP11199353SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer FY27",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": null,
+      "peak": 0.53492727,
+      "offPeak": 0.0,
+      "shoulder": 0.31973455,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125577SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "SAPN - RESI Solar Sharer Offer FY27",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": null,
+      "peak": 0.53492727,
+      "offPeak": 0.31973455,
+      "shoulder": 0.17875636,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125552SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "SAPN - RESI Anytime FY27",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": 0.38100273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125562SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "SAPN - RESI Time of Use FY27",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63682909,
+      "flat": null,
+      "peak": 0.51110727,
+      "offPeak": 0.29591455,
+      "shoulder": 0.15493727,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125572SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "SAPN - RESI Anytime + CL1 FY27",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.63682909,
+      "flat": 0.38100273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1127709SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer Prices (Flex Rate)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295915,
+      "shoulder": 0.154937,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127708SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer Prices (Flat Rate CTL)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": 0.381003,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1127710SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer Prices (Flex Rate CTL)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.511107,
+      "offPeak": 0.295915,
+      "shoulder": 0.154937,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1128316SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Solar Sharer Offer)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.319735,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1128317SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Solar Sharer CTL)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.319735,
+      "shoulder": null,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1127707SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer Prices (Flat Rate)-SAPN",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.636829,
+      "flat": 0.381003,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127703SRG2@EME",
+      "brand": "globird",
+      "fuel": "GAS",
+      "displayName": "Resi Standing Offer Prices (AGN SA)-AGN SA",
+      "distributors": [
+        "AGN Metro/Barossa/Peterborough",
+        "AGN Mount Gambier",
+        "AGN Port Pirie",
+        "AGN Riverland/Murray Bridge",
+        "AGN Whyalla"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.9,
+      "blocks": [
+        {
+          "volumeMJ": 1520.0,
+          "unitPrice": 0.082
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.062
+        }
+      ],
+      "blockPeriod": "P1M",
+      "firstBlockRate": 0.082,
+      "lastBlockRate": 0.062
+    },
+    {
+      "planId": "MOM1123757SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.53492,
+      "offPeak": 1e-08,
+      "shoulder": 0.31973,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM1063296SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.53492,
+      "offPeak": 1e-08,
+      "shoulder": 0.31973,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916075SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.63683,
+      "flat": null,
+      "peak": 0.57843,
+      "offPeak": 0.26118,
+      "shoulder": 0.33391,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916064SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.5111,
+      "offPeak": 0.15493,
+      "shoulder": 0.29591,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916047SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.636829,
+      "flat": 0.381,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916066SRE3@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.5111,
+      "offPeak": 0.15493,
+      "shoulder": 0.29591,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916011SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": 0.381,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO1110158SRE3@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer (Solar Sharer)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.178756,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO1110157SRE3@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer (Solar Sharer)",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.178756,
+      "controlledLoad": 0.202269,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934277SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.636828,
+      "flat": 0.381001,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO934259SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.511106,
+      "offPeak": 0.295913,
+      "shoulder": 0.154936,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO934296SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.63633,
+      "flat": null,
+      "peak": 0.511106,
+      "offPeak": 0.295913,
+      "shoulder": 0.154936,
+      "controlledLoad": 0.202269,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934310SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636599,
+      "flat": 0.381001,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.202269,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060402SRE3@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Powershop Solar Sharer Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636828,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.178756,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "PSH1060378SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.636828,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.20227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060375SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.636828,
+      "flat": 0.381002,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "IOR1159335SRE1@EME",
+      "brand": "radian",
+      "fuel": "ELECTRICITY",
+      "displayName": "Regulated Home | Time-of-use",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.6368,
+      "flat": null,
+      "peak": 0.5111,
+      "offPeak": 0.2959,
+      "shoulder": 0.1549,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "IOR1159333SRE1@EME",
+      "brand": "radian",
+      "fuel": "ELECTRICITY",
+      "displayName": "Regulated Home | Flat rate",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.6368,
+      "flat": 0.381,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "IOR1159332SRE1@EME",
+      "brand": "radian",
+      "fuel": "ELECTRICITY",
+      "displayName": "Regulated Home | Flat rate | Controlled load",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.6368,
+      "flat": 0.381,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2022,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "IOR1159334SRE1@EME",
+      "brand": "radian",
+      "fuel": "ELECTRICITY",
+      "displayName": "Regulated Home | Time-of-use | Controlled load",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.6368,
+      "flat": null,
+      "peak": 0.5111,
+      "offPeak": 0.2959,
+      "shoulder": 0.1549,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TAN1128312SRE2@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.178756,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TAN1128313SRE2@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "SA Power Networks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.636829,
+      "flat": null,
+      "peak": 0.534927,
+      "offPeak": 0.0,
+      "shoulder": 0.178756,
+      "controlledLoad": 0.126795,
+      "controlledLoadSupplyCharge": 0.0
+    }
+  ]
+}

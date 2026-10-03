@@ -1,0 +1,722 @@
+[
+  {
+    "planId": "ENE360421MRE29@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE360411MRE29@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE360415MRE29@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE360422MRE29@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE19297SRE43@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE19239SRE43@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE19256SRE43@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996136MRE6@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996137MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996138MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996139MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996140MRE6@EME",
+    "displayName": "Balance Plan - Resi Connections (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996134MRE6@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996129MRE6@EME",
+    "displayName": "Balance Plan - My Connect (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996126MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996133MRE6@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996127MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996130MRE6@EME",
+    "displayName": "Balance Plan - My Connect (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996128MRE6@EME",
+    "displayName": "Balance Plan - My Connect (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996132MRE6@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996135MRE6@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996125MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996131MRE6@EME",
+    "displayName": "Balance Plan - My Connect (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996123MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE996124MRE6@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE19176SRE43@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE19160SRE43@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796973MRE10@EME",
+    "displayName": "Balance Plan - Connect Now (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796999MRE10@EME",
+    "displayName": "Rate Fix (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796996MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE797003MRE12@EME",
+    "displayName": "Solar Max (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796991MRE10@EME",
+    "displayName": "Rate Fix (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE797000SRE10@EME",
+    "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE797002MRE12@EME",
+    "displayName": "Solar Max (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796984MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796977MRE10@EME",
+    "displayName": "Flexi Plan (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796990MRE10@EME",
+    "displayName": "Balance Plan - Connect Now (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796995MRE10@EME",
+    "displayName": "Flexi Plan (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796997SRE10@EME",
+    "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE797001MRE10@EME",
+    "displayName": "Balance Plan - Connect Now (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796979MRE10@EME",
+    "displayName": "Flexi Plan (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796974SRE10@EME",
+    "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796993MRE10@EME",
+    "displayName": "Rate Fix (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796992SRE10@EME",
+    "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796981MRE10@EME",
+    "displayName": "Rate Fix (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796985MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796975MRE12@EME",
+    "displayName": "Solar Max (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796983MRE10@EME",
+    "displayName": "Balance Plan - Connect Now (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796989MRE10@EME",
+    "displayName": "Balance Plan - Third Party Offer (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796987MRE12@EME",
+    "displayName": "Solar Max (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE796972MRE10@EME",
+    "displayName": "Flexi Plan (7 day TOU Interval)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE682971MRE13@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE682977MRE13@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE681818MRE14@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE682972MRE13@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE681816MRE14@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE681814MRE14@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE682979MRE14@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE682974MRE13@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE681810MRE14@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE681801MRE14@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE477676MRE16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE477673MRE16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE477675MRE16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE477668MRE16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE477667MRE16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE379841MRE28@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE379842MRE28@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE379840MRE28@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE379834MRE28@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE379830MRE28@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ENE360419MRE29@EME",
+    "displayName": "Solar Max",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  }
+]

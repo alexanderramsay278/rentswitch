@@ -1,0 +1,182 @@
+[
+  {
+    "planId": "OVO723814MRE23@EME",
+    "displayName": "The EV Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704517MRE25@EME",
+    "displayName": "The One Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO723777MRE23@EME",
+    "displayName": "The EV Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704516MRE25@EME",
+    "displayName": "The One Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704519MRE25@EME",
+    "displayName": "The One Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704518MRE25@EME",
+    "displayName": "The One Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO723748MRE23@EME",
+    "displayName": "The EV Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO723780MRE23@EME",
+    "displayName": "The EV Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704473MRE26@EME",
+    "displayName": "The Free 4 Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704474MRE26@EME",
+    "displayName": "The Free 4 Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704476MRE26@EME",
+    "displayName": "The Free 4 Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO704475MRE26@EME",
+    "displayName": "The Free 4 Plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO1110158SRE3@EME",
+    "displayName": "Basic Standing Offer (Solar Sharer)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO1110157SRE3@EME",
+    "displayName": "Basic Standing Offer (Solar Sharer)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO934277SRE4@EME",
+    "displayName": "Basic Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO934259SRE4@EME",
+    "displayName": "Basic Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO934296SRE4@EME",
+    "displayName": "Basic Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "OVO934310SRE4@EME",
+    "displayName": "Basic Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

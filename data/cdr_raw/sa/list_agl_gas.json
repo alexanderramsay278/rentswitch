@@ -1,0 +1,142 @@
+[
+  {
+    "planId": "AGL907799MRG11@EME",
+    "displayName": "Residential Smart Saver (No Exit Fee)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL907771MRG12@EME",
+    "displayName": "Residential Smart Saver - 3rd Party",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL933642MRG11@EME",
+    "displayName": "Residential Smart Saver - BP Fuel New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL726438MRG28@EME",
+    "displayName": "Residential Smart Saver - Velocity New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL827773MRG13@EME",
+    "displayName": "Residential Smart Saver - BP Fuel",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL360499MRG38@EME",
+    "displayName": "Residential Seniors Saver (No Exit Fee)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL726431MRG22@EME",
+    "displayName": "Residential Smart Saver - Velocity (No Exit Fee)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL360634MRG33@EME",
+    "displayName": "Residential Smart Saver - Westpac (No Exit Fee)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL737857MRG19@EME",
+    "displayName": "Residential Smart Saver Westpac New to AGL(No Exit Fee)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL15384SRG33@EME",
+    "displayName": "Residential Standing Offer - No Exit Fee",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL1189582MRG1@EME",
+    "displayName": "Residential Seniors Saver (No Exit Fee) New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL1189570MRG1@EME",
+    "displayName": "Residential Smart Saver (No Exit Fee) New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL1063776MRG2@EME",
+    "displayName": "Residential Smart Saver (No Exit Fee) New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "AGL1063775MRG2@EME",
+    "displayName": "Residential Seniors Saver (No Exit Fee) New To AGL",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  }
+]

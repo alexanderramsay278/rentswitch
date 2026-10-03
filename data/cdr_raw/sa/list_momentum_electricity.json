@@ -1,0 +1,222 @@
+[
+  {
+    "planId": "MOM1151384MRE2@EME",
+    "displayName": "Suit Yourself Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1151250MRE2@EME",
+    "displayName": "Suit Yourself Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1151248MRE2@EME",
+    "displayName": "Suit Yourself Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174216MRE1@EME",
+    "displayName": "Warm Welcome",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174217MRE1@EME",
+    "displayName": "Warm Welcome",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174215MRE1@EME",
+    "displayName": "Warm Welcome",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174041MRE1@EME",
+    "displayName": "NAB Goodies",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174040MRE1@EME",
+    "displayName": "NAB Goodies",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1174039MRE1@EME",
+    "displayName": "NAB Goodies",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1173928MRE1@EME",
+    "displayName": "Home Comfort Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1173927MRE1@EME",
+    "displayName": "Home Comfort Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1173929MRE1@EME",
+    "displayName": "Home Comfort Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1162917MRE1@EME",
+    "displayName": "Bill Boss Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-14T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1162918MRE1@EME",
+    "displayName": "Bill Boss Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-14T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1162916MRE1@EME",
+    "displayName": "Bill Boss Electricity",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-14T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1123757SRE2@EME",
+    "displayName": "Standing Offer - Solar Sharer Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM1063296SRE2@EME",
+    "displayName": "Standing Offer - Solar Sharer Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM916075SRE4@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM916064SRE4@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM916047SRE4@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-15T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM916066SRE3@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-08T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "MOM916011SRE2@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

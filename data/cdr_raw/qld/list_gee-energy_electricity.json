@@ -1,0 +1,102 @@
+[
+  {
+    "planId": "GEE1037088MRE1@EME",
+    "displayName": "GEE Smart Value ENGXR Demand Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037084MRE1@EME",
+    "displayName": "GEE Smart Saver ENGXR Demand Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037087MRE1@EME",
+    "displayName": "GEE Smart Value ENGXR Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037083MRE1@EME",
+    "displayName": "GEE Smart Saver ENGXR Time of Use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037038MRE1@EME",
+    "displayName": "GEE Smart Saver ENGXR Single Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037042MRE1@EME",
+    "displayName": "GEE Smart Value ENGXR Single Rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037040MRE1@EME",
+    "displayName": "GEE Smart Saver ENGXR Single Rate + CL2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037043MRE1@EME",
+    "displayName": "GEE Smart Value ENGXR  Single Rate + CL1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037039MRE1@EME",
+    "displayName": "GEE Smart Saver ENGXR  Single Rate + CL1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "GEE1037044MRE1@EME",
+    "displayName": "GEE Smart Value ENGXR Single Rate + CL2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-03-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

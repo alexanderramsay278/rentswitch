@@ -1,0 +1,580 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-03",
+    "filter": "customerType=RESIDENTIAL, postcode 2600, effective=CURRENT, type=STANDING",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
+  },
+  "plans": [
+    {
+      "planId": "ACT933031SRE5@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home time-of-use daytime economy with controlled load",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.454,
+      "offPeak": 0.16,
+      "shoulder": 0.29955,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ACT933030SRE5@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home time-of-use daytime economy",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.454,
+      "offPeak": 0.16,
+      "shoulder": 0.29955,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT62933SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home with controlled load",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ACT62941SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home demand with controlled load",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.27067,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ACT62938SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home saver plus",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 2.07,
+      "flat": 0.285081,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT62936SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home time-of-use with controlled load",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ACT62939SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home demand",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.27067,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT62930SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT62929SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home time-of-use",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT62937SRE15@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Home saver",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.55,
+      "flat": 0.316196,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT1034265SRE3@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "ACT Standard Home plan with CL (smart meters)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ACT1034264SRE3@EME",
+      "brand": "actewagl",
+      "fuel": "ELECTRICITY",
+      "displayName": "ACT Standard Home plan (smart meters)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ACT64470SRG12@EME",
+      "brand": "actewagl",
+      "fuel": "GAS",
+      "displayName": "Home Gas plan - ACT region",
+      "distributors": [
+        "Evoenergy ACT"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.815,
+      "blocks": [
+        {
+          "volumeMJ": 41.0959,
+          "unitPrice": 0.0533
+        },
+        {
+          "volumeMJ": 442.1918,
+          "unitPrice": 0.0435
+        },
+        {
+          "volumeMJ": 1489.3151,
+          "unitPrice": 0.03735
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.0369
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.0533,
+      "lastBlockRate": 0.0369
+    },
+    {
+      "planId": "ELU1021350SRE6@EME",
+      "brand": "energy-locals-urban",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.85,
+      "flat": 0.297,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19297SRE43@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.24,
+      "flat": null,
+      "peak": 0.44579,
+      "offPeak": 0.25489,
+      "shoulder": 0.32098,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19239SRE43@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": 0.3347,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE19256SRE43@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.24,
+      "flat": 0.3347,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19176SRE43@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": 0.3347,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE19160SRE43@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": 0.3347,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE797000SRE10@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": null,
+      "peak": 0.45475,
+      "offPeak": 0.29234,
+      "shoulder": 0.1794,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE796997SRE10@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": null,
+      "peak": 0.45475,
+      "offPeak": 0.29234,
+      "shoulder": 0.1794,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE796974SRE10@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.24,
+      "flat": null,
+      "peak": 0.45475,
+      "offPeak": 0.29234,
+      "shoulder": 0.1794,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE796992SRE10@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) (7 day TOU Interval)",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.24,
+      "flat": null,
+      "peak": 0.45475,
+      "offPeak": 0.29234,
+      "shoulder": 0.1794,
+      "controlledLoad": 0.2526,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE19194SRG36@EME",
+      "brand": "energyaustralia",
+      "fuel": "GAS",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Evoenergy ACT"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.953,
+      "blocks": [
+        {
+          "volumeMJ": 41.096,
+          "unitPrice": 0.055
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.041
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.055,
+      "lastBlockRate": 0.041
+    },
+    {
+      "planId": "ERC1152999SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -  Time of Use",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ERC1152997SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL2",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1152995SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ERC1152998SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL & CL2",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153001SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL2",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153002SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL1 & CL2",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153000SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL1",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": null,
+      "peak": 0.452,
+      "offPeak": 0.272,
+      "shoulder": 0.305146,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1152996SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL1",
+      "distributors": [
+        "Evoenergy"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.22,
+      "flat": 0.335942,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.2525,
+      "controlledLoadSupplyCharge": 0.0
+    }
+  ]
+}

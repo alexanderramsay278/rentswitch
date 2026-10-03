@@ -1,0 +1,322 @@
+[
+  {
+    "planId": "GLO1176090MRE2@EME",
+    "displayName": "FREELUNCH Resi (Flexible CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1176091MRE2@EME",
+    "displayName": "FREELUNCH Resi (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168920MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Two Rate) estimate-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168973MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flexible Rate CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168971MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flat Rate CTL Load)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168918MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Single Rate) estimate-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168972MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flat Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168921MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Two Rate CTL) estimate-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168974MRE1@EME",
+    "displayName": "FULLHOUSE Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1168919MRE1@EME",
+    "displayName": "WHOLESAVE Resi (Single Rate CTL) estimate-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-12T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165649MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible RESELE)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165653MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165648MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible RESELE CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165645MRE2@EME",
+    "displayName": "GLOHOME Residential (Flat Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165644MRE2@EME",
+    "displayName": "GLOHOME Residential (Flat Rate CTL Load)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165651MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flat Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165650MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flat Rate CTL Load)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165646MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible Rate CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165647MRE2@EME",
+    "displayName": "GLOHOME Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165652MRE2@EME",
+    "displayName": "ULTRAEASY Residential (Flexible Rate CTL Load)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-10T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165688MRE1@EME",
+    "displayName": "EASYEV Residential (Flexible Rate CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165687MRE1@EME",
+    "displayName": "EASYEV Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165678MRE1@EME",
+    "displayName": "FOUR4FREE Residential (Flexible Rate CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1165677MRE1@EME",
+    "displayName": "FOUR4FREE Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127667MRE2@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate CTL)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127709SRE2@EME",
+    "displayName": "Resi Standing Offer Prices (Flex Rate)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127708SRE2@EME",
+    "displayName": "Resi Standing Offer Prices (Flat Rate CTL)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127710SRE2@EME",
+    "displayName": "Resi Standing Offer Prices (Flex Rate CTL)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1128316SRE2@EME",
+    "displayName": "Resi Standing Offer (Solar Sharer Offer)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1128317SRE2@EME",
+    "displayName": "Resi Standing Offer (Solar Sharer CTL)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127707SRE2@EME",
+    "displayName": "Resi Standing Offer Prices (Flat Rate)-SAPN",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "GLO1127666MRE2@EME",
+    "displayName": "ZEROHERO VPP Residential (Flexible Rate)-SAPN",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-03T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "planId": "NTR1154729MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "NTR1154730MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "NTR1154731MRE1@EME",
+    "displayName": "Nectr GreenPower TOU - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "NTR1154728MRE1@EME",
+    "displayName": "Nectr GreenPower - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "NTR1154732MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "NTR1154733MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  }
+]

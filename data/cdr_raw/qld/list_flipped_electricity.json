@@ -1,0 +1,82 @@
+[
+  {
+    "planId": "FEA1174524MRE1@EME",
+    "displayName": "Freedom Switched On 2.3!",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-22T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1174525MRE1@EME",
+    "displayName": "Freedom Switched On 2.3! Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-22T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154658SRE2@EME",
+    "displayName": "Anytime Standing Offer - Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154635SRE2@EME",
+    "displayName": "Freedom Standing Offer - Controlled Load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154660SRE2@EME",
+    "displayName": "Anytime Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154604MRE2@EME",
+    "displayName": "Anytime Switched On 2.2!",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154613MRE2@EME",
+    "displayName": "Anytime Switched On 2.2! Controlled Load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "FEA1154636SRE2@EME",
+    "displayName": "Freedom Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-09-15T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

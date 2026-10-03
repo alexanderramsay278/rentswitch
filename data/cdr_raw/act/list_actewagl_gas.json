@@ -1,0 +1,72 @@
+[
+  {
+    "planId": "ACT891834MRG4@EME",
+    "displayName": "Home Saver MAX Gas (Compare & Connect)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT891835MRG4@EME",
+    "displayName": "Home Saver MAX Gas (My Connect)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT892768MRG4@EME",
+    "displayName": "Simple Saver gas plan (CIMET)",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT64470SRG12@EME",
+    "displayName": "Home Gas plan - ACT region",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT551684MRG11@EME",
+    "displayName": "Capital gas plan",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT639659MRG6@EME",
+    "displayName": "Simple Saver gas plan",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  },
+  {
+    "planId": "ACT551680MRG9@EME",
+    "displayName": "Direct Saver gas plan",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy ACT"
+    ]
+  }
+]

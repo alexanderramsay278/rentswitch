@@ -1,0 +1,522 @@
+[
+  {
+    "planId": "ACT985305MRE8@EME",
+    "displayName": "Power On plan with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT985304MRE8@EME",
+    "displayName": "Power On plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT912038MRE9@EME",
+    "displayName": "Smart Saver plan time-of-use with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT933031SRE5@EME",
+    "displayName": "Home time-of-use daytime economy with controlled load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT912037MRE9@EME",
+    "displayName": "Smart Saver plan time-of-use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT933030SRE5@EME",
+    "displayName": "Home time-of-use daytime economy",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT854786MRE7@EME",
+    "displayName": "evEnergy Saver with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT854785MRE7@EME",
+    "displayName": "evEnergy Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62933SRE15@EME",
+    "displayName": "Home with controlled load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT486853MRE13@EME",
+    "displayName": "Solar Saver - single rate",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62941SRE15@EME",
+    "displayName": "Home demand with controlled load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62938SRE15@EME",
+    "displayName": "Home saver plus",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62936SRE15@EME",
+    "displayName": "Home time-of-use with controlled load",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62939SRE15@EME",
+    "displayName": "Home demand",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62930SRE15@EME",
+    "displayName": "Home",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62929SRE15@EME",
+    "displayName": "Home time-of-use",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT62937SRE15@EME",
+    "displayName": "Home saver",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT484552MRE13@EME",
+    "displayName": "Solar Saver - time-of-use with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT486854MRE13@EME",
+    "displayName": "Solar Saver - single rate with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT484551MRE13@EME",
+    "displayName": "Solar Saver - time-of-use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT345475MRE11@EME",
+    "displayName": "Battery Saver",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT345476MRE12@EME",
+    "displayName": "Battery Saver with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034206MRE5@EME",
+    "displayName": "Certain Saver plan - time-of-use with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034204MRE5@EME",
+    "displayName": "Certain Saver plan with controlled load",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034203MRE5@EME",
+    "displayName": "Certain Saver plan",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015409MRE6@EME",
+    "displayName": "Home + CL with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015408MRE6@EME",
+    "displayName": "Demand with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015416MRE6@EME",
+    "displayName": "TOU daytime with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015410MRE6@EME",
+    "displayName": "Home saver plus with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015450MRE6@EME",
+    "displayName": "Demand + CL - 25% off supply & usage - Compare&Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015415MRE6@EME",
+    "displayName": "TOU daytime + CL with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015413MRE6@EME",
+    "displayName": "Time-of-use with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034265SRE3@EME",
+    "displayName": "ACT Standard Home plan with CL (smart meters)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015449MRE6@EME",
+    "displayName": "TOU + CL - 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015454MRE6@EME",
+    "displayName": "TOU daytime - 25% off supply & usage - Compare&Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034264SRE3@EME",
+    "displayName": "ACT Standard Home plan (smart meters)",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015453MRE6@EME",
+    "displayName": "Homesaver plus - 25% off supply&usage - Compare&Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1006534MRE5@EME",
+    "displayName": "Plus plan - time-of-use + controlled load (My Connect)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015451MRE6@EME",
+    "displayName": "Demand with 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1034205MRE5@EME",
+    "displayName": "Certain Saver plan - time-of-use",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015412MRE6@EME",
+    "displayName": "Home with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015414MRE6@EME",
+    "displayName": "TOU + CL with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015448MRE6@EME",
+    "displayName": "Home saver - 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1006533MRE5@EME",
+    "displayName": "Plus plan - time-of-use (My Connect)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015455MRE6@EME",
+    "displayName": "Home with 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015447MRE6@EME",
+    "displayName": "TOU daytime+CL - 25% off supply&usage - Compare&Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015446MRE6@EME",
+    "displayName": "TOU with 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1006532MRE5@EME",
+    "displayName": "Plus plan with controlled load (My Connect)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015452MRE6@EME",
+    "displayName": "Home + CL - 25% off supply & usage - Compare & Connect",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015411MRE6@EME",
+    "displayName": "Home saver with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1015407MRE6@EME",
+    "displayName": "Demand + CL with 25% off supply & usage - CIMET",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  },
+  {
+    "planId": "ACT1006531MRE5@EME",
+    "displayName": "Plus plan (My Connect)",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Evoenergy"
+    ]
+  }
+]

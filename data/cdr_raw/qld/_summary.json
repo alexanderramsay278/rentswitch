@@ -1,0 +1,1588 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-03",
+    "filter": "customerType=RESIDENTIAL, postcode 4000, effective=CURRENT, type=STANDING",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
+  },
+  "plans": [
+    {
+      "planId": "AGL15288SRE36@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL15287SRE36@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149245,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1189608SRE1@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1123053SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.073646,
+      "shoulder": 0.0,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "AGL1175152SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.073646,
+      "shoulder": 0.0,
+      "controlledLoad": 0.149245,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL1067193SRE2@EME",
+      "brand": "agl",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149245,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "AGL15285SRG33@EME",
+      "brand": "agl",
+      "fuel": "GAS",
+      "displayName": "Residential Standing Offer",
+      "distributors": [
+        "AGN - Brisbane and Riverview"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.9436,
+      "blocks": [
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.0612
+        }
+      ],
+      "blockPeriod": "P1D",
+      "firstBlockRate": 0.0612,
+      "lastBlockRate": 0.0612
+    },
+    {
+      "planId": "DOD14353SRE14@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149385,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "DOD14354SRE14@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.6168463,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "DOD13999SRE14@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149385,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "DOD14000SRE11@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Residential Standing",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "DOD1109081SRE1@EME",
+      "brand": "dodo",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444564,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ELU1021358SRE7@EME",
+      "brand": "energy-locals-urban",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.2543127,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19229SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE19245SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE1147743SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.073646,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE1147742SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.073646,
+      "controlledLoad": 0.15205,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE19190SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE19209SRE42@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.15205,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE1147741SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.073646,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE1147740SRE3@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer Solar Sharer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.073646,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ENE976978SRE8@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - 7 Day TOU + CL 1",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE976982SRE8@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - 7 Day TOU + CL 1 & 2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE976983SRE8@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - 7 Day TOU + CL 2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.15205,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ENE976980SRE8@EME",
+      "brand": "energyaustralia",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer (Home) - 7 Day TOU",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ERC1153004SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL1",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.14911,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153009SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61661,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.15204,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153010SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL1 & CL2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61661,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.14911,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153003SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "ERC1153006SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL & CL2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.14911,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153008SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -   Time of Use + CL1",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.61661,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.14911,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153005SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing  Offer - Anytime + CL2",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.15204,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "ERC1153007SRE1@EME",
+      "brand": "erc-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer -  Time of Use",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61661,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FEA1154658SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Anytime Standing Offer - Controlled Load",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.654611,
+      "flat": 0.261267,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.178167,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "FEA1154635SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Freedom Standing Offer - Controlled Load",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.654611,
+      "flat": null,
+      "peak": 0.498839,
+      "offPeak": 0.090531,
+      "shoulder": 0.276583,
+      "controlledLoad": 0.178167,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "FEA1154660SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Anytime Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.658721,
+      "flat": 0.261262,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FEA1154636SRE2@EME",
+      "brand": "flipped",
+      "fuel": "ELECTRICITY",
+      "displayName": "Freedom Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.658721,
+      "flat": null,
+      "peak": 0.49884,
+      "offPeak": 0.090532,
+      "shoulder": 0.276583,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FP11199349SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer FY27 TOU",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684636,
+      "flat": null,
+      "peak": 0.43441636,
+      "offPeak": 0.06349818,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FP11199354SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer FY27",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684636,
+      "flat": null,
+      "peak": 0.44456364,
+      "offPeak": 0.0,
+      "shoulder": 0.07364636,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FP11199350SRE1@EME",
+      "brand": "flow-power",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer FY27 SR",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.74559909,
+      "flat": 0.25431273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125561SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "Energex - RESI Time of Use FY27",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684636,
+      "flat": null,
+      "peak": 0.43441636,
+      "offPeak": 0.06349818,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125551SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "Energex - RESI Anytime FY27",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.74559909,
+      "flat": 0.25431273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "FXP1125571SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "Energex - RESI Anytime + CL1 FY27",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.74559909,
+      "flat": 0.25431273,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.14938455,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "FXP1125576SRE1@EME",
+      "brand": "future-x",
+      "fuel": "ELECTRICITY",
+      "displayName": "Energex - RESI Solar Sharer Offer FY27",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.61684636,
+      "flat": null,
+      "peak": 0.44456364,
+      "offPeak": 0.07364636,
+      "shoulder": 0.24010818,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127711SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Flat Rate CTL Load)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254313,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149385,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1127713SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Flexible Rate Energy CTL)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149385,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1128315SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Solar Sharer Offer CTL)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444564,
+      "offPeak": 0.073646,
+      "shoulder": null,
+      "controlledLoad": 0.149385,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "GLO1128314SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Solar Sharer Offer)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444564,
+      "offPeak": 0.073646,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127714SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Flexible Rate Energy)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127712SRE2@EME",
+      "brand": "globird",
+      "fuel": "ELECTRICITY",
+      "displayName": "Resi Standing Offer (Flat Rate)-Energex",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254313,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "GLO1127704SRG2@EME",
+      "brand": "globird",
+      "fuel": "GAS",
+      "displayName": "Resi Standing Offer Prices (AGN-Brisbane)-AGN QLD",
+      "distributors": [
+        "AGN - Brisbane and Riverview"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 0.95,
+      "blocks": [
+        {
+          "volumeMJ": 249.0,
+          "unitPrice": 0.095
+        },
+        {
+          "volumeMJ": null,
+          "unitPrice": 0.085
+        }
+      ],
+      "blockPeriod": "P1M",
+      "firstBlockRate": 0.095,
+      "lastBlockRate": 0.085
+    },
+    {
+      "planId": "MOM1123755SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.44456,
+      "offPeak": 1e-08,
+      "shoulder": 0.2401,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM1123747SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.44456,
+      "offPeak": 1e-08,
+      "shoulder": 0.2401,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM1123749SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.44456,
+      "offPeak": 1e-08,
+      "shoulder": 0.2401,
+      "controlledLoad": 0.15222,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM1123750SRE2@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer - Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.44456,
+      "offPeak": 1e-08,
+      "shoulder": 0.2401,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM916034SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM916027SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.3256,
+      "flat": null,
+      "peak": 0.20373,
+      "offPeak": 0.181,
+      "shoulder": 0.24191,
+      "controlledLoad": 0.14936,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM916024SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.15222,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM915991SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.3256,
+      "flat": null,
+      "peak": 0.20373,
+      "offPeak": 0.181,
+      "shoulder": 0.24191,
+      "controlledLoad": 0.15218,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM915989SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.15222,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM915984SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM915990SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.3256,
+      "flat": null,
+      "peak": 0.20373,
+      "offPeak": 0.181,
+      "shoulder": 0.24191,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM915979SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "MOM915977SRE4@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM1123046SRE1@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.3256,
+      "flat": null,
+      "peak": 0.20373,
+      "offPeak": 0.181,
+      "shoulder": 0.24191,
+      "controlledLoad": 0.14936,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM1123037SRE1@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.25431,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "MOM1123034SRE1@EME",
+      "brand": "momentum",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.43441,
+      "offPeak": 0.06349,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.14938,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO1110155SRE3@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer (Solar Sharer)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": 0.149383,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO1110153SRE3@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer (Solar Sharer)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO1110159SRE3@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer (Solar Sharer)",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": 0.152227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934258SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616845,
+      "flat": null,
+      "peak": 0.434415,
+      "offPeak": 0.063497,
+      "shoulder": 0.229959,
+      "controlledLoad": 0.149383,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934327SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616845,
+      "flat": null,
+      "peak": 0.434415,
+      "offPeak": 0.063497,
+      "shoulder": 0.229959,
+      "controlledLoad": 0.152227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934290SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745598,
+      "flat": 0.254311,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO934302SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616845,
+      "flat": null,
+      "peak": 0.434415,
+      "offPeak": 0.063497,
+      "shoulder": 0.229959,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "OVO934316SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745598,
+      "flat": 0.254311,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149383,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "OVO934323SRE4@EME",
+      "brand": "ovo-energy",
+      "fuel": "ELECTRICITY",
+      "displayName": "Basic Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745598,
+      "flat": 0.254311,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.152227,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060624SRE3@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Powershop Solar Sharer Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240107,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060581SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060622SRE3@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Powershop Solar Sharer Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240107,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060623SRE3@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Powershop Solar Sharer Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240107,
+      "controlledLoad": 0.152228,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060621SRE3@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Powershop Solar Sharer Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240107,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "PSH1060566SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "PSH1060564SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.152228,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060560SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060574SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060569SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.745599,
+      "flat": 0.254312,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.152228,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060568SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "PSH1060559SRE2@EME",
+      "brand": "powershop",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standing Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.434416,
+      "offPeak": 0.063498,
+      "shoulder": 0.22996,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TAN1128308SRE1@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "TAN1128311SRE1@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": 0.152228,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "TAN1128309SRE1@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    },
+    {
+      "planId": "TAN1128310SRE1@EME",
+      "brand": "tango",
+      "fuel": "ELECTRICITY",
+      "displayName": "Solar Sharer Offer",
+      "distributors": [
+        "Energex"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.616846,
+      "flat": null,
+      "peak": 0.444563,
+      "offPeak": 0.0,
+      "shoulder": 0.240108,
+      "controlledLoad": 0.149384,
+      "controlledLoadSupplyCharge": 0.0
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "planId": "ENE19248SRG37@EME",
+    "displayName": "Standing Offer (Home)",
+    "type": "STANDING",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE996204MRG4@EME",
+    "displayName": "Balance Plan - My Connect",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE996205MRG4@EME",
+    "displayName": "Balance Plan - Residential Connections",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE681821MRG11@EME",
+    "displayName": "Rate Fix",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE676775MRG11@EME",
+    "displayName": "Balance Plan - Third Party Offer",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE379833MRG26@EME",
+    "displayName": "Flexi Plan",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  },
+  {
+    "planId": "ENE477660MRG16@EME",
+    "displayName": "Balance Plan - Connect Now",
+    "type": "MARKET",
+    "fuelType": "GAS",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "AGN Metro/Barossa/Peterborough"
+    ]
+  }
+]

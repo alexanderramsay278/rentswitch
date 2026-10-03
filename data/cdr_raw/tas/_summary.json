@@ -1,0 +1,201 @@
+{
+  "_source": {
+    "name": "AER Consumer Data Right - Energy Product Reference Data API",
+    "headers": {
+      "list": "x-v: 1",
+      "detail": "x-v: 3"
+    },
+    "retrieved": "2026-10-03",
+    "filter": "customerType=RESIDENTIAL, postcode 7000, effective=CURRENT, type=STANDING",
+    "units": "unitPrice in $/kWh (electricity) and $/MJ (gas); dailySupplyCharge in $/day"
+  },
+  "plans": [
+    {
+      "planId": "SOL1140215SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Single Rate + H&H/W + Off Peak",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.190074,
+      "controlledLoadSupplyCharge": 0.16484
+    },
+    {
+      "planId": "SOL1140203SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Resi Single Rate + H&H/W + Off Peak Night",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.190074,
+      "controlledLoadSupplyCharge": 0.16484
+    },
+    {
+      "planId": "SOL1140188SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Single Rate + Heating & Hot Water",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.190074,
+      "controlledLoadSupplyCharge": 0.16484
+    },
+    {
+      "planId": "SOL1140227SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Single Rate + Off Peak",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.132613,
+      "controlledLoadSupplyCharge": 0.220005
+    },
+    {
+      "planId": "SOL1140266SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Time of Use + Off Peak Night",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "TIME_OF_USE_CONT_LOAD",
+      "dailySupplyCharge": 1.551122,
+      "flat": null,
+      "peak": 0.32569,
+      "offPeak": 0.15318,
+      "shoulder": null,
+      "controlledLoad": 0.126195,
+      "controlledLoadSupplyCharge": 0.210298
+    },
+    {
+      "planId": "SOL1140286SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Resi Flat Rate + Off Peak Night Only",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.638,
+      "flat": 0.21825,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.126195,
+      "controlledLoadSupplyCharge": 0.210298
+    },
+    {
+      "planId": "SOL1140278SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Flat Rate",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.638,
+      "flat": 0.21825,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "SOL1140294SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Consumer Energy Resources",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.841122,
+      "flat": null,
+      "peak": 0.345287,
+      "offPeak": 0.15318,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "SOL1142933SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Time of Use",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "TIME_OF_USE",
+      "dailySupplyCharge": 1.551122,
+      "flat": null,
+      "peak": 0.32569,
+      "offPeak": 0.15318,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    },
+    {
+      "planId": "SOL1140239SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Resi Single Rate + Off Peak Night Only",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE_CONT_LOAD",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": 0.126195,
+      "controlledLoadSupplyCharge": 0.210298
+    },
+    {
+      "planId": "SOL1140176SRE1@EME",
+      "brand": "solstice",
+      "fuel": "ELECTRICITY",
+      "displayName": "Standard Residential Single Rate",
+      "distributors": [
+        "TasNetworks"
+      ],
+      "pricingModel": "SINGLE_RATE",
+      "dailySupplyCharge": 1.509133,
+      "flat": 0.251584,
+      "peak": null,
+      "offPeak": null,
+      "shoulder": null,
+      "controlledLoad": null,
+      "controlledLoadSupplyCharge": null
+    }
+  ]
+}

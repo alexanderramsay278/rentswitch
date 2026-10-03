@@ -1,0 +1,62 @@
+[
+  {
+    "planId": "NTR1154736MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "NTR1154735MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "NTR1154734MRE1@EME",
+    "displayName": "Nectr GreenPower - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "NTR1154737MRE1@EME",
+    "displayName": "Nectr GreenPower TOU - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "NTR1154739MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  },
+  {
+    "planId": "NTR1154738MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "SA Power Networks"
+    ]
+  }
+]

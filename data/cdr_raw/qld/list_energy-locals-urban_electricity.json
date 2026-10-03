@@ -1,0 +1,12 @@
+[
+  {
+    "planId": "ELU1021358SRE7@EME",
+    "displayName": "Standing Offer",
+    "type": "STANDING",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-10-01T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]

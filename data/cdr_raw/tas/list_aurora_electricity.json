@@ -1,0 +1,92 @@
+[
+  {
+    "planId": "AUR1119317RRE1@EME",
+    "displayName": "Residential Peak and Off-Peak",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119318RRE1@EME",
+    "displayName": "Residential Single Rate",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119316RRE1@EME",
+    "displayName": "Residential Flat rate with Off-Peak option",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119314RRE1@EME",
+    "displayName": "Residential Flat rate (Lights & Power) Off-Peak option",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119312RRE1@EME",
+    "displayName": "Residential Flat rate (Light & Power)",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119267RRE1@EME",
+    "displayName": "aurora+ on Flat Rate",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119313RRE1@EME",
+    "displayName": "Residential Flat rate (Lights & Power) Off-Peak (Night)",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119311RRE1@EME",
+    "displayName": "Residential Flat Rate",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  },
+  {
+    "planId": "AUR1119268RRE1@EME",
+    "displayName": "aurora+ on Time of Use",
+    "type": "REGULATED",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-07-01T00:00:00.000Z",
+    "distributors": [
+      "TasNetworks"
+    ]
+  }
+]

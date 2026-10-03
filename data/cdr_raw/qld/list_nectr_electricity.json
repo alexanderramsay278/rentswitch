@@ -1,0 +1,242 @@
+[
+  {
+    "planId": "NTR1162395MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus + CL 1 & CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162396MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus TOU",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162398MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus TOU + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162394MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus + CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162393MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162392MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162399MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus TOU + CL 1 & CL 2",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1162397MRE1@EME",
+    "displayName": "Nectr Buzz in Bonus TOU + CL 1",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-27T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154698MRE1@EME",
+    "displayName": "Nectr Power Perks TOU + CL 1 & CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154696MRE1@EME",
+    "displayName": "Nectr Power Perks TOU + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154695MRE1@EME",
+    "displayName": "Nectr Power Perks TOU - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154694MRE1@EME",
+    "displayName": "Nectr Power Perks + CL 1 & CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154726MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154691MRE1@EME",
+    "displayName": "Nectr Power Perks - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154697MRE1@EME",
+    "displayName": "Nectr Power Perks TOU + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154693MRE1@EME",
+    "displayName": "Nectr Power Perks + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154692MRE1@EME",
+    "displayName": "Nectr Power Perks + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154720MRE1@EME",
+    "displayName": "Nectr GreenPower - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154721MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154727MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 1 & CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154723MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 1 & CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154724MRE1@EME",
+    "displayName": "Nectr GreenPower TOU - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154725MRE1@EME",
+    "displayName": "Nectr GreenPower TOU + CL 1 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  },
+  {
+    "planId": "NTR1154722MRE1@EME",
+    "displayName": "Nectr GreenPower + CL 2 - August 2026",
+    "type": "MARKET",
+    "fuelType": "ELECTRICITY",
+    "effectiveFrom": "2026-08-07T00:00:00.000Z",
+    "distributors": [
+      "Energex"
+    ]
+  }
+]
