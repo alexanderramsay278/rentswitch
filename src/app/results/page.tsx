@@ -15,6 +15,7 @@ import {
   formatNumber,
 } from "@/lib/format";
 import LetterBlock from "@/components/LetterBlock";
+import DealLadder from "@/components/DealLadder";
 
 const CURRENT_SYSTEM_LABEL: Record<CurrentSystem, string> = {
   gas: "gas storage",
@@ -307,6 +308,16 @@ export default async function ResultsPage({
               </p>
             )}
           </div>
+
+          <h3 className="mt-8 mb-3 text-xs font-semibold uppercase tracking-wide text-stone-500">
+            What we would propose at other rents
+          </h3>
+          <DealLadder
+            constants={constants}
+            incremental={result.landlord.incremental}
+            saving={result.saving.total}
+            weeklyRent={answers.weeklyRent}
+          />
         </Section>
       )}
 
