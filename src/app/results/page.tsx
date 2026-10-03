@@ -63,7 +63,7 @@ export default async function ResultsPage({
         >
           Rentswitch
         </Link>
-        <Link href="/" className="text-sm font-medium text-stone-500 hover:text-stone-700">
+        <Link href="/start" className="text-sm font-medium text-stone-500 hover:text-stone-700">
           Start over
         </Link>
       </div>
@@ -328,7 +328,7 @@ function Notes({ warnings }: { warnings: string[] }) {
 function StartOverButton() {
   return (
     <Link
-      href="/"
+      href="/start"
       className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
     >
       Start over

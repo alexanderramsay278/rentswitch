@@ -19,7 +19,7 @@ export default async function StatePage({
   const upper = code.toUpperCase();
 
   if (upper === "NSW") {
-    redirect("/");
+    redirect("/start");
   }
 
   const known = STATES.some((s) => s.code === upper);
@@ -47,7 +47,7 @@ export default async function StatePage({
           right rather than every state&apos;s numbers approximately.
         </p>
         <Link
-          href="/"
+          href="/start"
           className="inline-block rounded-lg bg-emerald-600 px-5 py-3 font-medium text-white transition-colors hover:bg-emerald-700"
         >
           Choose NSW instead

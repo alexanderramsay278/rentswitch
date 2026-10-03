@@ -40,3 +40,26 @@ body {
     animation: none;
   }
 }
+
+/* Scroll-triggered reveal (landing page). See src/components/Reveal.tsx - these classes are
+   only ever applied by JavaScript after mount, so a no-JS visit never hides content. */
+.rs-reveal-pending {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.rs-reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rs-reveal-pending {
+    opacity: 1;
+    transform: none;
+  }
+  .rs-reveal-visible {
+    transition: none;
+  }
+}
