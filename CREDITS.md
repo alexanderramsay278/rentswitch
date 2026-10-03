@@ -4,7 +4,7 @@ Climate Hack-tion 2026 · Team **PPC Fans** · Track: **Electrification**
 
 Rule 9 requires everything disclosed — libraries, APIs, datasets, assets, paid tools, and AI
 assistance. This file was created in the first commit and is updated as things are added.
-**Last updated: 2026-10-03.**
+**Last updated: 2026-10-04.**
 
 ---
 
@@ -101,6 +101,21 @@ Hot water demand assumption.
     (`Product Spec` §3 and `Model Maths` §2–§10, both authored by the team before the event
     as planning documents, which Rule 6 permits)
   - drafting the first version of the landlord letter copy
+- **Claude (Anthropic)**, via Claude Code, used on **2026-10-03 and 2026-10-04** (Sydney time) for:
+  - extending the model to Victoria, Queensland, South Australia, the ACT and Tasmania (tariff
+    fetching through GitHub Actions, `src/lib/cdr.ts`, `data/constants_<state>.json`,
+    transcribing the DCCEEW 2026 factors with independent cross-checks), the larger-household
+    figures, the deal ladder, the cooktop supply-charge note and the review fixes that followed
+  - **the tariff robustness sweep (2026-10-04):** writing `tools/validate_tariffs.py`, which
+    reuses `tools/model.py` `run()` and the `tools/extract_tariffs.py` parsers unchanged and
+    re-runs the two-person NSW headline case on all 256 cached electricity and gas plan pairs
+    offered at postcode 2088; choosing how to treat guaranteed discounts (run three ways, all
+    reported, with year one and the years after reported separately because the discounts
+    last one year) and eligibility-restricted plans (kept and flagged); generating
+    `data/validation_tariffs.json`; drafting the README subsection that reports the result
+    (the headline is at the generous end of the cached plans in year one and about the
+    middle after it) and the pointers to it beside the headline; and an AI review pass that
+    recomputed every pair independently from the raw files and checked every claim
 - **The model design, the formulas, the source hierarchy and the decision to default the
   rebate and asset-value inputs to zero are the team's own**, written up before the event
   started and implemented afterwards.
