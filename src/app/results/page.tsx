@@ -128,6 +128,16 @@ export default async function ResultsPage({
         )}
       </div>
 
+      <p className="mb-8 max-w-prose text-sm text-stone-500">
+        Every number on this page traces to a named government source.{" "}
+        <Link
+          href="/method"
+          className="font-semibold text-emerald-700 transition-colors hover:text-emerald-800"
+        >
+          See how we worked it out.
+        </Link>
+      </p>
+
       {/* ---------------------------------------------------------------- */}
       {/* 1. Do now - no permission needed                                 */}
       {/* ---------------------------------------------------------------- */}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Reveal from "@/components/Reveal";
+import SiteFooter from "@/components/SiteFooter";
 import { PercentBar, SupplyChargeBar, EmissionsCompareBars } from "@/components/LandingVisuals";
 
 const CTA_LABEL = "See your result";
@@ -93,6 +94,7 @@ export default function Home() {
       />
 
       <FinalCta />
+      <SiteFooter />
     </div>
   );
 }
@@ -105,12 +107,20 @@ function SiteNav() {
   return (
     <div className="sticky top-0 z-10 flex items-center justify-between border-b border-stone-200 bg-stone-50 px-4 py-3 sm:px-8">
       <span className="text-sm font-semibold tracking-tight text-stone-900">Rentswitch</span>
-      <Link
-        href="/start"
-        className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
-      >
-        {CTA_LABEL}
-      </Link>
+      <div className="flex items-center gap-5">
+        <Link
+          href="/method"
+          className="hidden text-sm font-medium text-stone-600 transition-colors hover:text-stone-900 sm:inline"
+        >
+          Method and sources
+        </Link>
+        <Link
+          href="/start"
+          className="rounded-xl bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-emerald-700 active:scale-[0.98]"
+        >
+          {CTA_LABEL}
+        </Link>
+      </div>
     </div>
   );
 }
