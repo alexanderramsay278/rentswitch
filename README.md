@@ -209,8 +209,11 @@ sub-linear: five people use 2.93x a one-person household, not 5.00x. Households 
 dishwashing, laundry and space heating even though they do not share showers.
 
 **Consequence.** Our worked example is a two-person household, which sits inside the defensible
-range. Beyond two occupants the quoted figure should be read as an upper bound. Calibrating the
-per-person curve against metered data is the first item in [Future work](#future-work).
+range. Beyond two occupants the results page now reports a **range**, not a single figure: the
+upper bound is the linear model, and the lower bound scales demand to the AER metered ratios
+above (2.03x at three people, 2.46x at four). Because those ratios cover *total* household gas,
+the lower bound is a floor, not a calibration, and the breakdown, deal and letter use it.
+Calibrating the per-person curve against hot-water-only metered data is still future work.
 
 > We would rather publish the limit we found than an accuracy figure we did not measure.
 

@@ -4,7 +4,16 @@ import { calculate, type CurrentSystem } from "@/lib/engine";
 import { generateLetter } from "@/lib/letter";
 import { constants, tariffs } from "@/lib/adapter";
 import { queryToAnswers } from "@/lib/questions";
-import { formatMoney, formatKg, formatYears, formatNumber } from "@/lib/format";
+import { occupancyRange } from "@/lib/occupancy";
+import {
+  formatMoney,
+  formatMoneyRange,
+  formatKg,
+  formatKgRange,
+  formatYears,
+  formatYearsRange,
+  formatNumber,
+} from "@/lib/format";
 import LetterBlock from "@/components/LetterBlock";
 
 const CURRENT_SYSTEM_LABEL: Record<CurrentSystem, string> = {
@@ -42,13 +51,18 @@ export default async function ResultsPage({
     );
   }
 
-  const result = calculate(constants, tariffs, {
+  const inputs = {
     occupants: answers.occupants,
     hotWaterFuel: answers.hotWater,
     isLastGasAppliance: answers.isLastGasAppliance,
-    heatPumpRate: "offPeak",
+    heatPumpRate: "offPeak" as const,
     weeklyRent: answers.weeklyRent,
-  });
+  };
+  // Above two people the linear model over-states demand, so we report a range. Everything
+  // below the headline (breakdown, deal, letter) uses the lower bound, so nothing we ask a
+  // landlord to act on rests on the figure we know runs high.
+  const range = occupancyRange(constants, tariffs, inputs);
+  const result = range ? range.lower : calculate(constants, tariffs, inputs);
 
   const deal = result.deal;
   const isGas = result.currentSystem === "gas";
@@ -88,21 +102,59 @@ export default async function ResultsPage({
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <BigStat
                 eyebrow="Tenant saving, per year"
-                value={formatMoney(result.saving.total)}
+                value={
+                  range
+                    ? formatMoneyRange(range.lower.saving.total, range.upper.saving.total)
+                    : formatMoney(result.saving.total)
+                }
                 caption="What you keep in your pocket every year if this switch happens."
                 accent
+                compact={range !== null}
               />
               <BigStat
                 eyebrow="Landlord cost, once"
                 value={formatMoney(result.landlord.incremental)}
                 caption="The extra cost over replacing like-for-like, paid once at install."
+                compact={range !== null}
               />
               <BigStat
                 eyebrow="Payback, in years"
-                value={formatYears(result.landlord.yearsOfTenantSaving)}
+                value={
+                  range
+                    ? formatYearsRange(
+                        range.upper.landlord.yearsOfTenantSaving,
+                        range.lower.landlord.yearsOfTenantSaving
+                      )
+                    : formatYears(result.landlord.yearsOfTenantSaving)
+                }
                 caption="Years of your saving it takes to cover the landlord's extra cost."
+                compact={range !== null}
               />
             </div>
+
+            {range && (
+              <div className="mt-6 rounded-lg border border-stone-200 bg-stone-50 p-4 text-sm text-stone-600">
+                <p className="max-w-prose">
+                  <span className="font-semibold text-stone-800">Why a range.</span> Our model
+                  assumes every extra person adds the same amount of hot water. Real metered
+                  households don&apos;t work that way: in the AER&apos;s benchmark of 1,062 NSW
+                  homes, a {answers.occupants === 4 ? "four" : "three"} person household used{" "}
+                  {range.ratio.toFixed(2)} times the gas of one person, not{" "}
+                  {answers.occupants}. The higher figure is our straight model. The
+                  lower one scales demand to that metered curve, which counts cooking and heating
+                  too, so it is a floor rather than a better estimate. The breakdown, the offer
+                  and the letter below all use the lower figure.
+                </p>
+                <p className="mt-2 text-xs text-stone-500">
+                  Emissions cut:{" "}
+                  {formatKgRange(
+                    range.lower.emissions.savedKgPerYear,
+                    range.upper.emissions.savedKgPerYear
+                  )}{" "}
+                  a year.
+                </p>
+              </div>
+            )}
 
             <CostBreakdown
               currentLabel={currentLabel}
@@ -403,17 +455,22 @@ function BigStat({
   value,
   caption,
   accent = false,
+  compact = false,
 }: {
   eyebrow: string;
   value: string;
   caption: string;
   accent?: boolean;
+  /** Smaller type, for ranges that would not fit a column at full size. */
+  compact?: boolean;
 }) {
   return (
     <div className="rounded-xl bg-white p-5 text-center shadow-sm ring-1 ring-stone-200 sm:p-6">
       <p className="text-xs font-semibold uppercase tracking-wide text-stone-600">{eyebrow}</p>
       <p
-        className={`mt-2 text-4xl font-bold tabular-nums sm:text-5xl ${
+        className={`mt-2 font-bold tabular-nums ${
+          compact ? "text-3xl sm:text-2xl" : "text-4xl sm:text-5xl"
+        } ${
           accent ? "text-emerald-700" : "text-stone-900"
         }`}
       >
